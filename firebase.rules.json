@@ -1,0 +1,24 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "review": {
+      "$grade": {
+        ".validate": "$grade === '6' || $grade === '7' || $grade === '8'",
+        "$unit": {
+          ".read": true,
+          "$item": {
+            ".validate": "newData.hasChild('attempts') && (!newData.hasChild('misses') || newData.child('misses').val() <= newData.child('attempts').val())",
+            "attempts": {
+              ".write": "newData.isNumber() && ((!data.exists() && newData.val() === 1) || (data.exists() && newData.val() === data.val() + 1))"
+            },
+            "misses": {
+              ".write": "newData.isNumber() && ((!data.exists() && newData.val() === 1) || (data.exists() && newData.val() === data.val() + 1))"
+            },
+            "$other": { ".validate": false }
+          }
+        }
+      }
+    }
+  }
+}

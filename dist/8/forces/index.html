@@ -1,0 +1,2217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unit 2: Dynamics review, Grade 8</title>
+<meta name="description" content="Practice and review for the Grade 8 forces and Newton's laws unit.">
+<style>
+:root{
+  --bg:#f3f6fb; --grid:#e3e9f3; --card:#ffffff; --ink:#0e1a2b; --muted:#53607a; --line:#cfd8e6;
+  --accent:#1c4fd6; --accent-ink:#ffffff; --good:#0b7a53; --good-bg:#e4f6ee; --bad:#b8340c; --bad-bg:#fdebe4; --warn:#8a5a00; --warn-bg:#fff3d6;
+  --f-app:#d9480f; --f-t:#862e9c; --f-n:#0b7285; --f-fr:#c92a2a; --f-sp:#4d7c0f; --f-g:#5f3dc4; --f-x:#6b7280;
+  --c-quiz:#1c4fd6; --c-topics:#0b7285; --c-unit:#5f3dc4; --c-chal:#d9480f;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#0d1524; --grid:#16223a; --card:#152036; --ink:#e8eefb; --muted:#9db0cf; --line:#2c3d5e;
+    --accent:#6c93ff; --accent-ink:#071126; --good:#52d3a0; --good-bg:#10382b; --bad:#ff9a78; --bad-bg:#3b1d14; --warn:#f5c75a; --warn-bg:#3a2e0e;
+    --f-app:#ff922b; --f-t:#da77f2; --f-n:#3bc9db; --f-fr:#ff6b6b; --f-sp:#a9e34b; --f-g:#9775fa; --f-x:#a0a8b8;
+    --c-quiz:#6c93ff; --c-topics:#3bc9db; --c-unit:#9775fa; --c-chal:#ff922b; }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background-color:var(--bg);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:26px 26px;color:var(--ink);
+  font:17px/1.55 ui-rounded,"SF Pro Rounded","Nunito","Trebuchet MS","Segoe UI",system-ui,sans-serif}
+a{color:var(--accent)}
+.skip{position:absolute;left:-999px;top:0;background:var(--accent);color:var(--accent-ink);padding:.6rem 1rem;z-index:10}
+.skip:focus{left:8px;top:8px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:6px}
+.top{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;align-items:center;justify-content:space-between;padding:.8rem clamp(1rem,4vw,2rem);background:var(--card);border-bottom:2px solid var(--line)}
+.brand{display:flex;gap:.6rem;align-items:center;text-decoration:none;color:var(--ink)}
+.brand .dog{width:48px;height:48px;border-radius:50%;object-fit:cover;border:3px solid var(--line);background:var(--bg)}
+.brand b{display:block;font-weight:800;line-height:1.1}
+.brand small{color:var(--muted)}
+.top nav{display:flex;flex-wrap:wrap;gap:.2rem .3rem}
+.top nav a{padding:.35rem .7rem;border-radius:999px;text-decoration:none;color:var(--ink);font-weight:600;font-size:.92rem}
+.top nav a:hover,.top nav a[aria-current]{background:var(--ink);color:var(--card)}
+main{max-width:900px;margin:0 auto;padding:1.4rem clamp(1rem,4vw,2rem) 4rem}
+main:focus{outline:none}
+h1{font-size:clamp(1.9rem,4.4vw,2.7rem);line-height:1.1;margin:.2rem 0 .6rem;font-weight:800;letter-spacing:-.01em}
+h2{font-size:1.3rem;margin:.2rem 0 .6rem;font-weight:800}
+h3{margin:.2rem 0 .4rem}
+h4{margin:1rem 0 .3rem}
+.lead{font-size:1.1rem;color:var(--muted);max-width:60ch}
+.kicker{margin:0;color:var(--muted);font-weight:700}
+.hero{padding:.6rem 0 1rem}
+.opts{display:grid;grid-template-columns:repeat(2,1fr);gap:.9rem;margin:1.2rem 0}
+@media (max-width:640px){.opts{grid-template-columns:1fr}}
+.opt{all:unset;box-sizing:border-box;cursor:pointer;display:block;background:var(--card);border:2px solid var(--line);border-left:10px solid var(--c);border-radius:14px;padding:1rem 1.1rem;transition:transform .12s,border-color .12s}
+.opt b{display:block;font-size:1.3rem;font-weight:800;margin-bottom:.2rem}
+.opt span{color:var(--muted)}
+.opt:nth-child(1){--c:var(--c-quiz)}.opt:nth-child(2){--c:var(--c-topics)}.opt:nth-child(3){--c:var(--c-unit)}.opt:nth-child(4){--c:var(--c-chal)}
+.opt:hover,.opt.on{border-color:var(--c);transform:translateY(-2px)}
+.opt:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.panel,.card{background:var(--card);border:2px solid var(--line);border-radius:14px;padding:1.1rem 1.2rem;margin:1rem 0}
+.panel{margin-top:0}
+.list{display:grid;gap:.6rem}
+.row{all:unset;box-sizing:border-box;cursor:pointer;display:flex;gap:1rem;align-items:center;justify-content:space-between;border:2px solid var(--line);border-radius:12px;padding:.7rem .9rem;background:var(--bg)}
+.row:hover{border-color:var(--accent)}.row:focus-visible{outline:3px solid var(--accent)}
+.row .rt{display:block}.row small{display:block;color:var(--muted)}
+.checks{display:grid;gap:.5rem;margin:.6rem 0 1rem}
+.chk{display:flex;gap:.7rem;align-items:center;border:2px solid var(--line);border-radius:12px;padding:.55rem .8rem;background:var(--bg);cursor:pointer}
+.chk input{width:1.3rem;height:1.3rem;accent-color:var(--accent)}
+.chk span:first-of-type{flex:1}.chk small{display:block;color:var(--muted)}
+.where h2{margin-top:1.2rem}
+.tgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:.6rem}
+.tcell{display:flex;flex-wrap:wrap;gap:.3rem .6rem;align-items:center;background:var(--card);border:2px solid var(--line);border-radius:12px;padding:.6rem .8rem}
+.tcell>span:first-child{font-weight:700;flex:1 1 100%}
+.tough{color:var(--muted);font-size:.92rem}
+.gauge{display:inline-block;vertical-align:middle;width:90px;height:10px;border-radius:999px;background:var(--line);overflow:hidden}
+.gauge i{display:block;height:100%;background:linear-gradient(90deg,var(--good),var(--warn),var(--bad));background-size:90px 100%}
+.status{display:inline-block;padding:.1rem .6rem;border-radius:999px;font-size:.82rem;font-weight:800}
+.s-ready{background:var(--good-bg);color:var(--good)}.s-almost{background:var(--warn-bg);color:var(--warn)}.s-work{background:var(--bad-bg);color:var(--bad)}.s-new{background:var(--bg);color:var(--muted);border:1px solid var(--line)}
+.chip{display:inline-block;background:var(--bg);border:2px solid var(--line);padding:.05rem .6rem;border-radius:999px;font-size:.85rem;font-weight:700}
+.banner{background:var(--warn-bg);color:var(--warn);border-left:8px solid var(--c-chal);padding:.6rem .9rem;border-radius:10px;font-weight:700;margin:.6rem 0}
+.banner.ok{background:var(--good-bg);color:var(--good);border-left-color:var(--good)}
+.chalcard{border-color:var(--c-chal)}
+.btns{display:flex;flex-wrap:wrap;gap:.6rem;margin:1rem 0 .4rem}
+.btn{display:inline-block;cursor:pointer;border:2px solid var(--accent);background:var(--accent);color:var(--accent-ink);padding:.6rem 1.1rem;border-radius:12px;font:inherit;font-weight:800;text-decoration:none}
+.btn:hover{filter:brightness(1.08)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.btn.ghost{background:transparent;color:var(--accent)}
+.btn.quiet{background:transparent;border-color:var(--line);color:var(--muted)}
+.trow{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.3rem 1rem;padding:.5rem 0;border-bottom:1px dashed var(--line)}
+.trow b{margin-right:.5rem}
+.qhead{display:flex;flex-wrap:wrap;gap:.5rem .8rem;align-items:center;margin-bottom:.4rem}
+.mode{background:var(--ink);color:var(--card);padding:.1rem .7rem;border-radius:999px;font-weight:800;font-size:.85rem}
+.prog{margin-left:auto;color:var(--muted);font-size:.9rem}
+.prompt{font-size:1.15rem;margin:.7rem 0 1rem}
+.figure{margin:.7rem 0}
+.figure .fbd{margin:0 auto}
+.choices{list-style:none;padding:0;margin:0;display:grid;gap:.6rem}
+.ch{all:unset;box-sizing:border-box;width:100%;cursor:pointer;display:flex;gap:.8rem;align-items:center;background:var(--bg);border:2px solid var(--line);border-radius:12px;padding:.65rem .8rem;transition:border-color .1s}
+.ch:hover:not(:disabled){border-color:var(--accent)}
+.ch:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.ch .ltr{flex:none;display:grid;place-items:center;width:2rem;height:2rem;border-radius:50%;background:var(--ink);color:var(--card);font-weight:800}
+.ch .ctext{flex:1}
+.ch.sel{border-color:var(--accent);background:var(--card);box-shadow:inset 0 0 0 2px var(--accent)}
+.ch.gone{opacity:.35;text-decoration:line-through;cursor:not-allowed}
+.ch.right{border-color:var(--good);background:var(--good-bg)}.ch.right .ltr{background:var(--good)}
+.ch.wrong{border-color:var(--bad);background:var(--bad-bg)}.ch.wrong .ltr{background:var(--bad)}
+.ch.off{opacity:.8;cursor:default}
+.why{margin:.25rem .3rem 0 2.9rem;font-size:.93rem;color:var(--muted)}
+.why.good{color:var(--good)}
+.conf{display:flex;flex-wrap:wrap;gap:.4rem .5rem;align-items:center;margin:1rem 0 0;color:var(--muted);font-size:.93rem}
+.pill{cursor:pointer;border:2px solid var(--line);background:transparent;color:var(--ink);padding:.15rem .8rem;border-radius:999px;font:inherit;font-weight:700;font-size:.9rem}
+.pill.on{background:var(--ink);color:var(--card);border-color:var(--ink)}
+.hint,.how{background:var(--warn-bg);color:var(--ink);border-radius:10px;padding:.5rem .8rem;margin:.4rem 0}
+.fb{border-radius:12px;padding:.7rem 1rem;margin:1rem 0 0}
+.fb-ok{background:var(--good-bg);color:var(--ink);border:2px solid var(--good)}
+.fb-no{background:var(--bad-bg);color:var(--ink);border:2px solid var(--bad)}
+.small{font-size:.9rem;color:var(--muted)}
+.card.note ul{padding-left:1.2rem}
+.card.note li{margin:.4rem 0}
+.tips{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.tips .card{margin:0}
+.wr summary{cursor:pointer;font-size:1.1rem}
+.wr blockquote{margin:.3rem 0;padding:.6rem 1rem;border-left:6px solid var(--accent);background:var(--bg);border-radius:8px}
+textarea{width:100%;font:1rem/1.4 ui-monospace,Menlo,Consolas,monospace;padding:.6rem;border:2px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);resize:vertical}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.93rem}
+th,td{text-align:left;padding:.45rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
+td small{display:block;color:var(--muted)}
+.growth{display:grid;gap:.8rem;margin:1rem 0}
+.grow{border:2px solid var(--line);border-radius:12px;padding:.6rem .8rem;background:var(--bg)}
+.bars{display:grid;grid-template-columns:auto 1fr;gap:.2rem .6rem;align-items:center;margin:.3rem 0;font-size:.9rem}
+.bar{display:block;height:12px;border-radius:999px;min-width:3px}
+.b0{background:var(--muted)}.b1{background:var(--good)}
+.up{color:var(--good);font-weight:800}.down{color:var(--bad);font-weight:800}
+.fbd{width:100%;max-width:440px;height:auto;display:block}
+.diag .ctext{display:flex;justify-content:center}
+.ctext .fbd{max-width:380px}
+.choices.diag{grid-template-columns:repeat(2,1fr);align-items:start}
+.diag .ch{padding:.4rem .6rem}
+.diag .why{margin-left:.4rem}
+@media (max-width:640px){.choices.diag{grid-template-columns:1fr}}
+.fbd .dot{fill:var(--ink)}
+.fbd .fa line{stroke-width:4;stroke-linecap:round}
+.fbd .fa line.lead{stroke-width:1.5;stroke-dasharray:3 3;opacity:.6}
+.fbd .fa text{font:700 16px ui-rounded,"Trebuchet MS",system-ui,sans-serif;fill:currentColor}
+.fbd .sub{font-size:11px}.fbd .src{font-size:13px;font-weight:600;fill:var(--muted)}
+.f-app{color:var(--f-app);stroke:var(--f-app);fill:var(--f-app)}.f-t{color:var(--f-t);stroke:var(--f-t);fill:var(--f-t)}.f-n{color:var(--f-n);stroke:var(--f-n);fill:var(--f-n)}
+.f-fr{color:var(--f-fr);stroke:var(--f-fr);fill:var(--f-fr)}.f-sp{color:var(--f-sp);stroke:var(--f-sp);fill:var(--f-sp)}.f-g{color:var(--f-g);stroke:var(--f-g);fill:var(--f-g)}.f-x{color:var(--f-x);stroke:var(--f-x);fill:var(--f-x)}
+.fa text{stroke:none}
+@media (max-width:560px){ body{font-size:16px} .prog{margin-left:0;flex:1 1 100%} .why{margin-left:.4rem} }
+@media (prefers-reduced-motion:reduce){ *{transition:none!important;animation:none!important} .opt:hover,.opt.on{transform:none} }
+
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="app"></div>
+<noscript><p style="padding:1rem">This review site needs JavaScript turned on.</p></noscript>
+<script>
+/* ---- rosters/grade8.js ---- */
+'use strict';
+/* ROSTER FILE: the only place student names live.
+   FIRST NAMES ONLY, grade 8. No last names, emails, phone numbers, or addresses belong here. */
+const ROSTER = {
+  grade: 8,
+  names: ["Oliver","David","Cyrus","Kamran","Zaki","Julien","Alex","Drew","Dean","Alec","Masen","Cam","Reid",
+    "Benjamin","Max","William","John","Jamie","Immanuel","Andy","Sam","Saahil","Jeeva","Rafay","Ari","Luke",
+    "Peter","Timothy","Stan","Dilan","Dylan","Quentin","Wayne","James","Will","Ammar","Viaan","Eric","Matthew",
+    "Bode","Aditya","Alden","Chad","Sidney","Joshua","Henry","Preston","Lawrence"]
+};
+
+/* ---- engine/01-core.js ---- */
+'use strict';
+/* ---------- random helpers (seedable so tests can replay) ---------- */
+let _rng = Math.random;
+function setRng(f) { _rng = f; }
+function mulberry32(a) {
+  return function () {
+    a |= 0; a = a + 0x6D2B79F5 | 0;
+    let t = Math.imul(a ^ a >>> 15, 1 | a);
+    t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+    return ((t ^ t >>> 14) >>> 0) / 4294967296;
+  };
+}
+const rand = () => _rng();
+const ri = (lo, hi) => lo + Math.floor(rand() * (hi - lo + 1));
+const pick = a => a[Math.floor(rand() * a.length)];
+function shuffle(a) {
+  const b = a.slice();
+  for (let i = b.length - 1; i > 0; i--) { const j = Math.floor(rand() * (i + 1)); [b[i], b[j]] = [b[j], b[i]]; }
+  return b;
+}
+
+/* ---------- number formatting ---------- */
+function sig(x, n) { return Number(Number(x).toPrecision(n)); }
+function fmt(x, n) {                       // n significant figures, trailing zeros trimmed
+  let s = Number(x).toPrecision(n);
+  if (s.indexOf('e') >= 0) s = String(Number(s));
+  if (s.indexOf('.') >= 0) s = s.replace(/0+$/, '').replace(/\.$/, '');
+  return s;
+}
+function sci(x, n) {                       // 1.8 x 10^-7 as HTML
+  n = n || 2;
+  let e = Math.floor(Math.log10(Math.abs(x)));
+  let m = Number((x / Math.pow(10, e)).toPrecision(n));
+  if (m >= 10) { m = Number((m / 10).toPrecision(n)); e += 1; }
+  return m.toFixed(n - 1) + ' &times; 10<sup>' + String(e).replace('-', '&minus;') + '</sup>';
+}
+const G_EARTH = 9.8, G_EARTH_ALT = 9.81;   // site shows 9.8; both are accepted
+/* true when a quantity computed with g=9.8 and g=9.81 shows the same value at n sig figs */
+function sameBoth(fn, n) { return fmt(fn(G_EARTH), n) === fmt(fn(G_EARTH_ALT), n); }
+
+/* ---------- names (first names only; staff/Murphy play anyone who makes a mistake) ---------- */
+function oneName() { return pick(ROSTER.names); }
+function twoNames() {
+  const a = oneName(); let b;
+  do { b = oneName(); } while (b[0] === a[0]);      // never near-identical names in one scenario
+  return [a, b];
+}
+
+/* ---------- free-body diagram SVG ---------- */
+const FCLS = { Fapp: 'app', FT: 't', FN: 'n', FFr: 'fr', Fspring: 'sp', Fg: 'g' };
+function _label(t) {
+  const m = /^F(app|T|N|Fr|spring|g)$/.exec(t);
+  if (!m) return t;                                   // custom label, e.g. "force of motion"
+  return 'F<tspan class="sub" dy="3">' + m[1] + '</tspan>';
+}
+function fbd(forces, o) {
+  o = o || {};
+  const W = 440, H = 180, cx = 220, cy = 90, u = 20, r = 7;
+  const lanes = { up: 0, down: 0, left: 0, right: 0 }, LANE = [0, 22, -22];   // same-direction arrows sit side by side
+  let body = '', desc = [];
+  forces.forEach(f => {
+    const maxLen = (f.dir === 'up' || f.dir === 'down') ? 3 : 4;
+    const len = Math.min(f.len, maxLen);
+    const cls = FCLS[f.t] || 'x';
+    const off = LANE[Math.min(lanes[f.dir]++, 2)];
+    const L = r + 2 + len * u;                       // tip distance from center
+    const s = r + 2;
+    let x1 = cx, y1 = cy, x2 = cx, y2 = cy, lx, ly, anchor = 'middle';
+    if (f.dir === 'up')    { x1 = x2 = cx + off; y1 = cy - s; y2 = cy - L; lx = x2 + 10; ly = y2 + 6; anchor = 'start'; }
+    if (f.dir === 'down')  { x1 = x2 = cx + off; y1 = cy + s; y2 = cy + L; lx = x2 + 10; ly = y2 - 2; anchor = 'start'; }
+    if (f.dir === 'left')  { y1 = y2 = cy + off; x1 = cx - s; x2 = cx - L; lx = x2 - 6; ly = y2 - 8; anchor = 'end'; }
+    if (f.dir === 'right') { y1 = y2 = cy + off; x1 = cx + s; x2 = cx + L; lx = x2 + 6; ly = y2 - 8; anchor = 'start'; }
+    const hs = 6;                                    // arrowhead half-size
+    let head;
+    if (f.dir === 'up')    head = [x2, y2, x2 - hs, y2 + 10, x2 + hs, y2 + 10];
+    if (f.dir === 'down')  head = [x2, y2, x2 - hs, y2 - 10, x2 + hs, y2 - 10];
+    if (f.dir === 'left')  head = [x2, y2, x2 + 10, y2 - hs, x2 + 10, y2 + hs];
+    if (f.dir === 'right') head = [x2, y2, x2 - 10, y2 - hs, x2 - 10, y2 + hs];
+    const shaftEnd = { up: [x2, y2 + 9], down: [x2, y2 - 9], left: [x2 + 9, y2], right: [x2 - 9, y2] }[f.dir];
+    const lead = off ? '<line class="lead" x1="' + cx + '" y1="' + cy + '" x2="' + x1 + '" y2="' + y1 + '" />' : '';
+    body += '<g class="fa f-' + cls + '">' + lead +
+      '<line x1="' + x1 + '" y1="' + y1 + '" x2="' + shaftEnd[0] + '" y2="' + shaftEnd[1] + '" />' +
+      '<polygon points="' + head.join(' ') + '" />' +
+      '<text x="' + lx + '" y="' + ly + '" text-anchor="' + anchor + '">' + _label(f.t) +
+      (f.src ? '<tspan class="src" dx="4"> (' + f.src + ')</tspan>' : '') + '</text></g>';
+    desc.push(f.t + ' ' + f.dir + (f.src ? ' (' + f.src + ')' : '') + ', length ' + len);
+  });
+  const label = 'Free-body diagram: ' + (desc.length ? desc.join('; ') : 'no arrows');
+  return '<svg class="fbd" viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="' + label + '">' +
+    '<title>' + label + '</title><circle class="dot" cx="' + cx + '" cy="' + cy + '" r="' + r + '" />' + body + '</svg>';
+}
+
+/* ---- engine/05-murphy.js ---- */
+'use strict';
+/* Murphy the dog: the ONLY image in the project. A photo of the teacher's own dog, supplied by the teacher.
+   Cropped to 128x128 and re-saved, so no camera or location data is carried over.
+   Student photos are never allowed. The privacy scan accepts exactly this image and nothing else. */
+const MURPHY_IMG = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBAUEBAYFBQUGBgYHCQ4JCQgICRINDQoOFRIWFhUSFBQXGiEcFxgfGRQUHScdHyIjJSUlFhwpLCgkKyEkJST/2wBDAQYGBgkICREJCREkGBQYJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCT/wAARCACAAIADASIAAhEBAxEB/8QAHAAAAwEBAQEBAQAAAAAAAAAABAUGBwMCAQAI/8QAMhAAAgEDAwMEAQMDAwUAAAAAAQIDAAQRBRIhBjFBEyJRYXEUMoEjkcEHQqEkgrHh8P/EABoBAAIDAQEAAAAAAAAAAAAAAAIEAQMFAAb/xAAhEQACAgIDAQADAQAAAAAAAAAAAQIRAyEEEjFBExQiUf/aAAwDAQACEQMRAD8A/nkR3FyqK5IRRgD6zTGwtFhkXA4ouC1GORRcFoAMcHNYGXkXo9Fj46jsJRdi4rzJGHFHw6dcTQqypkY4PzT2y6PeWMmZsHORt80pUhiU4r1klFatdOqIp3E44FNIul72QKViYZ4YEdvur/SOnILTHpRYOf3EZI/mqO20qQEbmDL91ak6F5Z18Mz0fo++upmguI2h2krvI4P3Xp+ltTiuRbm3ZiexUZH5rYLe1iAwQCfmjI7dB+3AoqK/2XZlFr0Jq7ErNCqY7MTkN+K6P0BqzyGNUjOBnO7ArVTFubPY/FdCigbqikR+1MxnWektQ0WFZrhFZGO0lOcGkZGex5rfNQt4b2D0po1dG/cCKzXXOiLiG4BtIwYjjtQtf4X4s6lqRHK+793cV9LBcnuKJ1bTJtJujDKCQeVbH7hQofcvtGceKraoci01aPoAbnwa4vw2PivanHHivLAN/NVthCS2jaSQIiljnsKpLXRLeWFZGWaN/KkjFINPmFpI0uSDjtXperblrhYzHGkKn3Ek5xT0MXZGbmzOLpFxZ3ttpkCwvF5/bnj809069trrBiDA/B/aaltEAvyZJU3RDBCtVdG1kkStFEsbKOccZ/NQ4C/cobaeHaEChSB2oiOZVJ54qUOrRQnJcZFcpOrVibAAI/NTQNWWP6xUbiuwujgNjANRQ6oWYDaAtMbbXFnjxvAOKBolIrI5i45rp6qkYzU1BrEqrtYggdjR8V56hHIyfFDR1DN3AGK+xxq4OTXhFDqCcmugdV4xzXJnCXX9Ngv7WSOWKEnHseRcgGsn1LTZdNuTFJsyecoeK3Jk9RSCBiovqzpiO+hea1hxcA54zzUSVjHHy9XTM32DYd396HUFX2nsaJnjltZGhkBVgexFcljLDkYxSz16afvgiMTt2yGPigIopP16wugdt2fTHAP5PgU3kkaEbtnK/PauFlD6sjCOVFuZvdz/ALVrS40v5Zk8yP8ASLXQd6WpZioy3BXtii7vVo4FKlgTUld6sbP07f1CMLjK9iaCef8AUc+pnPzR9bKUqGuo66oJIkNIn6kidiPWGfzQmu6VfG1/6eKWRpOAFGT91OQ6JqkrqFsLohsgYjPceKYhii1dlU8jTpIvNP1/naW7/dVVpfbgrKxzWSRw31nIsU0csXu2hmUgA/GattFuJwqJKGViON1VZcaXgcJ2aPZXpIwTniiYb0iXhjwal7e5aFQd3NGxXgj9zHk0q4lhfWF+fTG4mmKzllyi7vrsaiLLWAuB9d6d2ms7/wBrUPWiGPEvScrIpB/FDXRYDetDpe+sxzzjsa8ajcFLQTLkem4J/HaoOXpI9WWUNykt3JEWmVcLzxn5qMhJIx5FaHeRwX1uY5QwzweazzUbf0rmWFTjaeCPIqjIrRpcaeqEur3C2sXp7gWPjzilWkrJdXjsoOcd6N6o6Y1nSZorq8tJltboepFNglcH5Pg/Rpj0xpbfpC6oS0hyPnFaUIrHjpGbkm8mW38J7UY7uBmDhmGfFOdG6P1O9tRcGaOAMMoG9xP5FWmm6TBADJKI/VbxIucUdLHcxj+kiMvwuMVH5HVIloB0iKW3tY7W8AWWL9kqnIP2D/imy3EU5wcCUckgd/sUtncj23CsM+ARSbWNZTS4/ULEAcgg80FOTIbotls7O83rcQRSRye5lZcjPk0PL03bRiFYox6abseeBkgf81mzf6ryW7YggMhHYs2M060P/V2C4b09StmhHh0O5f580TwZEroD8sWxhrWnz6b6bElkfkHHP80sutQCbWzx2zVxZX1rraCSJ45Edfb8Y81F9bdIajbMZ9PgNxARu2pjKfxn/wAUMfaYT80Dx9RxouTIBngCm+m680hXbJ7D4zWOzX8qzFW3IwOCp8U40fXXjdQX7eKYngpaKo5FdG+Wdys8A2sQ/wA5po0i3VhJC/8AuXa1Z70vronCqznxxVjb3kZyN/ekZJoYQrMcrpJGZCrD2k/BHmpS7tpIriRZ/c481ZXsiiZpBgED3fdJ9YiE0CziH29i47qfg/VVTjaG8E6dF91z0/e6jpU8Mc8ssCRs/wClU4EhA9q/35/isqsrU6RIlvOwMsarvAORuxyK2jqDXGsiYI1Usw5z4FZL1DGVvZJY0YhvcTjzTdiEDpJqAIG5VAH3XCTVoYh7AFY9sdzSC4vtrYIOfjzQEt9tchGUMeC55x+K7rZZZRvehhlzlyMgD/NQnV8sxDIW4+u1MpNSW3BAlOe7Mx5Y/FJNcu4L62XD4ccYx4pjDCmVZWnEkSsgk3HgfRrslx6fuzxXmVcHaTXn0Q6hSeR2rR19M8uugOpZbS6/SmQ+lJ2UngH5rWIdUedFJ8jzzWI9Kae361ZXGdgz9fmtb0p1ljKIUEgAKhuxFZnJS7aNDjp9diTrboleoALi1e0tbhRyzxld/wDI/wAisna1urC8eGZdrRtg4OR/Fb3NdXMMbG4091VeDJE5dR9/IrKOoTbzarcvE24M2cnuaPBlddX4Dlxq+yGHS2oSK6jJ7itLsJlmA3lg2wNkVlPTHN3trQLTUPRuSpJAUbQfFUZo7LIPQxluyZlkzlXBHB4NGZ3W/OAHHI+an/1A2FEIHvJXFdbDVfXgMbNzvbH96qcdBqWy51O7a8mY4wxOc0h1RC0ThjkgYGadOpM5zgUr1Ee9hjiraKk9kDqVtjfJwMDkmpbUA8CiWM5xnJNXGsRvLDOsCrvP7QeP8Vn968/qyQTlWYg5RTkgfmjgGxfKbqRZGKyekmC7qP2gnjJ8ZNK3uXjbawOM84qi0PU4I4rq1um9lzCIST457/2NC3eh2NwXWx1OORw+FEo2gr+fnOacxtLTKJq9oSrMsj7nFO9J0yO7OdyoQcZPc9//AFSSfTrm1naCeMxyAZKsecHzR9nLPAQDkcDvx5qzJ5oqhHezQtDtEsEJyGZuOPinlvMFnhZeAyYOPxmo/SL1pXG4nAQg/mqfS5d81qpI2kAc/iszInex6L1SLCzvQ26NmBccYPBx8fdY5/qFbRWXUcz2yuFkAdlCjAPk1oc0jxCOeIkhRtYeeO1TXWFidSeK+jUE42yf4NThkoy2DOPZaJjpy7zcB05IFXum6hBOVynu7E5qHiRLW7GMGQjAwMfyaOiujFOoyfauTRzj22gE+o2vNQWzd1yQY5K5WF2VlJGQPV3f3HNT80019MWG5tzU7tozBGvqDnAJoJpRQWOLmzZ5RgbiM7uMmld2vtY96dbPVhO3k0qu42UMCMVwCI3qUypbt+mBR8FnkVclV+vk1J2ljCuXKAM37mdfca0DVbWOa3kUruBH96lp7FhG5RcsBkA9ia7sWJIgdf0aaxneWEf0GO4HwKUrIo4YYbwe1aLKEf2TruB424pbe9NW95MxyI8dsDgU1jzKqkUTwtO4ivT+o0to4xPaW9zJEWZXkXJZj2ye+BQuo351Ob17mUvO4wzKMKo8AD4puvSFtDhnmkf67UFcWyadPHFDwGPnzU94/AkpfTrpnrRINhLE4HbGQKrNPuNkOP8AeijmkulxSzKxZDwcD++Kaw27bc8ruGCKWm7LUN01FT6m4YUk+f8AmluqajDFbuWYcDIAPeukGlyXX9MMAPmib7oKO7tfWS5aNo+TuGQR3NAoq9hW0tEFC7S3Elw3DN2+hRSLJLGzr2bgH6pnNoUEEGI2aVjgY7DFdf0EjRqMKir2C0U8yXhGPA5bZ+06BLOJRtDK/O74oyUBhjGKEjX9MPTOdh+fmiInO7Y/8Gkptt2PwSS6mraJq6ajp0dxGOHHbyD5rrcBHQ7l91QPQ2rzi5axbBhwWXnBU/VXE3qRx73XKnzTcXaszZxqQruogAfilF5ahhlR+TTy4w4OKW3JC5Wpo5E/LYhgW2jd5NL5bZ+SPB5qidO/3QwgxuzyDXUH2EksDhef4pPcaY11dRttzsAbP/cP8ZqwltQ4yK4CzGf2AHt2qVaejnTBookiG1V8k/zRcFk0py/C12itVXkgUYn9Mdu9QQe7SARKuB2rj1prY03QWjhfbcXH9KMA4OPJ/wDvmjImZlwoqd6pt/1t/EJwQtuvsx99zQthRi34I9MunuVCyEh1HNNUk2+xufg0HNbG0kSUR7cgcHuQaLYqwKEZP14pfKreh3FpHyVA6lSM/FCjODG2QR2NEG3YFRHMPdxz4oeRzn3LgrwSKBINn//Z';
+
+/* ---- units/8-forces/00-unit.js ---- */
+'use strict';
+/* ======================= UNIT DEFINITION =======================
+   Everything unit-specific that is not a question. Another unit swaps this block and the question banks. */
+const UNIT = {
+  id: 'forces', grade: 8, codePrefix: 'G8F',
+  title: 'Unit 2: Dynamics',
+  subtitle: 'Forces, gravity, friction, and Newton\u2019s laws',
+  minShow: 10,          // fewer attempts than this: "not enough data yet"
+  minTrust: 20,         // about this many attempts and the score is mostly real data
+  k: 20,                // prior weight in the difficulty blend
+  topics: [
+    { id: 'types', name: 'Types of forces', idea: 'A force is a push or pull measured in newtons (N). Applied, tension, normal, friction, and spring forces are contact forces. Gravity is the non-contact force.' },
+    { id: 'fbd',   name: 'Free-body diagrams', idea: 'Draw the object as a dot. Draw one arrow per force, pointing the way the force acts ON the object. Label each arrow with the type and the source. Longer arrow = stronger force. Motion is not a force.' },
+    { id: 'net',   name: 'Net force and balanced forces', idea: 'Net force is all the forces added together, with direction. Opposite directions subtract. Balanced forces make a net force of zero. Unbalanced forces change the motion.' },
+    { id: 'grav',  name: 'Gravity', idea: 'Gravity is an attractive force between all objects with mass. More mass means more force. More distance means less force. The force on each object in a pair is the same size, but the effect depends on mass.' },
+    { id: 'wgt',   name: 'Weight and mass', idea: 'Mass (kg) is the amount of matter and never changes. Weight (N) is the gravitational force: W = mg. Weight changes with the planet because g changes.' },
+    { id: 'fall',  name: 'Free fall', idea: 'Free fall means gravity is the only force. Everything falls with the same acceleration g. Starting from rest, v = g \u00d7 t. Air resistance is why a feather and a hammer fall differently on Earth.' },
+    { id: 'fric',  name: 'Friction', idea: 'Friction resists the motion of touching surfaces. Static friction matches your push up to a limit (\u03bcs \u00d7 weight). Once sliding, kinetic (sliding) friction stays constant (\u03bck \u00d7 weight).' },
+    { id: 'n1',    name: 'Newton\u2019s 1st law and inertia', idea: 'If the net force is zero, the motion does not change. At rest stays at rest. Moving keeps the same speed and direction. Inertia is the tendency to resist a change in motion.' },
+    { id: 'n2',    name: 'Newton\u2019s 2nd law', idea: 'a = F \u00f7 m, where F is the NET force. Acceleration points the same way as the net force. 1 N = 1 kg\u00b7m/s\u00b2.' },
+    { id: 'n3',    name: 'Newton\u2019s 3rd law', idea: 'When object A pushes on object B, B pushes back on A with the same size force in the opposite direction. The two forces act on DIFFERENT objects, so they never cancel.' }
+  ],
+  chal: { id: 'chal', name: 'Challenge', idea: 'This goes beyond the test, but it\u2019s good to know!' },
+  quizzes: [
+    { id: 'q1', name: 'Quiz 1: Forces and free-body diagrams', topics: ['types', 'fbd', 'net'] },
+    { id: 'q2', name: 'Quiz 2: Gravity', topics: ['grav'] },
+    { id: 'q3', name: 'Quiz 3: Weight, mass, and free fall', topics: ['wgt', 'fall'] },
+    { id: 'q4', name: 'Quiz 4: Friction', topics: ['fric'] },
+    { id: 'q5', name: 'Quiz 5: Newton\u2019s laws', topics: ['n1', 'n2', 'n3'] }
+  ]
+};
+UNIT.topicById = {}; UNIT.topics.forEach(t => UNIT.topicById[t.id] = t); UNIT.topicById.chal = UNIT.chal;
+
+/* g values shown to students (Earth shows 9.8; 9.81 is accepted because Earth answers are built to match at 2 sig figs) */
+const PLANETS = {
+  Earth: 9.8, Moon: 1.62, Mars: 3.7, Jupiter: 23.1, Saturn: 9.0
+};
+
+
+/* ---- engine/02-qapi.js ---- */
+'use strict';
+/* ======================= QUESTION REGISTRY =======================
+   Fixed items (F) are one question each. Templates (T) are skills that make fresh numbers/names each time.
+   Every item or skill has a permanent ID. Never rename, renumber, or reuse an ID. */
+const QDEFS = { byKey: {}, order: [] };
+function _add(key, def) {
+  if (QDEFS.byKey[key]) throw new Error('Duplicate ID: ' + key);
+  QDEFS.byKey[key] = def; QDEFS.order.push(key);
+}
+/* F(id, topic, prior, prompt, rightHTML, [[wrongHTML, why],...], explain, {hint}) */
+function F(id, topic, prior, prompt, right, wrongs, explain, opt) {
+  opt = opt || {};
+  _add(id, { kind: 'fixed', key: id, topic: topic, chal: topic === 'chal', prior: prior, prompt: prompt,
+    right: right, wrongs: wrongs, explain: explain, hint: opt.hint || null,
+    label: String(prompt).replace(/<[^>]+>/g, '').slice(0, 90) });
+}
+/* T(id, topic, prior, name, gen) where gen() returns {prompt, right, wrongs, explain, hint?, meta?} */
+function T(id, topic, prior, name, gen) {
+  _add(id, { kind: 'template', key: id, topic: topic, chal: topic === 'chal', prior: prior, label: name, gen: gen });
+}
+function makeQuestion(key) {
+  const d = QDEFS.byKey[key];
+  if (!d) throw new Error('Unknown question key: ' + key);
+  const g = d.kind === 'fixed' ? d : d.gen();
+  // g.ordered = a fixed A-D order (used when an answer says "Choices A and B"); otherwise choices are shuffled
+  const choices = g.ordered ? g.ordered : [{ html: g.right, ok: true, why: '' }].concat(g.wrongs.map(w => ({ html: w[0], ok: false, why: w[1] })));
+  return { key: key, kind: d.kind, topic: d.topic, chal: d.chal, prior: d.prior, label: d.label,
+    prompt: g.prompt, choices: g.ordered ? choices : shuffle(choices), explain: g.explain, hint: g.hint || d.hint || null, meta: g.meta || null };
+}
+
+/* ---- units/8-forces/10-bank-forces.js ---- */
+'use strict';
+/* ===== Topic: Types of forces ===== */
+const FORCE_TYPES = {
+  'applied force': 'a push or pull by direct contact',
+  'tension force': 'the pulling force of a rope, string, or chain',
+  'normal force': 'the support force from the surface an object sits on',
+  'frictional force': 'a force that opposes the motion of surfaces that touch',
+  'spring force': 'the push of a compressed spring or the pull of a stretched one',
+  'gravitational force': 'the non-contact pull between objects with mass'
+};
+T('TYP-T1', 'types', 25, 'Name the force in a situation', function () {
+  const n = oneName();
+  const sc = pick([
+    { q: 'A lamp hangs from the ceiling by a chain. What force does the chain exert on the lamp?', a: 'tension force' },
+    { q: 'A backpack rests on a desk. What force does the desk exert upward on the backpack?', a: 'normal force' },
+    { q: n + ' pushes a cart across the floor. What force is ' + n + ' applying to the cart?', a: 'applied force' },
+    { q: 'A soccer ball rolls across grass and slows down. What force acts against its motion?', a: 'frictional force' },
+    { q: 'A mug falls off a shelf. What force pulls it down even though nothing touches it?', a: 'gravitational force' },
+    { q: 'A compressed spring in a toy launcher pushes a ball outward. What force is this?', a: 'spring force' }
+  ]);
+  const others = shuffle(Object.keys(FORCE_TYPES).filter(t => t !== sc.a)).slice(0, 3);
+  return {
+    prompt: sc.q, right: sc.a.charAt(0).toUpperCase() + sc.a.slice(1),
+    wrongs: others.map(t => [t.charAt(0).toUpperCase() + t.slice(1),
+      'The ' + t + ' is ' + FORCE_TYPES[t] + '. That is not the force described here.']),
+    explain: 'The ' + sc.a + ' is ' + FORCE_TYPES[sc.a] + ', and that matches the situation.',
+    meta: { ans: sc.a }
+  };
+});
+F('TYP-F01', 'types', 20, 'Which force can act on an object from a distance, with no contact at all?', 'Gravitational force',
+  [['Applied force', 'An applied force is a push or pull by direct contact.'],
+   ['Spring force', 'A spring has to touch the object to push or pull on it.'],
+   ['Kinetic friction', 'Friction happens only between surfaces that touch.']],
+  'Gravity pulls on objects even when nothing touches them, so it is the non-contact force on our list.');
+F('TYP-F02', 'types', 10, 'Forces are measured in which unit?', 'Newtons (N)',
+  [['Kilograms (kg)', 'Kilograms measure mass, the amount of matter, not force.'],
+   ['Meters per second (m/s)', 'That is a unit of speed or velocity.'],
+   ['Meters per second squared (m/s\u00b2)', 'That is a unit of acceleration.']],
+  'Force is measured in newtons. One newton is the force that gives 1 kg an acceleration of 1 m/s\u00b2.');
+F('TYP-F03', 'types', 25, 'Which statement describes the normal force?', 'The support force a surface exerts on an object sitting on it',
+  [['The pulling force of a rope or string', 'That describes tension.'],
+   ['The force that opposes sliding between two surfaces', 'That describes friction.'],
+   ['The attraction between all objects with mass', 'That describes gravity.']],
+  'The normal force is the support from the surface an object sits on. It pushes up on a book resting on a table.');
+F('TYP-F04', 'types', 25, 'A trampoline-style toy has a spring that is stretched and then pulls a flap back. What kind of force is that?', 'Spring force',
+  [['Normal force', 'A normal force is the support from a surface, not a stretched or squeezed spring.'],
+   ['Tension force', 'Tension is the pull of a rope, string, or chain. A spring has its own force type.'],
+   ['Gravitational force', 'Gravity is a non-contact pull between masses. A spring pulls by touching.']],
+  'A compressed or stretched spring pushes or pulls on whatever it touches. That is the spring force.');
+F('TYP-F05', 'types', 35, 'Which list contains only contact forces?', 'Applied, tension, normal',
+  [['Applied, gravitational, spring', 'Gravitational force is non-contact.'],
+   ['Frictional, gravitational, normal', 'Gravitational force is non-contact.'],
+   ['Tension, spring, gravitational', 'Gravitational force is non-contact.']],
+  'Applied, tension, normal, frictional, and spring forces all need touching. Only gravity acts at a distance.');
+F('TYP-F06', 'types', 20, 'A force is best described as', 'a push or a pull on an object',
+  [['the speed of an object', 'Speed describes motion. A force can change motion.'],
+   ['the amount of matter in an object', 'That is mass.'],
+   ['the energy an object has stored', 'Energy is a different quantity. A force is a push or a pull.']],
+  'A force is a push or a pull on an object that comes from its interaction with another object.');
+F('TYP-F07', 'types', 30, 'Brake pads squeeze a spinning bike wheel and slow it down. Which force do the pads exert on the wheel?', 'Frictional force',
+  [['Applied force', 'The pads do touch the wheel, but the force that slows it is friction opposing the motion.'],
+   ['Normal force', 'A normal force supports an object from below. It does not slow the wheel.'],
+   ['Gravitational force', 'Gravity does not depend on the pads touching the wheel.']],
+  'Surfaces rubbing against each other produce friction, which opposes motion.');
+F('TYP-F08', 'types', 30, 'Which statement about gravity is true?', 'It acts on objects even when nothing is touching them',
+  [['It only works when two objects touch', 'Gravity is a non-contact force.'],
+   ['It only pulls on objects that are moving', 'Gravity pulls on objects at rest too.'],
+   ['It is measured in kilograms', 'Force is measured in newtons. Kilograms measure mass.']],
+  'Gravity is an attractive force between all objects with mass, and no touching is needed.');
+
+/* ===== Topic: Free-body diagrams ===== */
+function _F(t, dir, len, src) { return { t: t, dir: dir, len: len, src: src || '' }; }
+function _sig(fs) { return fs.map(f => f.t + f.dir + f.len).sort().join('|'); }
+function _clone(fs) { return fs.map(f => Object.assign({}, f)); }
+const FBD_MUT = {
+  motionArrow: [fs => fs.concat([{ t: 'force of motion', dir: 'right', len: 2, src: '' }]),
+    'Motion is not a force. Nothing exerts a "force of motion," so it does not get an arrow.'],
+  noNormal: [fs => fs.filter(f => f.t !== 'FN'),
+    'The surface touches the object and pushes up on it. The normal force is missing.'],
+  noGravity: [fs => fs.filter(f => f.t !== 'Fg'),
+    'Earth always pulls on the object. Gravity (Fg) is missing.'],
+  bigGravity: [fs => { const c = _clone(fs); c.forEach(f => { if (f.t === 'Fg') f.len = 3; }); return c; },
+    'The up and down arrows must be the same length when the object is not accelerating up or down.'],
+  bigNormal: [fs => { const c = _clone(fs); c.forEach(f => { if (f.t === 'FN') f.len = 3; }); return c; },
+    'The up and down arrows must be the same length when the object is not accelerating up or down.'],
+  bigSupport: [fs => { const c = _clone(fs); c.forEach(f => { if (f.t === 'FT') f.len = 3; }); return c; },
+    'The chain\u2019s pull and gravity must be the same length, because the object is not moving up or down.'],
+  noTension: [fs => fs.filter(f => f.t !== 'FT'),
+    'The chain pulls up on the object. The tension force is missing.'],
+  extraNormal: [fs => fs.concat([_F('FN', 'up', 2, 'floor')]),
+    'Nothing is underneath the object. The chain\u2019s upward pull is tension, not a normal force.'],
+  extraApplied: [fs => fs.concat([_F('Fapp', 'right', 2, 'hand')]),
+    'Nothing is pushing or pulling the object right now, so there is no applied force.'],
+  addFriction: [fs => fs.concat([_F('FFr', 'left', 1, 'surface')]),
+    'The problem says to ignore friction, so there is no friction arrow.'],
+  flipFriction: [fs => { const c = _clone(fs); c.forEach(f => { if (f.t === 'FFr') f.dir = 'right'; }); return c; },
+    'Friction opposes the motion, so it points the opposite way from the motion.'],
+  noFriction: [fs => fs.filter(f => f.t !== 'FFr'),
+    'The surface is rough, so friction acts against the motion. The friction arrow is missing.'],
+  equalHorizontal: [fs => { const c = _clone(fs); const a = c.find(f => f.t === 'Fapp'); const r = c.find(f => f.t === 'FFr'); a.len = r.len; return c; },
+    'Equal horizontal arrows mean balanced forces, so the speed would stay constant, not increase.'],
+  weakApplied: [fs => { const c = _clone(fs); const a = c.find(f => f.t === 'Fapp' || f.t === 'FT'); const r = c.find(f => f.t === 'FFr'); a.len = Math.max(1, r.len - 1); return c; },
+    'The friction arrow is longer than the pushing or pulling arrow, so the object would slow down.'],
+  speedUp: [fs => { const c = _clone(fs); const a = c.find(f => f.t === 'FT'); a.len = 3; return c; },
+    'The rope arrow is longer than friction, so the object would speed up. The problem says constant speed.'],
+  slowDown: [fs => { const c = _clone(fs); const a = c.find(f => f.t === 'FT'); a.len = 1; return c; },
+    'Friction is longer than the rope arrow, so the object would slow down. The problem says constant speed.']
+};
+const FBD_SC = [
+  { s: o => 'A ' + o + ' rests on a table.', f: () => [_F('Fg', 'down', 2, 'Earth'), _F('FN', 'up', 2, 'table')],
+    m: ['noNormal', 'bigGravity', 'bigNormal', 'extraApplied'] },
+  { s: o => 'A ' + o + ' hangs at rest from the ceiling on a chain.', f: () => [_F('FT', 'up', 2, 'chain'), _F('Fg', 'down', 2, 'Earth')],
+    m: ['noTension', 'bigSupport', 'extraApplied', 'noGravity'] },
+  { s: o => 'A ' + o + ' glides to the right at a steady speed across smooth ice. Ignore friction and air resistance.',
+    f: () => [_F('Fg', 'down', 2, 'Earth'), _F('FN', 'up', 2, 'ice')], m: ['motionArrow', 'noNormal', 'bigGravity', 'addFriction'] },
+  { s: o => 'A student pushes a ' + o + ' to the right across the floor and it speeds up.',
+    f: () => [_F('Fapp', 'right', 3, 'student'), _F('FFr', 'left', 2, 'floor'), _F('FN', 'up', 2, 'floor'), _F('Fg', 'down', 2, 'Earth')],
+    m: ['flipFriction', 'equalHorizontal', 'weakApplied', 'noNormal', 'noFriction', 'motionArrow'] },
+  { s: o => 'A rope pulls a ' + o + ' to the right across the floor at a steady speed.',
+    f: () => [_F('FT', 'right', 2, 'rope'), _F('FFr', 'left', 2, 'floor'), _F('FN', 'up', 2, 'floor'), _F('Fg', 'down', 2, 'Earth')],
+    m: ['speedUp', 'slowDown', 'flipFriction', 'noFriction', 'bigGravity'] },
+  { s: o => 'A ' + o + ' rolls to the right across a carpet and slows down. Nobody is touching it.',
+    f: () => [_F('FFr', 'left', 2, 'carpet'), _F('FN', 'up', 2, 'carpet'), _F('Fg', 'down', 2, 'Earth')],
+    m: ['extraApplied', 'motionArrow', 'flipFriction', 'noFriction', 'noNormal'] }
+];
+T('FBD-T1', 'fbd', 50, 'Pick the correct free-body diagram', function () {
+  const o = pick(['crate', 'ball', 'toy truck', 'box', 'cart', 'puck']);
+  const sc = pick(FBD_SC);
+  const good = sc.f();
+  const muts = shuffle(sc.m).slice(0, 3);
+  const wrongs = muts.map(mk => [fbd(FBD_MUT[mk][0](_clone(good))), FBD_MUT[mk][1]]);
+  return {
+    prompt: sc.s(o) + ' Which free-body diagram shows the forces on the ' + o + '?',
+    right: fbd(good), wrongs: wrongs,
+    explain: 'Draw one arrow for every force touching or pulling on the ' + o + ', label type and source, and make arrow lengths match the motion: equal lengths when the forces balance, a longer arrow in the direction of a speed-up.',
+    meta: { good: good, wrongSigs: wrongs.map(w => w[0]) }
+  };
+});
+T('FBD-T2', 'fbd', 45, 'Read speed from a free-body diagram', function () {
+  const a = ri(1, 4), b = ri(1, 4);
+  const obj = pick(['crate', 'sled', 'cart', 'box']);
+  const fs = [_F('Fapp', 'right', a, 'student'), _F('FFr', 'left', b, 'floor'), _F('FN', 'up', 2, 'floor'), _F('Fg', 'down', 2, 'Earth')];
+  const state = a > b ? 'up' : a < b ? 'down' : 'same';
+  const T3 = { up: 'Its speed is increasing', down: 'Its speed is decreasing', same: 'Its speed is staying the same' };
+  const whys = {
+    up: 'The arrow pointing right (applied) is longer than the arrow pointing left (friction), so the net force is in the direction of motion and the speed increases.',
+    down: 'The arrow pointing left (friction) is longer than the arrow pointing right (applied), so the net force is against the motion and the speed decreases.',
+    same: 'The right and left arrows are the same length, so the forces are balanced and the speed stays the same.'
+  };
+  const wrongs = ['up', 'down', 'same'].filter(k => k !== state).map(k => [T3[k], 'Compare the right arrow and the left arrow. ' + whys[state]]);
+  wrongs.push(['You cannot tell without knowing the mass of the ' + obj, 'The arrow lengths already show which forces are bigger, so you can tell. ' + whys[state]]);
+  return {
+    prompt: 'A ' + obj + ' is sliding to the right. Here is its free-body diagram.<div class="figure">' + fbd(fs) + '</div>What is happening to the speed of the ' + obj + '?',
+    right: T3[state], wrongs: wrongs, explain: whys[state], meta: { a: a, b: b, state: state }
+  };
+});
+T('FBD-T3', 'fbd', 55, 'Find the arrow that does not belong', function () {
+  const sc = pick([
+    { s: 'a football rising through the air after a quarterback released it (ignore air resistance)', obj: 'football',
+      good: [_F('Fg', 'down', 2, 'Earth')], bad: { t: 'force of the release', dir: 'up', len: 2, src: '' },
+      goodNames: ['gravity (Fg)'], badName: 'the force of the release',
+      why: 'The quarterback is no longer touching the football, so nothing is pushing it upward. It keeps rising because of its velocity, not because of a force.' },
+    { s: 'a puck gliding at a steady speed across ice (ignore friction)', obj: 'puck',
+      good: [_F('Fg', 'down', 2, 'Earth'), _F('FN', 'up', 2, 'ice')], bad: { t: 'force of motion', dir: 'right', len: 2, src: '' },
+      goodNames: ['gravity (Fg)', 'the normal force (FN)'], badName: 'the force of motion',
+      why: 'Motion is not a force. Nothing exerts a force of motion, so only gravity and the normal force act on the puck.' },
+    { s: 'a cart rolling to the right after a push has ended (ignore friction)', obj: 'cart',
+      good: [_F('Fg', 'down', 2, 'Earth'), _F('FN', 'up', 2, 'floor')], bad: { t: 'Fapp', dir: 'right', len: 2, src: 'hand' },
+      goodNames: ['gravity (Fg)', 'the normal force (FN)'], badName: 'the applied force (Fapp)',
+      why: 'The hand stopped pushing, so there is no applied force anymore. Forces only act while something is touching or pulling.' },
+    { s: 'a skater coasting at a steady speed (ignore friction)', obj: 'skater',
+      good: [_F('Fg', 'down', 2, 'Earth'), _F('FN', 'up', 2, 'ice')], bad: { t: 'force of motion', dir: 'right', len: 2, src: '' },
+      goodNames: ['gravity (Fg)', 'the normal force (FN)'], badName: 'the force of motion',
+      why: 'A moving skater does not need a force to keep going. Motion is not a force, so the "force of motion" arrow does not belong.' }
+  ]);
+  const fs = sc.good.concat([sc.bad]);
+  const wrongs = sc.goodNames.map(n => [n.charAt(0).toUpperCase() + n.slice(1), 'That force is real. ' + n.charAt(0).toUpperCase() + n.slice(1) + ' does act on the ' + sc.obj + '.']);
+  if (sc.good.length === 1) { wrongs.push(['None of them. Both arrows belong', 'One arrow is a made-up force.']); wrongs.push(['Both of them', 'Gravity always pulls down on the ' + sc.obj + '.']); }
+  else wrongs.push(['None of them. All the arrows belong', 'One arrow is not a real force. Check each arrow: is something touching or pulling the ' + sc.obj + ' that way?']);
+  return {
+    prompt: 'Murphy drew a free-body diagram for ' + sc.s + '. Only real forces should be shown.<div class="figure">' + fbd(fs) + '</div>Which arrow should be erased?',
+    right: sc.badName.charAt(0).toUpperCase() + sc.badName.slice(1), wrongs: wrongs, explain: sc.why, meta: {}
+  };
+});
+F('FBD-F01', 'fbd', 15, 'In a free-body diagram, what does a longer arrow mean?', 'A stronger force',
+  [['A faster object', 'Arrow length shows force strength, not speed.'],
+   ['A heavier object', 'The object is just a dot. The arrow length shows how strong the force is.'],
+   ['A force that acts for a longer time', 'Arrow length shows strength, not time.']],
+  'Longer arrow = stronger force.');
+F('FBD-F02', 'fbd', 30, 'Which way should a force arrow point in a free-body diagram?', 'The direction the force acts ON the object',
+  [['The direction the object is moving', 'The object might move one way while forces act in other directions.'],
+   ['The direction the force came from', 'The arrow points the way the object is pushed or pulled, not back toward the source.'],
+   ['Always upward', 'Arrows point the way each force acts, which can be any direction.']],
+  'The arrow shows the direction the force acts on the object.');
+F('FBD-F03', 'fbd', 30, 'What should each arrow in a free-body diagram be labeled with?', 'The type of force and what exerts it',
+  [['Only the type of force', 'The source (what exerts the force) is part of a complete label.'],
+   ['Only the number of newtons', 'The label names the type and the source.'],
+   ['The object\u2019s speed', 'Speed is not a force, so it is not part of the label.']],
+  'A good label gives both the type and the source, such as FN, normal, table.');
+F('FBD-F04', 'fbd', 15, 'In a free-body diagram, how is the object usually drawn?', 'As a dot or a box',
+  [['As a detailed picture', 'Free-body diagrams use a simple dot or box so the arrows are easy to see.'],
+   ['As a long arrow', 'Arrows are used for forces. The object is a dot or box.'],
+   ['It is not drawn at all', 'The arrows all act on the object, so a dot or box shows where they act.']],
+  'A dot or a box stands for the object of interest.');
+F('FBD-F05', 'fbd', 40, 'A book sits at rest on a table. Why are the gravity arrow and the normal force arrow the same length?', 'The forces are balanced, so the book\u2019s motion does not change',
+  [['Gravity and the normal force are the same kind of force', 'They are different forces from different sources. Their arrows match because they balance.'],
+   ['The table is stronger than the book', 'If the table\u2019s force were bigger, the book would accelerate upward.'],
+   ['The book has no weight when it is resting', 'The book always has weight. The table\u2019s normal force matches it.']],
+  'The net force is zero. The up arrow and the down arrow are equal so the book stays at rest.');
+F('FBD-F06', 'fbd', 30, 'Two boxes are stacked and pushed together. How many free-body diagrams should you draw?', 'One for each object',
+  [['Just one for the whole stack', 'If there are several objects, each gets its own diagram.'],
+   ['One for the floor', 'The diagrams are for the objects of interest, not the floor.'],
+   ['None, because the forces cancel', 'Even balanced forces are drawn in a diagram.']],
+  'Identify each object of interest. If there are multiple objects, draw one free-body diagram for each.');
+
+/* ===== Topic: Net force and balanced forces ===== */
+T('NET-T1', 'net', 40, 'Net force: opposite directions', function () {
+  const [n1, n2] = twoNames();
+  let A, B;
+  do { A = ri(2, 20) * 10; B = ri(2, 20) * 10; } while (A === B);
+  const big = A > B ? 'right' : 'left', small = big === 'right' ? 'left' : 'right';
+  const net = Math.abs(A - B);
+  const txt = (d) => d === 'right' ? 'to the right' : 'to the left';
+  return {
+    prompt: n1 + ' pushes a crate to the right with ' + A + ' N. ' + n2 + ' pushes the same crate to the left with ' + B + ' N. What is the net force on the crate?',
+    right: net + ' N ' + txt(big),
+    wrongs: [[(A + B) + ' N ' + txt(big), 'Forces in opposite directions subtract. Only forces in the same direction add.'],
+             [net + ' N ' + txt(small), 'The net force points the same way as the larger force.'],
+             ['0 N, because the forces are balanced', 'Balanced forces must be equal. These two forces are different sizes, so the net force is not zero.']],
+    explain: 'Call right positive. The net force is ' + A + ' + (\u2212' + B + ') = ' + (A - B < 0 ? '\u2212' : '') + net + ' N, which means ' + net + ' N ' + txt(big) + '.',
+    meta: { A: A, B: B, net: net, big: big }
+  };
+});
+T('NET-T2', 'net', 20, 'Net force: same direction', function () {
+  const [n1, n2] = twoNames();
+  const A = ri(2, 20) * 10, B = ri(2, 20) * 10;
+  const dir = pick(['right', 'left']);
+  const txt = d => d === 'right' ? 'to the right' : 'to the left';
+  const opp = dir === 'right' ? 'left' : 'right';
+  const diff = Math.abs(A - B);
+  const wrongs = [[(A + B) + ' N ' + txt(opp), 'The size is right, but the net force points the same direction as the pushes.'],
+                  ['0 N, because the forces are balanced', 'Forces in the same direction do not cancel. They add.'],
+                  [(diff === 0 ? (A + B + 10) : diff) + ' N ' + txt(dir), 'When forces point the same way, you add them, you do not subtract them.']];
+  return {
+    prompt: n1 + ' and ' + n2 + ' both push a dresser ' + txt(dir).replace('to the ', '') + '. ' + n1 + ' pushes with ' + A + ' N and ' + n2 + ' pushes with ' + B + ' N. What is the net force on the dresser?',
+    right: (A + B) + ' N ' + txt(dir), wrongs: wrongs,
+    explain: 'Forces in the same direction add: ' + A + ' N + ' + B + ' N = ' + (A + B) + ' N ' + txt(dir) + '.', meta: { A: A, B: B }
+  };
+});
+T('NET-T3', 'net', 40, 'What balanced forces do', function () {
+  const rest = rand() < 0.5;
+  const v = ri(2, 9);
+  const obj = pick(['hockey puck', 'cart', 'box', 'toy car']);
+  if (rest) return {
+    prompt: 'A ' + obj + ' is at rest. The forces acting on it are balanced. What will happen to the ' + obj + '?',
+    right: 'It stays at rest',
+    wrongs: [['It starts moving in the direction of the strongest force', 'Balanced forces have no strongest force. They add up to a net force of zero.'],
+             ['It slowly speeds up', 'A net force of zero cannot change the motion.'],
+             ['It moves back and forth', 'Nothing is pushing it in a way that would make it move.']],
+    explain: 'Net force zero means no change in motion. An object at rest stays at rest.', meta: { rest: true }
+  };
+  return {
+    prompt: 'A ' + obj + ' is moving to the right at ' + v + ' m/s. The net force on it is 0 N. What will the ' + obj + ' do?',
+    right: 'Keep moving to the right at ' + v + ' m/s',
+    wrongs: [['Slow down and stop', 'An object only slows down when there is a net force against its motion.'],
+             ['Speed up', 'It would speed up only if there were a net force in the direction of motion.'],
+             ['Stop right away', 'Balanced forces do not stop an object. They leave its motion unchanged.']],
+    explain: 'Newton\u2019s first law: if the net force is zero, the motion does not change. Same speed, same direction.', meta: { rest: false, v: v }
+  };
+});
+F('NET-F01', 'net', 15, 'The net force on an object is', 'the combination of all the forces acting on it',
+  [['the strongest single force acting on it', 'The net force counts every force, with direction.'],
+   ['the force of gravity on it', 'Gravity is only one of the forces that might act.'],
+   ['the force it exerts on other objects', 'The net force is about the forces acting on the object.']],
+  'Add up all the forces on an object, taking direction into account, to get the net force.');
+F('NET-F02', 'net', 25, 'Balanced forces', 'combine to make a net force of zero',
+  [['always make an object stop moving', 'An object with balanced forces can be moving at a steady speed.'],
+   ['are always equal to the weight of the object', 'Balanced forces just add to zero. They do not need to equal the weight.'],
+   ['can only act on objects at rest', 'Moving objects can have balanced forces too.']],
+  'Balanced forces add to a net force of zero, so the motion does not change.');
+F('NET-F03', 'net', 25, 'What happens to an object when unbalanced forces act on it?', 'Its velocity changes',
+  [['Nothing, the motion stays the same', 'That is what balanced forces do.'],
+   ['It must start moving upward', 'The object accelerates in the direction of the net force, which can be any direction.'],
+   ['Its mass changes', 'Forces change motion, not mass.']],
+  'Unbalanced forces make a net force that is not zero. That changes the velocity: speed, direction, or both.');
+F('NET-F04', 'net', 40, 'In a net-force equation, what does a negative force mean?', 'The force points opposite the reference direction',
+  [['The force is weaker than zero', 'Force strength is not negative. The sign tells direction.'],
+   ['The force is not acting', 'A force of 0 N means no force. A negative sign means opposite direction.'],
+   ['The force is gravity', 'Any force can be negative if it points opposite the reference direction.']],
+  'You choose a reference direction. Forces that point that way are positive, and forces that point the opposite way are negative.');
+F('NET-F05', 'net', 35, 'An object is at rest and an unbalanced force acts on it. What does it do?', 'It starts moving in the direction of the net force',
+  [['It stays at rest', 'It stays at rest only if the forces are balanced.'],
+   ['It starts moving opposite the net force', 'Objects accelerate in the direction of the net force.'],
+   ['It spins in place', 'A net force changes velocity in the direction of the net force.']],
+  'An unbalanced force on an object at rest makes it start moving in the direction of the net force.');
+F('NET-F06', 'net', 50, 'A crate has a 150 N push to the right and a 150 N push to the left. Which statement is true?', 'The net force is 0 N, so the crate\u2019s motion does not change',
+  [['The net force is 300 N', 'The pushes point opposite ways, so you subtract, not add.'],
+   ['The net force is 150 N to the right', 'Equal opposite forces cancel. The net force is 0 N.'],
+   ['The crate must be moving to the right', 'With a net force of zero the crate keeps its motion, which could be rest.']],
+  'Equal forces in opposite directions are balanced, so the net force is zero.');
+
+/* ---- units/8-forces/11-bank-gravity.js ---- */
+'use strict';
+/* ===== Topic: Gravity ===== */
+const FTXT = { 0.111111: 'one-ninth as large', 0.25: 'one-fourth as large', 0.333333: 'one-third as large', 0.5: 'half as large',
+  1: 'the same size', 2: 'twice as large', 3: 'three times as large', 4: 'four times as large', 9: 'nine times as large' };
+function _ft(f) { const k = Object.keys(FTXT).find(x => Math.abs(Number(x) - f) < 0.001); return FTXT[k]; }
+T('GRV-T1', 'grav', 55, 'How changing mass or distance changes gravity', function () {
+  const cases = [
+    { c: 'the mass of one object doubles', f: 2, w: [[0.5, 'More mass means more force, so the force cannot get smaller.'], [4, 'Only one mass doubled, so the force doubles. It does not quadruple.'], [1, 'Mass changes the force: more mass, more gravitational force.']] },
+    { c: 'the mass of one object triples', f: 3, w: [[9, 'Only one mass tripled, so the force triples. It does not become nine times larger.'], [0.333333, 'More mass means more force, so the force cannot get smaller.'], [1, 'Mass changes the force: more mass, more gravitational force.']] },
+    { c: 'both masses double', f: 4, w: [[2, 'Both masses doubled, so the force is 2 \u00d7 2 = 4 times larger.'], [0.25, 'More mass means more force, not less.'], [0.5, 'More mass means more force, not less.']] },
+    { c: 'the distance between the objects doubles', f: 0.25, w: [[0.5, 'The force depends on the distance squared. Doubling the distance divides the force by 2\u00b2 = 4, not by 2.'], [2, 'More distance means a weaker force.'], [4, 'More distance means a weaker force.']] },
+    { c: 'the distance between the objects triples', f: 0.111111, w: [[0.333333, 'The force depends on the distance squared. Tripling the distance divides the force by 3\u00b2 = 9.'], [3, 'More distance means a weaker force.'], [9, 'More distance means a weaker force.']] },
+    { c: 'the distance between the objects is cut in half', f: 4, w: [[2, 'The force depends on the distance squared. Half the distance makes the force (2)\u00b2 = 4 times larger.'], [0.5, 'Less distance means a stronger force.'], [0.25, 'Less distance means a stronger force.']] },
+    { c: 'one mass doubles and the distance doubles', f: 0.5, w: [[2, 'The doubled mass makes the force 2\u00d7 bigger, but the doubled distance makes it 4\u00d7 smaller, so the force gets weaker.'], [1, '2\u00d7 from the mass and 1/4 from the distance do not cancel. The result is 2 \u00d7 1/4 = 1/2.'], [0.25, 'The mass doubling raises the force by 2, so the force is not cut all the way to 1/4.']] }
+  ];
+  const k = pick(cases);
+  return {
+    prompt: 'Two objects attract each other with a gravitational force. What happens to the force between them if ' + k.c + '?',
+    right: 'The force becomes ' + _ft(k.f),
+    wrongs: k.w.map(w => ['The force becomes ' + _ft(w[0]), w[1]]),
+    explain: 'Gravitational force grows with the product of the masses and shrinks with the square of the distance. For this change the force becomes ' + _ft(k.f) + '.',
+    meta: { f: k.f }
+  };
+});
+F('GRV-F01', 'grav', 15, 'Gravity is a force that exists between', 'all objects that have mass',
+  [['only planets and moons', 'Every object with mass attracts every other object. Planets just have a lot of mass.'],
+   ['only objects that touch', 'Gravity is a non-contact force.'],
+   ['only objects that are falling', 'Objects at rest attract each other too.']],
+  'Gravity is an attractive force between all objects with mass.');
+F('GRV-F02', 'grav', 20, 'Two objects attract each other. One of them is replaced with a more massive object. What happens to the gravitational force between them?', 'It increases',
+  [['It decreases', 'More mass means more gravitational pull.'],
+   ['It stays the same', 'The force depends on the masses of the objects.'],
+   ['It becomes zero', 'The force never becomes zero just because of a mass change.']],
+  'Greater mass means a greater force of gravity.');
+F('GRV-F03', 'grav', 20, 'Two objects move farther apart. What happens to the gravitational force between them?', 'It decreases',
+  [['It increases', 'The farther apart objects are, the weaker the pull.'],
+   ['It stays the same', 'The force depends on the distance between the objects.'],
+   ['It turns into a push', 'Gravity only attracts. It never repels.']],
+  'More distance means less gravitational force.');
+F('GRV-F04', 'grav', 25, 'The pull of gravity between any two objects is set by which two things?', 'The masses of the objects and the distance between them',
+  [['The sizes of the objects and their speeds', 'Speed and size do not set the gravitational force. Mass and distance do.'],
+   ['The weights of the objects and their colors', 'Color has no effect on gravity.'],
+   ['The temperature of the objects and the distance between them', 'Temperature does not affect gravity. Mass does.']],
+  'Newton\u2019s law of universal gravitation: the force depends on the masses and on the distance.');
+F('GRV-F05', 'grav', 15, 'Which scientist worked out that every pair of masses attracts, a rule called the law of universal gravitation?', 'Sir Isaac Newton',
+  [['Albert Einstein', 'Einstein came later and developed relativity.'],
+   ['Marie Curie', 'Curie studied radioactivity.'],
+   ['Galileo Galilei', 'Galileo studied falling objects, but the law of universal gravitation is Newton\u2019s.']],
+  'Newton developed the law of universal gravitation in the late 1600s.');
+F('GRV-F06', 'grav', 65, 'Henry holds a sandwich in the air. Compared with Earth\u2019s pull on the sandwich, the sandwich\u2019s pull on Earth is',
+  'equal in size and opposite in direction',
+  [['much smaller, because the sandwich has so little mass', 'The two forces in a pair are always the same size. The sandwich\u2019s small mass only makes its effect on Earth tiny.'],
+   ['zero, because Earth does not move', 'The sandwich really does pull on Earth. Earth just has so much mass that the same force barely moves it.'],
+   ['equal in size and in the same direction', 'The forces in a pair point in opposite directions: the sandwich is pulled toward Earth, and Earth toward the sandwich.']],
+  'Gravity is a force pair. Each object pulls on the other with the same size force. The effect on each object differs because their masses differ.');
+F('GRV-F07', 'grav', 70, 'Why don\u2019t we feel Earth move when we pick up a sandwich?', 'Earth has so much mass that the same force gives it an extremely tiny acceleration',
+  [['The sandwich does not pull on Earth at all', 'It does. The pull on Earth is equal to the pull on the sandwich.'],
+   ['Earth is held in place by friction', 'Friction has nothing to do with it. Earth\u2019s huge mass makes its acceleration tiny.'],
+   ['Gravity only pulls in one direction', 'Gravity is a mutual attraction. Both objects pull on each other.']],
+  'Same force, but a = F \u00f7 m. With an enormous mass, Earth\u2019s acceleration is essentially zero.');
+F('GRV-F08', 'grav', 55, 'Astronauts in orbit weigh about 90 percent of what they weigh on Earth. Why is the change so small?', 'They are still close to Earth compared with Earth\u2019s size',
+  [['There is no gravity in space, but they have a little leftover', 'Gravity is still strong in orbit. That is why they stay in orbit.'],
+   ['Their mass increases in space', 'Mass does not change with location.'],
+   ['The ship\u2019s engines push them down', 'The engines are not the reason. The distance is small compared with Earth\u2019s size, so gravity changes little.']],
+  'Orbit is not far enough away compared with Earth\u2019s size to change gravity much, so astronauts are not weightless.');
+F('GRV-F09', 'grav', 45, 'Is there a gravitational force between you and a friend sitting next to you?', 'Yes, but it is very small because your masses are small',
+  [['No, because gravity only exists between planets', 'Gravity exists between any two objects with mass.'],
+   ['Yes, and it is as strong as Earth\u2019s pull on you', 'Earth has far more mass than your friend, so its pull is much greater.'],
+   ['No, because you are touching the floor', 'Touching the floor does not turn off gravity between you and your friend.']],
+  'All objects with mass attract each other, but the force is tiny unless one of them has a huge mass.');
+
+/* ===== Topic: Weight and mass ===== */
+const _objs = ['backpack', 'toolbox', 'bag of sand', 'telescope', 'microscope case', 'lab cart'];
+function _wfmt(planet, x) { return planet === 'Earth' ? fmt(x, 2) : fmt(x, 3); }
+T('WGT-T1', 'wgt', 40, 'Weight on a planet (W = mg)', function () {
+  for (let tries = 0; tries < 200; tries++) {
+    const planet = pick(Object.keys(PLANETS)), g = PLANETS[planet];
+    const m = ri(20, 95) / 10, o = pick(_objs);
+    if (planet === 'Earth' && !sameBoth(gg => m * gg, 2)) continue;
+    const ans = m * g, wrongG = planet === 'Earth' ? 1.62 : 9.8;
+    const vals = [ans, m / g, m * wrongG, m];
+    const strs = vals.map(v => _wfmt(planet, v));
+    if (new Set(strs).size < 4) continue;
+    if ([1, 2, 3].some(i => Math.abs(vals[i] - ans) / ans < 0.06)) continue;
+    if (planet === 'Earth' && [1, 2, 3].some(i => Math.abs(vals[i] - m * G_EARTH_ALT) / ans < 0.06)) continue;
+    const owner = rand() < 0.5 ? oneName() + '\u2019s ' + o : 'A ' + o;
+    return {
+      prompt: owner + ' has a mass of ' + fmt(m, 2) + ' kg. What is its weight on ' + planet + '? (g on ' + planet + ' = ' + g + ' m/s\u00b2)',
+      right: strs[0] + ' N',
+      wrongs: [[strs[1] + ' N', 'Weight is mass \u00d7 g. Dividing mass by g gives the wrong result.'],
+               [strs[2] + ' N', 'That used g = ' + wrongG + ' m/s\u00b2, which belongs to ' + (planet === 'Earth' ? 'the Moon' : 'Earth') + '. Use the g for ' + planet + '.'],
+               [strs[3] + ' N', 'Mass and weight are different quantities. Weight in newtons is mass \u00d7 g.']],
+      explain: 'W = mg = ' + fmt(m, 2) + ' kg \u00d7 ' + g + ' m/s\u00b2 = ' + strs[0] + ' N.' + (planet === 'Earth' ? ' (Using 9.81 gives the same value to 2 significant figures.)' : ''),
+      meta: { m: m, planet: planet, g: g }
+    };
+  }
+  throw new Error('WGT-T1 could not generate');
+});
+T('WGT-T2', 'wgt', 55, 'Find mass from weight on another planet', function () {
+  for (let tries = 0; tries < 200; tries++) {
+    const planet = pick(['Moon', 'Mars', 'Jupiter', 'Saturn']), g = PLANETS[planet];
+    const m = ri(35, 90), W = Number((m * g).toPrecision(3));
+    const ans = W / g, vals = [ans, W * g, W / 9.8, W];
+    const strs = vals.map(v => fmt(v, 3));
+    if (new Set(strs).size < 4) continue;
+    if ([1, 2, 3].some(i => Math.abs(vals[i] - ans) / ans < 0.06)) continue;
+    return {
+      prompt: 'An astronaut weighs ' + fmt(W, 3) + ' N on ' + planet + '. What is the astronaut\u2019s mass? (g on ' + planet + ' = ' + g + ' m/s\u00b2)',
+      right: strs[0] + ' kg',
+      wrongs: [[strs[1] + ' kg', 'To find mass from weight you divide: m = W \u00f7 g. Multiplying gives a number that is much too big.'],
+               [strs[2] + ' kg', 'That used Earth\u2019s g. The weight was measured on ' + planet + ', so divide by the g for ' + planet + '.'],
+               [strs[3] + ' kg', 'Weight and mass are not the same number. Divide the weight by g to get the mass.']],
+      explain: 'm = W \u00f7 g = ' + fmt(W, 3) + ' N \u00f7 ' + g + ' m/s\u00b2 = ' + strs[0] + ' kg. Use the g of the planet where the weight was measured.',
+      meta: { W: W, g: g, m: ans }
+    };
+  }
+  throw new Error('WGT-T2 could not generate');
+});
+T('WGT-T3', 'wgt', 60, 'Weight on Earth from weight on another planet', function () {
+  for (let tries = 0; tries < 200; tries++) {
+    const planet = pick(['Moon', 'Mars', 'Jupiter', 'Saturn']), g = PLANETS[planet];
+    const m = ri(20, 200) / 10, W = Number((m * g).toPrecision(3)), o = pick(_objs);
+    if (!sameBoth(gg => (W / g) * gg, 2)) continue;
+    const ansV = (W / g) * G_EARTH, vals = [ansV, W, W * G_EARTH, W / G_EARTH];
+    const strs = vals.map(v => fmt(v, 2));
+    if (new Set(strs).size < 4) continue;
+    if ([1, 2, 3].some(i => Math.abs(vals[i] - ansV) / ansV < 0.06)) continue;
+    const eq = [1, 2, 3].some(i => Math.abs(vals[i] - (W / g) * G_EARTH_ALT) / ansV < 0.06);
+    if (eq) continue;
+    return {
+      prompt: 'A ' + o + ' weighs ' + fmt(W, 3) + ' N on ' + planet + ' (g = ' + g + ' m/s\u00b2). What would it weigh on Earth?',
+      right: strs[0] + ' N',
+      wrongs: [[strs[1] + ' N', 'Weight changes from planet to planet. Only mass stays the same.'],
+               [strs[2] + ' N', 'Weight is already a force. Multiplying it by g again does not give the weight on Earth.'],
+               [strs[3] + ' N', 'Dividing the weight by g gives a mass, not a weight.']],
+      explain: 'Mass stays the same. m = W \u00f7 g = ' + fmt(W, 3) + ' \u00f7 ' + g + ' = ' + fmt(W / g, 3) + ' kg. On Earth, W = mg = ' + fmt(W / g, 3) + ' \u00d7 9.8 = ' + strs[0] + ' N.',
+      meta: { W: W, g: g }
+    };
+  }
+  throw new Error('WGT-T3 could not generate');
+});
+T('WGT-T4', 'wgt', 50, 'Find g from weight and mass', function () {
+  for (let tries = 0; tries < 200; tries++) {
+    const m = ri(15, 90) / 10, gx = ri(25, 200) / 10, W = Number((m * gx).toPrecision(3)), o = pick(_objs);
+    const ans = W / m, vals = [ans, W * m, m / W, W / 9.8];
+    const strs = vals.map(v => fmt(v, 2));
+    if (new Set(strs).size < 4) continue;
+    if ([1, 2, 3].some(i => Math.abs(vals[i] - ans) / ans < 0.06)) continue;
+    return {
+      prompt: 'A ' + o + ' with a mass of ' + fmt(m, 2) + ' kg weighs ' + fmt(W, 3) + ' N on a new planet. What is the acceleration due to gravity (g) on that planet?',
+      right: strs[0] + ' m/s\u00b2',
+      wrongs: [[strs[1] + ' m/s\u00b2', 'Starting from W = mg, g = W \u00f7 m. Multiplying W and m is the wrong operation.'],
+               [strs[2] + ' m/s\u00b2', 'This flipped the fraction. g = W \u00f7 m, with the weight on top.'],
+               [strs[3] + ' m/s\u00b2', 'Dividing by 9.8 (Earth\u2019s g) does not find g on a different planet. Divide by the mass.']],
+      explain: 'W = mg, so g = W \u00f7 m = ' + fmt(W, 3) + ' N \u00f7 ' + fmt(m, 2) + ' kg = ' + strs[0] + ' m/s\u00b2.',
+      meta: { W: W, m: m }
+    };
+  }
+  throw new Error('WGT-T4 could not generate');
+});
+F('WGT-F01', 'wgt', 15, 'Weight is', 'the gravitational force exerted on an object',
+  [['the amount of matter in an object', 'That is mass.'],
+   ['the speed an object falls at', 'That is a velocity, not weight.'],
+   ['the same as mass, measured in kilograms', 'Weight is a force measured in newtons. Mass is measured in kilograms.']],
+  'Weight is the gravitational force on an object, measured in newtons.');
+F('WGT-F02', 'wgt', 15, 'Mass is', 'the amount of matter in an object',
+  [['the pull of gravity on an object', 'That is weight.'],
+   ['how fast an object moves', 'That is speed.'],
+   ['measured in newtons', 'Mass is measured in kilograms. Newtons measure force.']],
+  'Mass is the amount of matter in an object, measured in kilograms.');
+F('WGT-F03', 'wgt', 30, 'A rock is moved from Earth to Mars. How do its mass and weight on Mars compare with its mass and weight on Earth?', 'The mass would be the same, but the weight would be less on Mars',
+  [['The mass would be less on Mars, but the weight would be the same', 'It is the other way around: mass never changes with location.'],
+   ['The mass and weight would both be the same on Mars', 'Weight changes because g on Mars (3.7 m/s\u00b2) is smaller than on Earth.'],
+   ['The mass and weight would both be less on Mars', 'The rock\u2019s mass is the amount of matter in it, which does not change.']],
+  'Mass is the same everywhere. Weight depends on g, which is smaller on the Moon.');
+F('WGT-F04', 'wgt', 20, 'Which equation gives weight?', 'W = mg',
+  [['W = m \u00f7 g', 'Weight is mass multiplied by g, not divided.'],
+   ['W = g \u00f7 m', 'That would give a very small weight for a big mass.'],
+   ['W = m + g', 'Mass and g are multiplied, not added.']],
+  'Weight is the force of gravity on the object, so W = Fg = mg: mass times g.');
+F('WGT-F05', 'wgt', 30, 'What does the little g stand for?', 'The acceleration due to gravity',
+  [['The gravitational constant, 6.67 \u00d7 10\u207b\u00b9\u00b9', 'That is capital G. Little g is the acceleration due to gravity at a location.'],
+   ['The mass of the planet', 'g depends on the planet\u2019s mass and size, but it is not the mass itself.'],
+   ['The weight of one kilogram', 'g is an acceleration, in m/s\u00b2. It is not a weight.']],
+  'Little g is the acceleration an object has when gravity is the only force acting on it.');
+F('WGT-F06', 'wgt', 25, 'Which pair of units is correct for weight and mass?', 'Weight in newtons, mass in kilograms',
+  [['Weight in kilograms, mass in newtons', 'Those units are swapped.'],
+   ['Weight in kilograms, mass in kilograms', 'Weight is a force, so it is measured in newtons.'],
+   ['Weight in newtons, mass in newtons', 'Mass is measured in kilograms.']],
+  'Weight is a force (N). Mass is the amount of matter (kg).');
+F('WGT-F07', 'wgt', 35, 'Why does the same rock weigh less on the Moon than on Earth?', 'The Moon\u2019s acceleration due to gravity is smaller',
+  [['The rock has less mass on the Moon', 'The mass of the rock does not change.'],
+   ['The Moon has no gravity', 'The Moon has gravity. Its g is 1.62 m/s\u00b2.'],
+   ['The rock is farther from the Sun', 'Distance from the Sun is not the reason. The Moon\u2019s g is smaller.']],
+  'Weight = mg. The mass stays the same, but g on the Moon is smaller, so the weight is smaller.');
+F('WGT-F08', 'wgt', 40, 'Object A has twice the mass of object B. Both are on Earth. How do their weights compare?', 'A weighs twice as much as B',
+  [['A weighs the same as B', 'Weight is proportional to mass. More mass means more weight.'],
+   ['A weighs half as much as B', 'More mass means more weight, not less.'],
+   ['A weighs four times as much as B', 'Weight is proportional to mass, so twice the mass is twice the weight.']],
+  'W = mg, and g is the same for both. Doubling the mass doubles the weight.');
+
+/* ===== Topic: Free fall ===== */
+const _fallObjs = ['a coin', 'a tennis ball', 'a water balloon', 'a wrench', 'an apple', 'a marble'];
+T('FFL-T1', 'fall', 40, 'Speed after falling for t seconds', function () {
+  for (let tries = 0; tries < 200; tries++) {
+    const planet = pick(['Earth', 'Earth', 'Moon', 'Mars']), g = PLANETS[planet], t = pick([1.5, 2, 2.5, 3, 4, 5, 6]);
+    if (planet === 'Earth' && !sameBoth(gg => gg * t, 2)) continue;
+    const vals = [g * t, g / t, g + t, g * t * t];
+    const f = v => planet === 'Earth' ? fmt(v, 2) : fmt(v, 3);
+    const strs = vals.map(f);
+    if (new Set(strs).size < 4) continue;
+    if ([1, 2, 3].some(i => Math.abs(vals[i] - vals[0]) / vals[0] < 0.06)) continue;
+    const o = pick(_fallObjs);
+    return {
+      prompt: o.charAt(0).toUpperCase() + o.slice(1) + ' is dropped from rest on ' + planet + ' (g = ' + g + ' m/s\u00b2). Ignoring air resistance, what is its velocity after ' + t + ' s?',
+      right: strs[0] + ' m/s downward',
+      wrongs: [[strs[1] + ' m/s downward', 'Velocity is g \u00d7 t. Dividing g by t is the wrong operation.'],
+               [strs[2] + ' m/s downward', 'Velocity is g \u00d7 t. Adding g and t mixes units that do not add.'],
+               [strs[3] + ' m/s downward', 'The velocity grows in proportion to the time (v = g \u00d7 t). The time is not squared in this formula.']],
+      explain: 'Starting from rest, v = g \u00d7 t = ' + g + ' \u00d7 ' + t + ' = ' + strs[0] + ' m/s downward.' + (planet === 'Earth' ? ' (9.81 gives the same value to 2 significant figures.)' : ''),
+      meta: { planet: planet, g: g, t: t }
+    };
+  }
+  throw new Error('FFL-T1 could not generate');
+});
+T('FFL-T2', 'fall', 55, 'Time to reach a speed', function () {
+  for (let tries = 0; tries < 200; tries++) {
+    const planet = pick(['Earth', 'Moon', 'Mars']), g = PLANETS[planet], t0 = pick([2, 3, 4, 5, 6, 8]);
+    if (planet === 'Moon' && t0 === 5) continue;      // avoid the class homework's exact 8.1 m/s on the Moon
+    const v = Number((g * t0).toPrecision(planet === 'Earth' ? 2 : 3));
+    if (planet === 'Earth' && !sameBoth(gg => v / gg, 2)) continue;
+    const vals = [v / g, v * g, g / v, v > g ? v - g : v + g];
+    const strs = vals.map(x => fmt(x, 2));
+    if (new Set(strs).size < 4) continue;
+    if ([1, 2, 3].some(i => Math.abs(vals[i] - vals[0]) / vals[0] < 0.06)) continue;
+    const o = pick(_fallObjs);
+    return {
+      prompt: o.charAt(0).toUpperCase() + o.slice(1) + ' is dropped from rest on ' + planet + ' (g = ' + g + ' m/s\u00b2). Ignoring air resistance, how long does it take to reach ' + fmt(v, 3) + ' m/s?',
+      right: strs[0] + ' s',
+      wrongs: [[strs[1] + ' s', 'Rearranging v = g \u00d7 t gives t = v \u00f7 g. Multiplying makes a number far too large.'],
+               [strs[2] + ' s', 'This flipped the fraction. The speed goes on top: t = v \u00f7 g.'],
+               [strs[3] + ' s', 'Subtracting or adding g does not solve v = g \u00d7 t. Divide the speed by g.']],
+      explain: 't = v \u00f7 g = ' + fmt(v, 3) + ' \u00f7 ' + g + ' = ' + strs[0] + ' s.',
+      meta: { planet: planet, g: g, v: v }
+    };
+  }
+  throw new Error('FFL-T2 could not generate');
+});
+T('FFL-T3', 'fall', 55, 'Speed grows in proportion to time', function () {
+  const t = pick([1, 2, 3]), k = pick([2, 3]), v = pick([8, 10, 12, 15]);
+  return {
+    prompt: 'A rock falls freely from rest on a distant planet. After ' + t + ' s its speed is ' + v + ' m/s. What is its speed after ' + (k * t) + ' s?',
+    right: (k * v) + ' m/s',
+    wrongs: [[(k * k * v) + ' m/s', 'Speed is proportional to time (v = g \u00d7 t). Doubling or tripling the time only doubles or triples the speed.'],
+             [v + ' m/s', 'A falling object keeps speeding up as long as gravity acts, so the speed does not stay the same.'],
+             [Number((v / k).toFixed(1)) + ' m/s', 'The speed keeps increasing. It does not decrease as time goes on.']],
+    explain: 'The acceleration is constant, so speed grows in step with time. ' + k + ' times the time gives ' + k + ' times the speed: ' + (k * v) + ' m/s.',
+    meta: { v: v, k: k }
+  };
+});
+F('FFL-F01', 'fall', 30, 'An object is in free fall when', 'gravity is the only force acting on it',
+  [['it is dropped from any height', 'A paper drifting down has air resistance acting on it, so it is not in free fall.'],
+   ['no forces act on it', 'Gravity is acting on a free-falling object.'],
+   ['it is falling through air', 'Air resistance is another force. Free fall means gravity is the only force.']],
+  'Free fall means gravity is the only force on the object.');
+F('FFL-F02', 'fall', 45, 'A hammer and a feather are dropped together from the same height on the Moon. What happens?', 'They hit the ground at the same time',
+  [['The hammer lands first because it is heavier', 'Without air resistance, all objects fall with the same acceleration.'],
+   ['The feather lands first because it is lighter', 'Objects do not fall faster because they are lighter.'],
+   ['They float because the Moon has no gravity', 'The Moon has gravity. Its g is 1.62 m/s\u00b2.']],
+  'The Moon has no air, so only gravity acts on both. They have the same acceleration and land together.');
+F('FFL-F03', 'fall', 55, 'Which statement correctly explains why a hammer and a feather accelerate the same on the Moon?', 'There is no air resistance, and gravity gives every object the same acceleration',
+  [['There is no gravity on the Moon', 'The Moon has gravity (1.62 m/s\u00b2). That is why things fall.'],
+   ['The hammer and feather have the same mass', 'They do not. Gravity accelerates objects equally regardless of mass.'],
+   ['Gravity pulls harder on the feather', 'Gravity pulls harder on the hammer (greater weight), but the hammer also has more mass, so their accelerations match.']],
+  'No air resistance means gravity is the only force. Then g is the same for all objects at that place.');
+F('FFL-F04', 'fall', 40, 'Why is a falling book a good example of free fall, but a flat sheet of paper is not?', 'The paper has a lot of air resistance compared with its weight, but the book does not',
+  [['The book has no gravity acting on it', 'Both are pulled by gravity.'],
+   ['The paper is too light to be pulled by gravity', 'Gravity pulls on the paper too. Air resistance is just large compared with its weight.'],
+   ['The book falls through a vacuum', 'The book falls through air too, but air resistance is small compared with its weight.']],
+  'Free fall needs air resistance to be small. It is for the book, not for the flat paper.');
+F('FFL-F05', 'fall', 70, 'Two balls are dropped from the same height, one second apart. As they keep falling, the distance between them', 'increases',
+  [['stays the same', 'The first ball is always moving faster than the second, so the gap grows.'],
+   ['decreases', 'The first ball is ahead and speeding up at the same rate, so it pulls farther ahead.'],
+   ['becomes zero when they land together', 'They are released a second apart, so they land a second apart, not together.']],
+  'Both speed up at the same rate, but the first ball always has a one-second head start in speed. It moves faster, so the gap increases.');
+F('FFL-F06', 'fall', 30, 'A bowling ball and a tennis ball are dropped from the same height in a room with no air. Which lands first?', 'They land at the same time',
+  [['The bowling ball', 'Heavier objects do not fall faster when there is no air resistance.'],
+   ['The tennis ball', 'Lighter objects do not fall faster either.'],
+   ['It depends on the colors of the balls', 'Color has nothing to do with free fall.']],
+  'Objects dropped from the same height at the same time land together when only gravity acts.');
+F('FFL-F07', 'fall', 40, 'On Earth, a freely falling object\u2019s speed increases by about how much each second?', '9.8 m/s',
+  [['9.8 m', 'The change in speed is in meters per second.'],
+   ['98 m/s', 'That is ten times too much.'],
+   ['It does not increase; the object falls at a constant speed', 'Gravity keeps pulling, so the speed keeps increasing.']],
+  'g = 9.8 m/s\u00b2 means the speed increases by 9.8 m/s every second.');
+F('FFL-F08', 'fall', 40, 'Why do a rock and a leaf accelerate at the same rate when they are dropped on the Moon?', 'There is no air resistance, and gravity gives all objects the same acceleration',
+  [['the Moon has no gravity', 'The Moon has gravity. Its g is smaller than Earth\u2019s.'],
+   ['all objects have the same weight', 'Weights differ. The accelerations are the same.'],
+   ['the Moon is not round', 'The shape of the Moon has nothing to do with it.']],
+  'On the Moon, gravity is the only force, so every object has an acceleration of 1.62 m/s\u00b2.');
+
+/* ---- units/8-forces/12-bank-friction-laws.js ---- */
+'use strict';
+FTXT[0.666667] = 'two-thirds as large'; FTXT[1.5] = 'one and a half times as large'; FTXT[6] = 'six times as large';
+
+/* ===== Topic: Friction (weights use g = 9.8; magnitudes shown to 2 sig figs so 9.81 gives the same display) ===== */
+function _fricParams() {
+  for (let tries = 0; tries < 400; tries++) {
+    const m = pick([10, 15, 20, 25, 30, 40, 50]);
+    const mus = pick([0.3, 0.4, 0.5, 0.6]);
+    const muk = pick([0.2, 0.25, 0.3, 0.35, 0.4].filter(x => x < mus));
+    if (!muk) continue;
+    const W = gg => m * gg;
+    const okDisp = sameBoth(gg => mus * W(gg), 2) && sameBoth(gg => muk * W(gg), 2) && sameBoth(gg => W(gg), 2);
+    if (okDisp) return { m: m, mus: mus, muk: muk, W: m * G_EARTH, maxS: mus * m * G_EARTH, kin: muk * m * G_EARTH };
+  }
+  throw new Error('friction params');
+}
+T('FRI-T1', 'fric', 70, 'Static or sliding friction, and how big', function () {
+  for (let tries = 0; tries < 400; tries++) {
+    const p = _fricParams(), n = oneName();
+    const slide = rand() < 0.5;
+    let F = slide ? Math.round(p.maxS * 1.35 / 5) * 5 : Math.round(p.maxS * 0.6 / 5) * 5;
+    if (F <= 0) continue;
+    // classification must be the same for g = 9.8 and 9.81, with a clear margin
+    const maxS81 = p.mus * p.m * G_EARTH_ALT;
+    if (slide && (F < p.maxS * 1.08 || F < maxS81 * 1.08)) continue;
+    if (!slide && (F > p.maxS * 0.92 || F > maxS81 * 0.92)) continue;
+    const f2 = x => fmt(x, 2);
+    const A = f2(F), S = f2(p.maxS), K = f2(p.kin);
+    if (new Set([A, S, K]).size < 3) continue;
+    const mk = (type, mag) => type + ' friction, ' + mag + ' N';
+    let right, wrongs, explain;
+    if (!slide) {
+      right = mk('Static', A);
+      wrongs = [[mk('Static', S), 'The maximum static friction is ' + S + ' N, but static friction only matches the push (' + A + ' N) until the push exceeds that limit.'],
+                [mk('Kinetic', K), 'The push is smaller than the maximum static friction, so the crate does not move. Kinetic friction acts only on a sliding object.'],
+                [mk('Kinetic', A), 'The crate is not sliding, so the friction is static, not kinetic.']];
+      explain = 'Maximum static friction = \u03bcs \u00d7 W = ' + p.mus + ' \u00d7 ' + f2(p.W) + ' N = ' + S + ' N. The ' + A + ' N push is less than that, so the crate stays at rest and static friction matches the push: ' + A + ' N.';
+    } else {
+      right = mk('Kinetic', K);
+      wrongs = [[mk('Static', S), 'The ' + A + ' N push is more than the maximum static friction (' + S + ' N), so the crate slides. Once sliding, the friction is kinetic.'],
+                [mk('Kinetic', A), 'Kinetic friction does not match the push. It is \u03bck \u00d7 W = ' + K + ' N no matter how hard you push.'],
+                [mk('Static', A), 'The crate is moving now, so the friction is kinetic, not static.']];
+      explain = 'Maximum static friction = \u03bcs \u00d7 W = ' + p.mus + ' \u00d7 ' + f2(p.W) + ' N = ' + S + ' N. The ' + A + ' N push is more than that, so the crate slides, and kinetic friction = \u03bck \u00d7 W = ' + p.muk + ' \u00d7 ' + f2(p.W) + ' N = ' + K + ' N.';
+    }
+    return {
+      prompt: 'A ' + p.m + ' kg crate sits on a floor. The coefficient of static friction is ' + p.mus + ' and the coefficient of kinetic friction is ' + p.muk + '. ' + n + ' pushes the crate horizontally with ' + F + ' N. What kind of friction acts on the crate, and how big is it? (Use g = 9.8 m/s\u00b2.)',
+      right: right, wrongs: wrongs, explain: explain, meta: { p: p, F: F, slide: slide }
+    };
+  }
+  throw new Error('FRI-T1 could not generate');
+});
+T('FRI-T2', 'fric', 55, 'Force needed to start something moving', function () {
+  for (let tries = 0; tries < 400; tries++) {
+    const p = _fricParams(), o = pick(['crate', 'box', 'trunk', 'cabinet']);
+    const vals = [p.maxS, p.kin, p.W, p.mus * p.m];
+    const strs = vals.map(v => fmt(v, 2));
+    if (new Set(strs).size < 4) continue;
+    if ([1, 2, 3].some(i => Math.abs(vals[i] - vals[0]) / vals[0] < 0.06)) continue;
+    return {
+      prompt: 'A ' + p.m + ' kg ' + o + ' rests on the floor. \u03bcs = ' + p.mus + ' and \u03bck = ' + p.muk + '. About how much horizontal force must be applied to just get the ' + o + ' moving? (Use g = 9.8 m/s\u00b2.)',
+      right: strs[0] + ' N',
+      wrongs: [[strs[1] + ' N', 'That is the kinetic friction once it is already sliding. To start the motion you need to beat the static friction.'],
+               [strs[2] + ' N', 'That is the weight. The force needed depends on \u03bcs \u00d7 weight, not on the weight alone.'],
+               [strs[3] + ' N', 'This used the mass instead of the weight. First find the weight, W = mg, then multiply by \u03bcs.']],
+      explain: 'The push must exceed the maximum static friction: \u03bcs \u00d7 W = ' + p.mus + ' \u00d7 (' + p.m + ' \u00d7 9.8) = ' + strs[0] + ' N.',
+      meta: { p: p }
+    };
+  }
+  throw new Error('FRI-T2 could not generate');
+});
+T('FRI-T3', 'fric', 50, 'Sliding friction once it is moving', function () {
+  for (let tries = 0; tries < 400; tries++) {
+    const p = _fricParams(), o = pick(['crate', 'box', 'trunk', 'cabinet']);
+    const vals = [p.kin, p.maxS, p.W, p.muk * p.m];
+    const strs = vals.map(v => fmt(v, 2));
+    if (new Set(strs).size < 4) continue;
+    if ([1, 2, 3].some(i => Math.abs(vals[i] - vals[0]) / vals[0] < 0.06)) continue;
+    return {
+      prompt: 'A ' + p.m + ' kg ' + o + ' is sliding across the floor. \u03bcs = ' + p.mus + ' and \u03bck = ' + p.muk + '. What is the force of kinetic (sliding) friction on it? (Use g = 9.8 m/s\u00b2.)',
+      right: strs[0] + ' N',
+      wrongs: [[strs[1] + ' N', 'That used the static coefficient. Once the ' + o + ' is sliding, use \u03bck.'],
+               [strs[2] + ' N', 'That is the weight. Friction is \u03bc \u00d7 weight.'],
+               [strs[3] + ' N', 'This used the mass instead of the weight. Find W = mg first, then multiply by \u03bck.']],
+      explain: 'Kinetic friction = \u03bck \u00d7 W = ' + p.muk + ' \u00d7 (' + p.m + ' \u00d7 9.8) = ' + strs[0] + ' N.',
+      meta: { p: p }
+    };
+  }
+  throw new Error('FRI-T3 could not generate');
+});
+F('FRI-F01', 'fric', 15, 'Friction is a force that', 'resists the motion of two surfaces that are touching',
+  [['pulls objects toward the center of Earth', 'That is gravity.'],
+   ['holds a rope tight', 'That is tension.'],
+   ['pushes an object away from a spring', 'That is a spring force.']],
+  'Friction resists the motion of two surfaces that touch each other.');
+F('FRI-F02', 'fric', 25, 'Static friction is the friction that', 'keeps an object from starting to slide',
+  [['acts only on objects that are already sliding', 'That is kinetic (sliding) friction.'],
+   ['pulls an object toward the ground', 'That is gravity.'],
+   ['speeds an object up', 'Friction opposes motion. It does not speed objects up.']],
+  'Static friction prevents surfaces from sliding past each other. The applied force has to be greater than it before the object moves.');
+F('FRI-F03', 'fric', 45, 'A box sits still while you push on it harder and harder. As you increase your push, but before the box moves, the static friction', 'increases to match your push',
+  [['stays the same', 'Static friction changes to match the applied force, up to its limit.'],
+   ['decreases', 'It does not shrink as you push harder. It grows to match you.'],
+   ['becomes zero', 'The box stays still because static friction balances your push.']],
+  'Up to its limit, the strength of static friction changes to match the applied force, so the box does not move.');
+F('FRI-F04', 'fric', 45, 'Once a box is sliding, the sliding friction on it', 'stays about the same, even if the box speeds up',
+  [['increases as the box speeds up', 'Sliding friction does not depend on speed. It stays the same.'],
+   ['decreases to zero', 'Friction does not vanish while an object slides.'],
+   ['becomes static friction', 'A sliding object has kinetic (sliding) friction.']],
+  'Sliding friction does not change in value once the object is moving.');
+F('FRI-F05', 'fric', 40, 'Which are two causes of friction between surfaces?', 'Microscopic bumps catching on each other and attraction between the particles of the surfaces',
+  [['Gravity and magnetism', 'Those are different forces. Friction comes from surface roughness and particle attraction.'],
+   ['The color and temperature of the surfaces', 'Those do not cause friction.'],
+   ['Air pressure and light', 'Those do not cause friction between surfaces.']],
+  'Microscopic dips and bumps catch on each other, and the surfaces\u2019 particles attract each other. Both slow sliding.');
+F('FRI-F06', 'fric', 20, 'Which of these would reduce friction between two surfaces?', 'Adding a lubricant such as oil',
+  [['Pressing the surfaces together harder', 'More contact means more friction.'],
+   ['Roughening the surfaces', 'Rougher surfaces catch on each other more.'],
+   ['Adding sand between them', 'Sand makes the surfaces rougher, so friction increases.']],
+  'A lubricant such as oil or soap separates the surfaces and lowers friction.');
+F('FRI-F07', 'fric', 30, 'Friction on a sliding object acts', 'in the direction opposite the object\u2019s motion',
+  [['in the same direction as the motion', 'Friction slows objects down, so it opposes the motion.'],
+   ['straight up', 'Straight up is the normal force. Friction runs along the surface.'],
+   ['straight down', 'Straight down is gravity. Friction runs along the surface.']],
+  'Friction opposes motion. It acts parallel to the surface, perpendicular to the normal force.');
+F('FRI-F08', 'fric', 50, 'A crumpled sheet of paper falls faster than a flat sheet. Why?', 'The crumpled paper has less surface area facing the air, so it has less air resistance',
+  [['The crumpled paper has more mass', 'Crumpling does not change the mass.'],
+   ['Gravity pulls harder on crumpled paper', 'Gravity pulls with the same force. Air resistance is what differs.'],
+   ['The flat paper has no air resistance', 'The flat paper has more air resistance because more surface faces the air.']],
+  'Fluid friction (air resistance) is greater when more surface area faces the oncoming air.');
+F('FRI-F09', 'fric', 45, 'In Ffr = \u03bcW, what does a larger coefficient of friction (\u03bc) tell you about two surfaces?', 'There is more friction between them',
+  [['There is less friction between them', 'A bigger \u03bc multiplies the weight to make a bigger friction force.'],
+   ['The object must be heavier', '\u03bc describes the surfaces, not the object\u2019s weight.'],
+   ['The object must be moving', '\u03bc exists whether or not the object is moving.']],
+  'The coefficient of friction measures how much friction the two surfaces produce. A larger \u03bc means a larger friction force.');
+F('FRI-F10', 'fric', 55, 'A student slides a heavy filing cabinet across the floor. A bigger push is needed to get it moving than to keep it moving. Which comparison explains this?', 'The maximum static friction is greater than the kinetic friction',
+  [['The maximum static friction is less than the kinetic friction', 'If that were true, keeping it moving would take the bigger push.'],
+   ['The maximum static friction equals the kinetic friction', 'If they were equal, starting and keeping it moving would need the same push.'],
+   ['There is no static friction on a heavy object', 'Static friction acts on every object at rest, and it is what the first push must beat.']],
+  'The maximum static friction (\u03bcs W) is greater than sliding friction (\u03bck W), so starting needs more force than keeping it going.');
+F('FRI-F11', 'fric', 25, 'Fluid friction is friction between', 'a surface and a fluid such as air or water',
+  [['two solid surfaces', 'That is static or sliding friction.'],
+   ['two magnets', 'Magnets exert a non-contact force.'],
+   ['an object and Earth\u2019s core', 'Fluid friction involves air or water moving past a surface.']],
+  'Air resistance is an example of fluid friction.');
+F('FRI-F12', 'fric', 35, 'A swimmer wants to reduce fluid friction. Which change would help?', 'Making the body smaller and more streamlined against the water',
+  [['Spreading the arms and legs wide', 'That increases the surface area facing the water.'],
+   ['Wearing loose, baggy clothes', 'Baggy clothes catch water and add fluid friction.'],
+   ['Swimming in thicker liquid', 'A thicker fluid increases fluid friction.']],
+  'Reducing the surface area that faces the oncoming fluid reduces fluid friction.');
+
+/* ===== Topic: Newton's 1st law and inertia ===== */
+F('N1-F01', 'n1', 20, 'Newton\u2019s first law of motion says that', 'if the net force on an object is zero, its motion does not change',
+  [['a force is needed to keep any object moving', 'A moving object keeps moving with no net force.'],
+   ['the acceleration of an object equals force divided by mass', 'That is the second law.'],
+   ['every force has an equal and opposite reaction force', 'That is the third law.']],
+  'Zero net force means no change in motion: a resting object stays at rest and a moving object keeps its velocity.');
+F('N1-F02', 'n1', 15, 'Inertia is', 'the tendency of an object to resist a change in its motion',
+  [['a force that keeps objects moving', 'Inertia is a property of matter, not a force.'],
+   ['the force of gravity on an object', 'That is weight.'],
+   ['the speed an object has when it falls', 'That is velocity.']],
+  'Inertia is the tendency of an object to resist a change in its motion.');
+F('N1-F03', 'n1', 40, 'A backpack on the back seat slides forward when the driver brakes hard. Why?', 'The backpack keeps moving forward at its old speed because of inertia while the car slows',
+  [['A force of motion pushes it forward', 'There is no force of motion. Inertia keeps its velocity the same until a force changes it.'],
+   ['Gravity pulls it forward', 'Gravity pulls downward, not forward.'],
+   ['The brakes pull it forward', 'The brakes act on the car, not on the backpack.']],
+  'No unbalanced force acts on the backpack, so its velocity does not change. The car slows, so the backpack seems to slide forward.');
+F('N1-F04', 'n1', 35, 'A ball rolling across the floor eventually stops. Which statement explains why?', 'Friction (an unbalanced force) acts against the motion',
+  [['Objects naturally stop moving when no one pushes them', 'Objects stop only because a force acts on them, such as friction.'],
+   ['The ball runs out of inertia', 'Inertia does not get used up.'],
+   ['Gravity slows it down horizontally', 'Gravity pulls down, not backward along the floor.']],
+  'Without friction, the ball would keep rolling at the same speed. Objects stop because friction or another force acts on them.');
+F('N1-F05', 'n1', 55, 'A skater glides across frictionless ice at a steady speed in a straight line. What is needed to change the skater\u2019s speed or direction?', 'An unbalanced force',
+  [['Nothing, because skaters change speed on their own', 'A skater cannot change motion without a net force from something else.'],
+   ['Less inertia', 'Inertia does not change by itself, and it does not change the motion.'],
+   ['More time', 'Waiting does not change the motion. A net force does.']],
+  'By Newton\u2019s first law, only an unbalanced force can change an object\u2019s velocity.');
+F('N1-F06', 'n1', 55, 'A moving object has no forces acting on it. What will it do?', 'Keep moving at the same speed in the same direction',
+  [['Slow down and stop', 'Slowing needs a force such as friction. There are none here.'],
+   ['Speed up', 'Speeding up needs an unbalanced force.'],
+   ['Stop immediately', 'An object does not stop instantly when forces vanish.']],
+  'With no net force, the object\u2019s velocity stays the same.');
+F('N1-F07', 'n1', 40, 'A crash-test dummy keeps moving forward when the car hits a wall and stops. This is an example of', 'inertia',
+  [['balanced forces', 'The wall exerts an unbalanced force on the car. The dummy just keeps moving.'],
+   ['friction', 'Friction is not the cause. The dummy keeps moving because of inertia.'],
+   ['weight', 'Weight is the pull of gravity, which acts downward.']],
+  'The car stops because of an unbalanced force. The dummy has no such force, so it keeps moving forward by inertia.');
+F('N1-F08', 'n1', 45, 'Which has more inertia?', 'A bowling ball, because it has more mass',
+  [['A tennis ball, because it is smaller', 'Size does not set inertia. Mass does.'],
+   ['They have the same inertia because both are round', 'Inertia depends on mass, not shape.'],
+   ['Whichever is moving faster', 'Inertia depends on mass. Speed does not change it.']],
+  'The more mass an object has, the more inertia it has.');
+
+/* ===== Topic: Newton's 2nd law ===== */
+const _n2objs = ['cart', 'wagon', 'sled', 'crate', 'toy car', 'shopping cart'];
+function _distinct(vals, tol) {
+  const strs = vals.map(v => fmt(v, 3));
+  if (new Set(strs).size < vals.length) return false;
+  for (let i = 1; i < vals.length; i++) if (Math.abs(vals[i] - vals[0]) / Math.abs(vals[0]) < (tol || 0.06)) return false;
+  return true;
+}
+T('2ND-T1', 'n2', 30, 'Find acceleration (a = F/m)', function () {
+  for (let tries = 0; tries < 200; tries++) {
+    const m = pick([2, 3, 4, 5, 6, 8, 12, 15, 20, 24, 30, 40, 50]), a = pick([0.5, 1, 1.5, 2, 2.5, 3, 4, 5]);
+    if ((m === 8 && a === 3) || (m === 10 && a === 0.2)) continue;      // avoid textbook/homework numbers
+    const F_ = m * a, o = pick(_n2objs), who = pick(['Murphy', 'Mr. Ward', oneName()]);
+    const vals = [a, F_ * m, m / F_, F_ > m ? F_ - m : F_ + m];
+    if (!_distinct(vals)) continue;
+    const s = vals.map(v => fmt(v, 3));
+    return {
+      prompt: who + ' pulls a ' + m + ' kg ' + o + ' with a net force of ' + F_ + ' N. What is the acceleration of the ' + o + '?',
+      right: s[0] + ' m/s\u00b2',
+      wrongs: [[s[1] + ' m/s\u00b2', 'Acceleration is force divided by mass. Multiplying them gives the wrong result.'],
+               [s[2] + ' m/s\u00b2', 'This flipped the fraction. The force goes on top: a = F \u00f7 m.'],
+               [s[3] + ' m/s\u00b2', 'You cannot add or subtract a force and a mass. Divide the force by the mass.']],
+      explain: 'a = F \u00f7 m = ' + F_ + ' N \u00f7 ' + m + ' kg = ' + s[0] + ' m/s\u00b2.', meta: { m: m, F: F_, a: a }
+    };
+  }
+  throw new Error('2ND-T1');
+});
+T('2ND-T2', 'n2', 30, 'Find net force (F = ma)', function () {
+  for (let tries = 0; tries < 200; tries++) {
+    const m = pick([2, 3, 4, 5, 6, 8, 12, 15, 20, 24, 30, 40, 50]), a = pick([0.5, 1, 1.5, 2, 2.5, 3, 4, 5]);
+    const o = pick(_n2objs);
+    const vals = [m * a, m / a, a / m, m + a];
+    if (!_distinct(vals)) continue;
+    const s = vals.map(v => fmt(v, 3));
+    return {
+      prompt: 'A ' + m + ' kg ' + o + ' speeds up at ' + a + ' m/s\u00b2. What net force acts on it?',
+      right: s[0] + ' N',
+      wrongs: [[s[1] + ' N', 'F = m \u00d7 a. Dividing mass by acceleration gives the wrong result.'],
+               [s[2] + ' N', 'F = m \u00d7 a. Dividing acceleration by mass is the wrong operation.'],
+               [s[3] + ' N', 'You cannot add mass and acceleration. Multiply them.']],
+      explain: 'F = ma = ' + m + ' kg \u00d7 ' + a + ' m/s\u00b2 = ' + s[0] + ' N.', meta: { m: m, a: a }
+    };
+  }
+  throw new Error('2ND-T2');
+});
+T('2ND-T3', 'n2', 45, 'Find mass (m = F/a)', function () {
+  for (let tries = 0; tries < 200; tries++) {
+    const m = pick([2, 3, 4, 5, 6, 8, 12, 15, 20, 24, 30, 40, 50]), a = pick([0.5, 1, 1.5, 2, 2.5, 3, 4, 5]);
+    const F_ = m * a, o = pick(_n2objs);
+    const vals = [m, F_ * a, a / F_, F_ > a ? F_ - a : F_ + a];
+    if (!_distinct(vals)) continue;
+    const s = vals.map(v => fmt(v, 3));
+    return {
+      prompt: 'A net force of ' + F_ + ' N makes a ' + o + ' accelerate at ' + a + ' m/s\u00b2. What is the mass of the ' + o + '?',
+      right: s[0] + ' kg',
+      wrongs: [[s[1] + ' kg', 'Rearranging a = F \u00f7 m gives m = F \u00f7 a. Multiplying is the wrong operation.'],
+               [s[2] + ' kg', 'This flipped the fraction. m = F \u00f7 a, with the force on top.'],
+               [s[3] + ' kg', 'You cannot subtract an acceleration from a force. Divide the force by the acceleration.']],
+      explain: 'm = F \u00f7 a = ' + F_ + ' N \u00f7 ' + a + ' m/s\u00b2 = ' + s[0] + ' kg.', meta: { F: F_, a: a }
+    };
+  }
+  throw new Error('2ND-T3');
+});
+T('2ND-T4', 'n2', 45, 'How force and mass change acceleration', function () {
+  const cases = [
+    { c: 'the net force on it doubles and its mass stays the same', f: 2, w: [[0.5, 'More force means more acceleration, not less.'], [4, 'Doubling the force doubles the acceleration. It does not quadruple it.'], [1, 'Acceleration depends on the net force, so it changes.']] },
+    { c: 'its mass doubles and the net force stays the same', f: 0.5, w: [[2, 'More mass means less acceleration for the same force.'], [0.25, 'Doubling the mass halves the acceleration. It does not cut it to one-fourth.'], [1, 'Acceleration depends on mass, so it changes.']] },
+    { c: 'the net force on it triples and its mass stays the same', f: 3, w: [[0.333333, 'More force means more acceleration.'], [9, 'Tripling the force triples the acceleration.'], [1, 'Acceleration depends on the net force, so it changes.']] },
+    { c: 'its mass triples and the net force stays the same', f: 0.333333, w: [[3, 'More mass means less acceleration for the same force.'], [0.111111, 'Tripling the mass divides the acceleration by 3, not by 9.'], [1, 'Acceleration depends on mass, so it changes.']] },
+    { c: 'both the net force and the mass double', f: 1, w: [[2, 'Doubling the force doubles a, but doubling the mass halves it. They cancel.'], [4, 'The two doublings work against each other, so they cancel.'], [0.5, 'The force doubling raises a by 2 and the mass doubling lowers it by 2, so a stays the same.']] },
+    { c: 'the net force doubles and the mass triples', f: 0.666667, w: [[1.5, 'This flipped the ratio. The tripled mass divides the acceleration by 3 while the doubled force multiplies it by 2, so it ends up smaller, not larger.'], [6, 'Tripling the mass makes the acceleration smaller. It cannot multiply the acceleration by 3.'], [1, '2 \u00f7 3 is not 1. The acceleration changes by a factor of two-thirds.']] }
+  ];
+  const k = pick(cases), o = pick(_n2objs);
+  return {
+    prompt: 'A ' + o + ' is accelerating. What happens to its acceleration if ' + k.c + '?',
+    right: 'The acceleration becomes ' + _ft(k.f),
+    wrongs: k.w.map(w => ['The acceleration becomes ' + _ft(w[0]), w[1]]),
+    explain: 'a = F \u00f7 m. Acceleration grows with the net force and shrinks with the mass, so the acceleration becomes ' + _ft(k.f) + '.', meta: { f: k.f }
+  };
+});
+F('N2-F01', 'n2', 20, 'Newton\u2019s second law says that the acceleration of an object is', 'the net force on the object divided by its mass',
+  [['the mass divided by the net force', 'This flips the equation. Acceleration is force over mass.'],
+   ['the net force times the mass', 'That is F = ma, which gives the force, not the acceleration.'],
+   ['equal to its weight', 'Weight is a force. Acceleration depends on the net force and mass.']],
+  'a = F \u00f7 m, with F the net force.');
+F('N2-F02', 'n2', 30, 'In which direction does an object accelerate?', 'In the direction of the net force',
+  [['In the direction it was already moving', 'Acceleration points along the net force, which can be opposite to the motion.'],
+   ['Opposite the net force', 'Acceleration is always in the direction of the net force.'],
+   ['Straight down', 'Acceleration follows the net force, not gravity alone.']],
+  'The direction of the acceleration is the same as the direction of the net force.');
+F('N2-F03', 'n2', 45, 'One newton (N) is the same as', '1 kg\u00b7m/s\u00b2',
+  [['1 kg\u00b7m/s', 'That is a unit of momentum, not force.'],
+   ['1 kg/m\u00b7s\u00b2', 'The meters belong on top: kg\u00b7m/s\u00b2.'],
+   ['1 m/s\u00b2', 'That is a unit of acceleration. A newton also includes mass in kilograms.']],
+  'Since F = ma, force has units of kg \u00d7 m/s\u00b2. One newton accelerates 1 kg at 1 m/s\u00b2.');
+F('N2-F04', 'n2', 25, 'You know the mass of an object and the net force on it. Which law helps you find its acceleration?', 'Newton\u2019s second law',
+  [['Newton\u2019s first law', 'The first law only says what happens when the net force is zero.'],
+   ['Newton\u2019s third law', 'The third law describes force pairs.'],
+   ['The law of universal gravitation', 'That is about gravity between masses, not acceleration from a net force.']],
+  'Newton\u2019s second law, a = F \u00f7 m, links force, mass, and acceleration.');
+F('N2-F05', 'n2', 35, 'In the equation a = F \u00f7 m, what does each letter stand for?', 'a is acceleration, F is net force, m is mass',
+  [['a is area, F is friction, m is momentum', 'These letters stand for acceleration, net force, and mass.'],
+   ['a is speed, F is force, m is meters', 'a is acceleration, not speed. m is mass, not meters.'],
+   ['a is weight, F is fall, m is motion', 'These letters stand for acceleration, net force, and mass.']],
+  'a = acceleration (m/s\u00b2), F = net force (N), m = mass (kg).');
+F('N2-F06', 'n2', 35, 'The same net force is applied to a heavy cart and a light cart. Which statement is true?', 'The light cart has the greater acceleration',
+  [['The heavy cart has the greater acceleration', 'With the same force, more mass means less acceleration.'],
+   ['Both carts have the same acceleration', 'With the same net force, the masses make the accelerations different.'],
+   ['Neither cart accelerates', 'A net force always produces an acceleration.']],
+  'a = F \u00f7 m. With the same F, the smaller mass gives the larger acceleration.');
+
+/* ===== Topic: Newton's 3rd law ===== */
+T('N3-T1', 'n3', 45, 'Describe a reaction force', function () {
+  const sc = pick([
+    ['A hand pushes on a wall', 'the wall pushes on the hand'],
+    ['A foot pushes down on the ground', 'the ground pushes up on the foot'],
+    ['A bat hits a baseball', 'the baseball pushes back on the bat'],
+    ['A swimmer\u2019s hands push the water backward', 'the water pushes the swimmer\u2019s hands forward'],
+    ['A tire pushes backward on the road', 'the road pushes the tire forward'],
+    ['A hammer strikes a nail', 'the nail pushes back on the hammer']
+  ]);
+  const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
+  return {
+    prompt: sc[0] + '. Which statement describes the reaction force?',
+    right: cap(sc[1]) + ' with the same strength in the opposite direction',
+    wrongs: [[cap(sc[1]) + ' with a weaker force, since it responds second', 'The two forces in a pair are always the same strength.'],
+             ['Nothing pushes back unless something starts to move', 'Reaction forces exist the moment there is an action force, even if nothing moves.'],
+             ['The action force continues in the same direction with the same strength', 'The reaction force acts on the other object and points in the opposite direction.']],
+    explain: 'For every action force there is a reaction force of equal strength in the opposite direction, acting on the other object.', meta: {}
+  };
+});
+F('N3-F01', 'n3', 20, 'Newton\u2019s third law says that', 'when one object pushes on a second, the second pushes back with a force of the same size in the opposite direction',
+  [['an object at rest stays at rest', 'That is the first law.'],
+   ['force equals mass times acceleration', 'That is the second law.'],
+   ['the bigger object always pushes harder', 'The forces in a pair are always the same size, regardless of the objects\u2019 masses.']],
+  'Forces come in pairs: equal in size, opposite in direction, acting on different objects.');
+F('N3-F02', 'n3', 65, 'The action and reaction forces in a force pair do not cancel each other because', 'they act on different objects',
+  [['they are different sizes', 'Forces in a pair are the same size.'],
+   ['they point the same direction', 'Forces in a pair point in opposite directions.'],
+   ['one of them is not really a force', 'Both are real forces.']],
+  'Forces cancel only if they act on the same object. The action acts on one object and the reaction acts on the other.');
+F('N3-F03', 'n3', 40, 'A swimmer pushes the water backward with their hands. What is the reaction force?', 'The water pushes the swimmer\u2019s hands forward',
+  [['The swimmer\u2019s hands push forward on the swimmer', 'The reaction acts on the other object, the hands being pushed by the water.'],
+   ['Gravity pulls the swimmer down', 'Gravity is not the reaction here. The reaction is the water pushing back on the hands.'],
+   ['The water stops the swimmer', 'The water pushes the swimmer forward, which is the reaction force.']],
+  'The swimmer pushes the water back (action) and the water pushes the swimmer forward (reaction).');
+F('N3-F04', 'n3', 40, 'A rocket engine pushes hot gas downward. What is the reaction force?', 'The gas pushes the engine upward',
+  [['The engine pushes the gas upward', 'The engine pushes the gas down. The gas pushes the engine up.'],
+   ['Gravity pulls the rocket down', 'Gravity is a different force from Earth, not the reaction to the engine\u2019s push.'],
+   ['Nothing, because the gas is not solid', 'Reaction forces happen with gases too.']],
+  'The engine\u2019s push on the gas is the action. The gas pushes back on the engine, which accelerates the rocket upward.');
+F('N3-F05', 'n3', 35, 'Dilan dribbles a basketball. When the ball pushes down on the floor, what is the reaction force?', 'The floor pushes up on the ball',
+  [['Dilan pushes down on the ball', 'That is another force on the ball, not the reaction to the ball pushing on the floor.'],
+   ['Gravity pulls the ball down', 'Gravity is not the reaction here. The floor pushes back on the ball.'],
+   ['The ball pushes up on Dilan', 'The reaction to the ball pushing the floor is the floor pushing the ball.']],
+  'The ball pushes on the floor (action). The floor pushes up on the ball (reaction).');
+F('N3-F06', 'n3', 40, 'A diver springs off the end of a diving board. Which pair is a Newton\u2019s third law pair?', 'The diver pushes down on the board, and the board pushes up on the diver',
+  [['The diver\u2019s weight and the board pushing up on the diver', 'Both of those act on the diver, so they are not an action-reaction pair.'],
+   ['The board pushes up on the diver, and gravity pulls the diver down', 'Both act on the diver, so they are not a force pair.'],
+   ['The diver pushes down, and the diver pushes up', 'A force pair acts on two different objects.']],
+  'Action: the diver pushes down on the board. Reaction: the board pushes up on the diver.');
+F('N3-F07', 'n3', 60, 'Which of these is a Newton\u2019s third law force pair?', 'Earth pulls on you, and you pull on Earth',
+  [['Gravity pulls you down, and the floor pushes you up', 'Both act on you, so they are not a force pair.'],
+   ['You push on a wall, and you push on the floor', 'Those are two different pushes by you. A pair involves the same two objects.'],
+   ['Your weight and your mass', 'Weight is a force and mass is not.']],
+  'In a force pair, A pushes or pulls on B, and B pushes or pulls on A.');
+F('N3-F08', 'n3', 70, 'A large truck and a small car crash head-on. Which statement about the forces during the crash is true?', 'The truck and the car exert forces of the same size on each other',
+  [['The truck exerts a larger force because it has more mass', 'The forces in a pair are always equal, no matter the masses.'],
+   ['The car exerts a larger force because it is damaged more', 'The damage differs because the same force has different effects on different masses.'],
+   ['Only the truck exerts a force', 'Each vehicle exerts a force on the other.']],
+  'Newton\u2019s third law: the forces are equal and opposite. The car accelerates more because it has less mass.');
+F('N3-F09', 'n3', 40, 'When you jump, you push down on the ground. What makes you accelerate upward?', 'The ground pushes up on you with a force of the same size',
+  [['Your muscles push you upward directly', 'Your muscles push down on the ground. The ground pushing back accelerates you.'],
+   ['Gravity pulls you upward', 'Gravity pulls you down.'],
+   ['The ground does not push on you', 'The ground does push back, which is the reaction force.']],
+  'You push down on the ground (action). The ground pushes up on you (reaction). If it is larger than your weight, you accelerate upward.');
+
+/* ---- units/8-forces/13-bank-challenge.js ---- */
+'use strict';
+/* ===== Challenge (beyond the test). Tracked separately. IDs start with CH- ===== */
+const _G = 6.67e-11;
+T('CH-T1', 'chal', 75, 'Universal gravitation calculation', function () {
+  for (let tries = 0; tries < 200; tries++) {
+    const [a, b] = twoNames();
+    const m1 = ri(40, 90), m2 = ri(40, 90), r = pick([0.5, 1.0, 1.5, 2.0]);
+    if (m1 === m2) continue;
+    const vals = [_G * m1 * m2 / (r * r), _G * m1 * m2 / r, m1 * m2 / (r * r), _G * (m1 + m2) / (r * r)];
+    const s = vals.map(v => sci(v, 2));
+    if (new Set(s).size < 4) continue;
+    if ([1, 2, 3].some(i => Math.abs(vals[i] - vals[0]) / vals[0] < 0.06)) continue;
+    return {
+      prompt: a + ' (' + m1 + ' kg) and ' + b + ' (' + m2 + ' kg) stand ' + fmt(r, 2) + ' m apart. Use F = G m\u2081m\u2082 \u00f7 r\u00b2 with G = 6.67 \u00d7 10<sup>\u221211</sup> N\u00b7m\u00b2/kg\u00b2. How big is the gravitational force between them?',
+      right: s[0] + ' N',
+      wrongs: [[s[1] + ' N', 'The distance must be squared: use r\u00b2, not r.'],
+               [s[2] + ' N', 'This left out G. The tiny value of G makes gravity between people extremely small.'],
+               [s[3] + ' N', 'The masses are multiplied (m\u2081 \u00d7 m\u2082), not added.']],
+      explain: 'F = (6.67 \u00d7 10\u207b\u00b9\u00b9)(' + m1 + ')(' + m2 + ') \u00f7 (' + fmt(r, 2) + ')\u00b2 = ' + s[0] + ' N. Gravity between two people is tiny.', meta: { m1: m1, m2: m2, r: r }
+    };
+  }
+  throw new Error('CH-T1');
+});
+T('CH-T2', 'chal', 80, 'Where g comes from', function () {
+  const pl = pick([{ n: 'Earth', M: 5.98e24, R: 6.38e6 }, { n: 'Mars', M: 6.42e23, R: 3.39e6 }]);
+  const g = _G * pl.M / (pl.R * pl.R);
+  const fv = v => (v >= 0.01 && v < 1e4) ? fmt(v, 2) : sci(v, 2);
+  const vals = [g, _G * pl.M / pl.R, pl.M / (pl.R * pl.R), _G * pl.R * pl.R / pl.M];
+  return {
+    prompt: 'For a 1.00 kg object on the surface of ' + pl.n + ' (mass ' + sci(pl.M, 3) + ' kg, radius ' + sci(pl.R, 3) + ' m), the force of gravity equals its weight. Which value of g do you get from g = G M \u00f7 R\u00b2?',
+    right: fv(g) + ' m/s\u00b2',
+    wrongs: [[fv(vals[1]) + ' m/s\u00b2', 'The radius must be squared in the formula.'],
+             [fv(vals[2]) + ' m/s\u00b2', 'This left out G.'],
+             [fv(vals[3]) + ' m/s\u00b2', 'This put R\u00b2 on top and M on the bottom. The mass of the planet goes on top.']],
+    explain: 'g = G M \u00f7 R\u00b2 = (6.67 \u00d7 10\u207b\u00b9\u00b9)(' + sci(pl.M, 3) + ') \u00f7 (' + sci(pl.R, 3) + ')\u00b2 = ' + fv(g) + ' m/s\u00b2, which matches the g value in the table.', meta: { planet: pl.n, g: g }
+  };
+});
+F('CH-F01', 'chal', 60, 'A skydiver reaches terminal velocity. What is true about the forces at that moment?', 'Air resistance equals the force of gravity, so the net force is zero',
+  [['Gravity has stopped pulling on the skydiver', 'Gravity never stops. The air resistance has grown to match it.'],
+   ['Air resistance is greater than gravity, so the skydiver is slowing', 'If air resistance were greater, the skydiver would slow down, not move at a constant speed.'],
+   ['There is no air resistance at terminal velocity', 'Air resistance is exactly what balances gravity at terminal velocity.']],
+  'Terminal velocity is the constant velocity reached when air resistance equals the force of gravity on a falling object.');
+F('CH-F02', 'chal', 55, 'At terminal velocity, a falling object\u2019s acceleration is', 'zero',
+  [['9.8 m/s\u00b2 downward', 'That is the acceleration of free fall. At terminal velocity the forces balance.'],
+   ['9.8 m/s\u00b2 upward', 'The object is not accelerating upward.'],
+   ['increasing', 'The net force is zero, so the acceleration is zero.']],
+  'The net force is zero, so by Newton\u2019s second law the acceleration is zero. The speed is constant.');
+F('CH-F03', 'chal', 60, 'A parachute with a bigger canopy has a slower terminal velocity. Why?', 'The bigger canopy has more air resistance at the same speed, so the forces balance at a lower speed',
+  [['The bigger canopy is lighter', 'A bigger canopy does not reduce gravity. It increases air resistance.'],
+   ['Gravity is weaker over a bigger area', 'Gravity does not depend on canopy size.'],
+   ['The canopy removes air resistance', 'A canopy increases air resistance.']],
+  'More surface area facing the air means more drag at any given speed, so drag equals weight sooner, at a lower speed.');
+F('CH-F04', 'chal', 55, 'A skydiver jumps from a plane and falls until reaching terminal velocity. Which describes the speed over time?', 'It increases at first, then levels off',
+  [['It stays constant from the start', 'At the start the skydiver is speeding up because gravity is greater than air resistance.'],
+   ['It increases forever', 'Air resistance grows with speed until it balances gravity, so the speed stops increasing.'],
+   ['It decreases the whole time', 'Gravity pulls the skydiver faster at the start, so the speed increases.']],
+  'Drag grows as speed grows. When drag equals the weight, the speed levels off.');
+F('CH-F05', 'chal', 55, 'What happens to the air resistance on a falling object as it speeds up?', 'It increases',
+  [['It decreases', 'Faster motion through air means more air resistance.'],
+   ['It stays zero', 'Air resistance exists whenever an object moves through air, and it grows with speed.'],
+   ['It stays the same regardless of speed', 'Air resistance grows as the object speeds up.']],
+  'Air resistance increases with speed, which is why a falling object eventually reaches terminal velocity.');
+
+/* ---- units/8-forces/14-bank-test-language.js ---- */
+'use strict';
+/* ===== Questions written in the same language as the unit test (constant, neglecting, simultaneously,
+   at its maximum height, "Choices A and B" ...). New IDs only: appended to the registry. ===== */
+
+/* Net force when velocity is zero (the "maximum height" trap) */
+T('NET-T4', 'net', 70, 'Net force at the top of a throw', function () {
+  for (let tries = 0; tries < 100; tries++) {
+    const W = pick([2, 3, 4, 6, 8, 12, 15]) + pick([0, 0.5]);
+    if (W === 5 || W === 9.8) continue;
+    const o = pick(['rock', 'tennis ball', 'water bottle', 'apple']);
+    const when = pick(['at its highest point, where it stops for an instant', 'as it rises toward its highest point', 'just before it lands, as it falls back down']);
+    const w = W.toFixed(1);
+    return {
+      prompt: 'A student tosses a ' + w + '-newton ' + o + ' straight up. Ignoring air resistance, what is the net force on the ' + o + ' ' + when + '?',
+      right: w + ' N, down',
+      wrongs: [['0.0 N', 'A speed of zero for an instant does not make the net force zero. Gravity still pulls on the ' + o + ', so the net force is its weight.'],
+               [w + ' N, up', 'Nothing pushes the ' + o + ' up after it leaves the hand. The only force is gravity, which points down.'],
+               ['9.8 N, down', '9.8 m/s\u00b2 is the acceleration due to gravity, not a force. The net force is the ' + o + '\u2019s weight, ' + w + ' N.']],
+      explain: 'With air resistance ignored, gravity is the only force acting on the ' + o + ' the whole time, whether it is rising, stopped for an instant, or falling. The net force is its weight, ' + w + ' N, downward.',
+      meta: { W: w }
+    };
+  }
+  throw new Error('NET-T4');
+});
+
+/* Acceleration constant, speed changing */
+T('FFL-T4', 'fall', 60, 'Acceleration and speed during free fall', function () {
+  const falling = rand() < 0.5;
+  if (falling) {
+    const o = pick(['flower pot', 'rock', 'apple', 'water balloon']), from = pick(['a balcony', 'a cliff', 'a tree branch', 'a rooftop']);
+    return {
+      prompt: 'A ' + o + ' starts from rest and falls freely from ' + from + ' to the ground. As the ' + o + ' falls, its acceleration',
+      right: 'is constant and its speed increases',
+      wrongs: [['increases and its speed increases', 'In free fall the acceleration stays at g. Only the speed increases.'],
+               ['increases and its speed is constant', 'In free fall the speed keeps increasing, and the acceleration stays constant.'],
+               ['is constant and its speed is constant', 'The speed increases by about 9.8 m/s every second. The acceleration is the part that stays constant.']],
+      explain: 'Gravity is the only force, so the acceleration is constant (g). A constant acceleration means the speed grows by the same amount each second.', meta: { falling: true }
+    };
+  }
+  const o = pick(['baseball', 'rock', 'tennis ball', 'bean bag']);
+  return {
+    prompt: 'A ' + o + ' is thrown straight up and rises toward its highest point. Neglecting air resistance, as it rises, its acceleration',
+    right: 'is constant and its speed decreases',
+    wrongs: [['decreases and its speed decreases', 'The acceleration does not shrink. Gravity pulls with the same force the whole way, so the acceleration stays at g.'],
+             ['is zero and its speed decreases', 'The acceleration is not zero. Gravity gives it an acceleration of g, downward, even while it slows.'],
+             ['is constant and its speed is constant', 'The upward speed decreases because gravity pulls against the motion.']],
+    explain: 'Gravity is the only force, so the acceleration is constant (g, downward). It points against the upward motion, so the speed decreases.', meta: { falling: false }
+  };
+});
+
+/* Mass on a planet whose g is not given */
+T('WGT-T5', 'wgt', 65, 'Mass on a planet with no g given', function () {
+  for (let tries = 0; tries < 200; tries++) {
+    const p1 = pick(['Mars', 'Moon', 'Jupiter']), g1 = PLANETS[p1], p2 = pick(['Saturn', 'Jupiter', 'Moon', 'Mars'].filter(x => x !== p1));
+    const m = ri(5, 90) / 10, W = Number((m * g1).toPrecision(3)), o = pick(['pint of ice cream', 'bag of flour', 'science textbook', 'rock sample']);
+    const ans = W / g1, vals = [ans, W * g1, W / 9.8];
+    const s = vals.map(v => fmt(v, 3));
+    if (new Set(s).size < 3) continue;
+    if (Math.abs(vals[1] - ans) / ans < 0.06 || Math.abs(vals[2] - ans) / ans < 0.06) continue;
+    return {
+      prompt: 'A ' + o + ' weighs ' + fmt(W, 3) + ' N on ' + p1 + ' (g = ' + g1 + ' m/s\u00b2). The value of g on ' + p2 + ' is not given. What is the mass of the ' + o + ' on ' + p2 + '?',
+      right: s[0] + ' kg',
+      wrongs: [['It cannot be found because g for ' + p2 + ' is not given', 'Mass does not depend on location, so you do not need g for ' + p2 + '. Find the mass from the weight and g on ' + p1 + '.'],
+               [s[1] + ' kg', 'To find mass from weight, divide: m = W \u00f7 g. Multiplying gives a number that is much too big.'],
+               [s[2] + ' kg', 'The weight was measured on ' + p1 + ', so divide by the g for ' + p1 + ', not Earth\u2019s g.']],
+      explain: 'Mass is the same everywhere. m = W \u00f7 g = ' + fmt(W, 3) + ' N \u00f7 ' + g1 + ' m/s\u00b2 = ' + s[0] + ' kg on ' + p1 + ', and also on ' + p2 + '.',
+      meta: { W: W, g1: g1 }
+    };
+  }
+  throw new Error('WGT-T5');
+});
+
+/* Coefficient of kinetic friction from a pull at constant velocity (weight given in newtons) */
+T('FRI-T4', 'fric', 60, 'Find the coefficient of kinetic friction', function () {
+  for (let tries = 0; tries < 300; tries++) {
+    const W = pick([80, 90, 100, 150, 160, 200, 250, 300]), mu = pick([0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.6]);
+    const F_ = W * mu;
+    if (Math.abs(F_ - Math.round(F_)) > 1e-9 || (W === 120 && F_ === 48)) continue;
+    const vals = [F_ / W, W / F_, F_ / (W * 9.8), (W - F_) / W];
+    const s = [vals[0].toFixed(2), vals[1].toFixed(2), vals[2].toFixed(3), vals[3].toFixed(2)];
+    if (new Set(s).size < 4) continue;
+    const o = pick(['crate', 'box', 'trunk', 'sled']);
+    return {
+      prompt: 'A ' + F_ + '-newton horizontal force pulls a ' + W + '-newton ' + o + ' across a level floor at constant velocity. What is the coefficient of kinetic friction between the ' + o + ' and the floor?',
+      right: s[0],
+      wrongs: [[s[1], 'This flipped the ratio. \u03bc = friction \u00f7 weight, with the weight on the bottom.'],
+               [s[2], 'The weight is already in newtons, so there is no need to multiply by g again.'],
+               [s[3], 'That subtracts instead of dividing. At constant velocity the friction equals the pull, so \u03bc = ' + F_ + ' \u00f7 ' + W + '.']],
+      explain: 'Constant velocity means the net force is zero, so kinetic friction equals the pull: ' + F_ + ' N. Then \u03bc = F\u1d63 \u00f7 W = ' + F_ + ' \u00f7 ' + W + ' = ' + s[0] + '.',
+      meta: { W: W, F: F_ }
+    };
+  }
+  throw new Error('FRI-T4');
+});
+
+/* Which scenario could this free-body diagram represent? (includes the "Choices A and B" answer) */
+const FBD4_K = {
+  bal:  () => [_F('Fg', 'down', 2, 'Earth'), _F('FN', 'up', 2), _F('Fapp', 'right', 2), _F('FFr', 'left', 2)],
+  acc:  () => [_F('Fg', 'down', 2, 'Earth'), _F('FN', 'up', 2), _F('Fapp', 'right', 4), _F('FFr', 'left', 2)],
+  slow: () => [_F('Fg', 'down', 2, 'Earth'), _F('FN', 'up', 2), _F('FFr', 'left', 2)],
+  hang: () => [_F('FT', 'up', 2), _F('Fg', 'down', 2, 'Earth')],
+  fall: () => [_F('Fg', 'down', 2, 'Earth')]
+};
+const FBD4_S = [
+  { id: 'static', kind: 'bal', t: 'A person pushes a heavy box to the right, but the box does not move.', why: 'the push equals the static friction, so the net force is zero' },
+  { id: 'drag', kind: 'bal', t: 'A sled is dragged to the right across snow at a constant velocity.', why: 'the pull equals the friction, so the net force is zero' },
+  { id: 'speed', kind: 'acc', t: 'A car speeds up to the right while friction acts against it.', why: 'the applied force is greater than friction, so the net force points right' },
+  { id: 'cart', kind: 'acc', t: 'A shopping cart is pushed to the right and speeds up. Friction acts against it.', why: 'the push is greater than friction, so the net force points right' },
+  { id: 'coast', kind: 'slow', t: 'A hockey puck slides to the right across a rough floor and slows down. Nobody is touching it.', why: 'only friction acts sideways, so the net force points left' },
+  { id: 'roll', kind: 'slow', t: 'A soccer ball rolls to the right across carpet and slows to a stop.', why: 'only friction acts sideways, so the net force points left' },
+  { id: 'hang', kind: 'hang', t: 'A lamp hangs at rest from a chain.', why: 'only the chain\u2019s pull and gravity act, and they balance' },
+  { id: 'lift', kind: 'hang', t: 'An elevator hangs from its cable and moves upward at a constant speed.', why: 'only the cable\u2019s pull and gravity act, and they balance' },
+  { id: 'drop', kind: 'fall', t: 'A coconut falls from a tree. Ignore air resistance.', why: 'only gravity acts, so the net force points down' },
+  { id: 'toss', kind: 'fall', t: 'A ball moves upward just after it leaves a thrower\u2019s hand. Ignore air resistance.', why: 'only gravity acts, so the net force points down' }
+];
+T('FBD-T4', 'fbd', 65, 'Which scenario could this diagram show?', function () {
+  const kind = pick(Object.keys(FBD4_K));
+  const fit = FBD4_S.filter(s => s.kind === kind), non = FBD4_S.filter(s => s.kind !== kind);
+  const compound = rand() < 0.6;
+  let s3, correct;
+  if (compound) { const f2 = shuffle(fit).slice(0, 2); s3 = [f2[0], f2[1], pick(non)]; correct = 3; }
+  else { const f1 = pick(fit), ns = shuffle(non).slice(0, 2), p = ri(0, 2); s3 = []; let ni = 0; for (let i = 0; i < 3; i++) s3.push(i === p ? f1 : ns[ni++]); correct = p; }
+  const L = ['A', 'B', 'C'];
+  const ordered = s3.map((s, i) => {
+    const fits = s.kind === kind;
+    let why = '';
+    if (i !== correct) why = fits ? 'This scenario does fit the diagram, but so does the other one in Choices A and B. The best answer is "Choices A and B."'
+      : 'In this scenario ' + s.why + ', which does not match the arrows in the diagram.';
+    return { html: s.t, ok: i === correct, why: why };
+  });
+  const dOk = correct === 3;
+  const dWhy = dOk ? '' : (s3[0].kind !== kind && s3[1].kind !== kind ? 'Neither A nor B matches the diagram.' : 'Only one of A and B matches the diagram, so "Choices A and B" is not right.');
+  ordered.push({ html: 'Choices A and B', ok: dOk, why: dWhy });
+  const fs = FBD4_K[kind]();
+  const rightScenarios = dOk ? 'both ' + L[0] + ' and ' + L[1] : 'only ' + L[correct];
+  return {
+    prompt: 'Which of these situations could the free-body diagram shown below represent?<div class="figure">' + fbd(fs) + '</div>',
+    ordered: ordered,
+    explain: 'Read the arrows first. ' + (kind === 'bal' ? 'The arrows are balanced both ways, so the net force is zero.' : kind === 'acc' ? 'The arrow to the right is longer than friction, so the net force points right.' : kind === 'slow' ? 'Only friction acts sideways, so the net force points left, against the motion.' : kind === 'hang' ? 'The up and down arrows balance, so the net force is zero.' : 'Gravity is the only force, so the net force points down.') + ' This diagram fits ' + rightScenarios + '.',
+    meta: { kind: kind, texts: s3.map(s => s.t), correct: correct, forces: fs }
+  };
+});
+
+F('TYP-F09', 'types', 35, 'Dynamics is the part of physics that studies', 'why objects move: the forces that cause changes in motion',
+  [['how objects move: describing position, speed, and acceleration without the forces', 'That describes kinematics. Dynamics asks what forces cause the motion to change.'],
+   ['where objects are located', 'Location is only part of describing motion. Dynamics is about the forces behind the motion.'],
+   ['only the energy stored in moving objects', 'Dynamics is about forces and how they change motion, not only energy.']],
+  'Kinematics describes how things move. Dynamics explains why: forces change motion.');
+F('FFL-F09', 'fall', 55, 'A bowling ball and a golf ball are released simultaneously from the same height above the ground. Which statement is true if air resistance is neglected?',
+  'They both accelerate at the same rate because the ratio of weight to mass is the same for both',
+  [['The bowling ball accelerates faster because it has more mass', 'The bowling ball has more weight, but it also has more mass, so the extra weight is used up accelerating the extra mass.'],
+   ['The golf ball accelerates faster because it has less mass', 'Less mass does not mean faster acceleration in free fall, because gravity pulls less on a smaller mass.'],
+   ['The bowling ball accelerates more slowly because it has more inertia', 'More inertia is balanced by more gravitational force. The two effects cancel.']],
+  'a = Fg \u00f7 m = mg \u00f7 m = g. The mass cancels, so every object in free fall has the same acceleration.');
+
+/* ---- units/8-forces/20-content.js ---- */
+'use strict';
+/* ======================= STUDY NOTES (vocabulary matches the unit notes) ======================= */
+const NOTES = {
+  types: [
+    'A <b>force</b> is a push or pull on an object that comes from its interaction with another object. Forces are measured in <b>newtons (N)</b>. One newton gives 1 kg an acceleration of 1 m/s\u00b2.',
+    '<b>Applied force (F<sub>app</sub>)</b>: a contact force involving direct pushing or pulling.',
+    '<b>Tension force (F<sub>T</sub>)</b>: a contact force involving pulling, such as a rope, string, or chain.',
+    '<b>Normal force (F<sub>N</sub>)</b>: a contact force involving the support of an object, such as a table under a book.',
+    '<b>Frictional force (F<sub>Fr</sub>)</b>: a contact force that slows down motion.',
+    '<b>Spring force (F<sub>spring</sub>)</b>: a contact force from compressing or stretching a spring.',
+    '<b>Gravitational force (F<sub>g</sub>)</b>: the <b>non-contact</b> force of attraction between two objects with mass. It is the one force on this list that acts without touching.',
+    'A force that <b>acts at a distance</b> works <b>without contact</b>. Gravity does. Applied, tension, normal, friction, and spring forces all need contact.',
+    '<b>Dynamics</b> is the study of <b>why</b> objects move: the forces that change motion. (Kinematics describes <b>how</b> they move.)'
+  ],
+  fbd: [
+    'A free-body diagram shows every force acting on one object.',
+    '1. Identify the object of interest. If there are several objects, draw one diagram for each.',
+    '2. Identify all forces acting directly on the object, and the object exerting each one.',
+    '3. Draw a dot or box for the object.',
+    '4. Draw an arrow for each force, pointing in the direction the force acts <b>on</b> the object. Label each arrow with the type of force and its source. A longer arrow means a stronger force.',
+    '<b>Common slips:</b> drawing a \u201cforce of motion\u201d (motion is not a force), leaving out the normal force or gravity, and drawing friction in the same direction as the motion. After something leaves your hand, there is no applied force anymore.'
+  ],
+  net: [
+    'The <b>net force</b> is the combination of all the forces acting on an object.',
+    '<b>Same direction:</b> add the forces. 200 N + 100 N = 300 N in that direction.',
+    '<b>Opposite directions:</b> pick a reference direction. Forces that point that way are positive and forces that point the other way are negative. Add them: 200 N + (\u2212100 N) = 100 N.',
+    '<b>Balanced forces</b> combine to make a net force of zero. They do not change the motion.',
+    '<b>Unbalanced forces</b> combine to make a net force that is not zero. They change the velocity: the speed, the direction, or both.',
+    '<b>Watch out:</b> a speed of zero does not mean a net force of zero. A ball thrown straight up stops for an instant at the top, but gravity still pulls on it, so the net force is its weight, downward.'
+  ],
+  grav: [
+    '<b>Gravity</b> is an attractive force that exists between all objects that have mass. <b>Mass</b> is the amount of matter in an object.',
+    'If the mass increases, the force of gravity increases. If the distance between the objects increases, the force of gravity decreases.',
+    '<b>Newton\u2019s law of universal gravitation:</b> F<sub>G</sub> = G m<sub>1</sub>m<sub>2</sub> \u00f7 r\u00b2. The force is proportional to the product of the masses and inversely proportional to the square of the distance. Doubling the distance makes the force one-fourth as big.',
+    '<b>Same force, different effect:</b> the gravitational force between two objects is the SAME on each, but the effect (acceleration) depends on mass. Earth pulls on you and you pull on Earth with equal force, but Earth\u2019s huge mass means it barely accelerates.'
+  ],
+  wgt: [
+    '<b>Mass</b> (kg) is the amount of matter in an object. It is the same everywhere.',
+    '<b>Weight</b> (N) is the gravitational force exerted on an object: <b>W = F<sub>g</sub> = mg</b>.',
+    '<b>g</b> is the acceleration due to gravity. It is different on each planet, so weight changes with location. Earth 9.8 m/s\u00b2 (9.81 is also fine), Moon 1.62, Mars 3.7, Jupiter 23.1, Saturn 9.0.',
+    '<b>Use the g for the place where the weight is measured.</b> To find a mass from a weight, divide by that place\u2019s g. Then use the mass, which does not change, to find the weight somewhere else.'
+  ],
+  fall: [
+    '<b>Free fall:</b> if no other forces act on an object, it falls at the g value for its location. On Earth, that is about 9.8 m/s\u00b2. Without significant air resistance, objects dropped from the same height at the same time land at the same time.',
+    'For an object dropped from rest: <b>v = g \u00d7 t</b>. In general, v<sub>2</sub> = v<sub>1</sub> + (g \u00d7 t).',
+    'A falling book is a good example of free fall. A flat sheet of paper is not, because air resistance is large compared with its weight.',
+    'On the Moon there is no air, so a hammer and a feather dropped together hit the ground at the same time.'
+  ],
+  fric: [
+    '<b>Friction</b> is a force that acts between two solid surfaces when we try to move an object. It generally impedes motion. It acts parallel to the surface, perpendicular to the normal force.',
+    '<b>Static friction</b> makes it difficult to start moving an object. It grows to match the applied force until the object finally starts to move. The push must be greater than the maximum static friction: F<sub>Fr</sub> \u2264 \u03bc<sub>s</sub>W.',
+    '<b>Kinetic (sliding) friction</b> acts on a moving object. It does not change in value once the object is moving: F<sub>Fr</sub> = \u03bc<sub>k</sub>W. If you stop pushing, it slows the object to a stop.',
+    '<b>\u03bc</b> is the coefficient of friction. A bigger \u03bc means more friction. \u03bc<sub>s</sub> is larger than \u03bc<sub>k</sub>, which is why starting takes more force than keeping going.',
+    '<b>Fluid friction</b> is friction between a surface and a fluid such as air or water. Air resistance is an example. More surface area facing the fluid means more fluid friction. Lubricants like oil or soap reduce friction.'
+  ],
+  n1: [
+    '<b>Newton\u2019s first law:</b> if the net force on an object is zero, the motion of the object does not change. At rest stays at rest. Moving keeps the same speed and direction.',
+    '<b>Inertia</b> is the tendency of an object to resist a change in its motion. More mass means more inertia.',
+    'Objects stop moving because friction or another force acts on them. With no friction, a moving object would keep going at the same speed in the same direction.',
+    'When a car stops suddenly, a passenger keeps moving forward because of inertia.',
+    '<b>Words that mean \u201cnot changing\u201d:</b> constant, uniform, and steady. Constant velocity means no acceleration, so the net force is zero, the same as for an object at rest.'
+  ],
+  n2: [
+    '<b>Newton\u2019s second law:</b> the acceleration of an object is equal to the net force acting on it divided by its mass. <b>a = F \u00f7 m</b>.',
+    'The acceleration points in the same direction as the net force.',
+    '1 newton = 1 kg\u00b7m/s\u00b2.',
+    'Use the NET force, not just one of the forces. Double the net force and the acceleration doubles. Double the mass and the acceleration is cut in half.'
+  ],
+  n3: [
+    '<b>Newton\u2019s third law:</b> when one object exerts a force on a second object, the second object exerts a force of the same size but in the opposite direction on the first object.',
+    'A <b>force pair</b> is the forces two objects apply to each other. One is the action force and the other is the reaction force.',
+    'Force pairs do <b>not</b> cancel because each force acts on a <b>different object</b>.',
+    'Examples: a swimmer pushes the water back and the water pushes the swimmer forward. A jumper pushes down on the ground and the ground pushes up. A rocket pushes gas down and the gas pushes the rocket up.'
+  ],
+  chal: [
+    '<b>Terminal velocity</b> is the constant velocity reached when air resistance (drag) equals the force of gravity on a falling object. At that point the net force is 0 N, so the acceleration is 0 m/s\u00b2.',
+    'A bigger canopy has more drag at the same speed, so a parachute reaches a slower terminal velocity.',
+    'The universal gravitation formula F = G m\u2081m\u2082 \u00f7 r\u00b2 uses G = 6.67 \u00d7 10<sup>\u221211</sup> N\u00b7m\u00b2/kg\u00b2. Putting in Earth\u2019s mass and radius gives g = 9.8 m/s\u00b2.'
+  ]
+};
+
+/* ======================= TEST TIPS ======================= */
+const TIPS = [
+  ['Read the whole question first', 'Underline what it asks for. A question about weight and a question about mass can look almost the same.'],
+  ['Cover the choices, then try to answer', 'Make your own answer before you look at the options. It keeps tempting wrong choices from steering you.'],
+  ['Eliminate what you know is wrong', 'Crossing out two choices turns a guess into a 50-50. Wrong choices often fall into patterns: the wrong operation, the wrong direction, or the wrong planet.'],
+  ['Sketch a free-body diagram', 'For any question about forces, draw the dot and the arrows on scrap paper. Check each arrow: is something touching or pulling the object that way?'],
+  ['Watch for the \u201cforce of motion\u201d trap', 'Motion is not a force. If an arrow only describes where the object is going, it does not belong.'],
+  ['Check units and what the answer should be', 'Weight is in N, mass is in kg, g is in m/s\u00b2. Does the answer make sense? Things weigh less on the Moon than on Earth.'],
+  ['Which g?', 'Use the g for the planet in the question. To go from a weight to a mass, divide by THAT planet\u2019s g. Then use the mass for any other planet.'],
+  ['Net force means add with direction', 'Pick a reference direction. Forces in opposite directions subtract. Equal and opposite means net force zero.'],
+  ['Same force does not mean same effect', 'In a force pair the forces are equal. The accelerations are different when the masses are different.'],
+  ['Change an answer only for a reason', 'Your first idea is often right. Change it only if you find a specific mistake.'],
+  ['Decode the wording', 'Constant, uniform, and steady all mean \u201cnot changing.\u201d Constant velocity means zero acceleration and a net force of zero. \u201cNeglecting\u201d or \u201cignoring\u201d air resistance means gravity is the only force. \u201cSimultaneously\u201d means at the same time. \u201cFree fall\u201d means only gravity acts. \u201cAt a distance\u201d means without contact.'],
+  ['Zero speed is not zero force', 'At the top of a throw an object stops for an instant, but gravity is still pulling. Net force depends on the forces, not on the speed.'],
+  ['Look for \u201cChoices A and B\u201d', 'When one choice says \u201cChoices A and B,\u201d check A and B separately. If both fit, that choice is the best answer. If only one fits, it is not.'],
+  ['Use your confidence', 'If you were sure and still missed it, slow down: that is a misunderstanding worth fixing, not a typo.']
+];
+
+/* ======================= WRITTEN-RESPONSE PRACTICE (ungraded) ======================= */
+const WRITTEN = [
+  { title: 'Why doesn\u2019t Earth move?',
+    prompt: 'Drew lifts a 0.5 kg textbook off a desk. Earth pulls down on the book with a force of 4.9 N. Does the book pull on Earth? Explain why Drew never sees or feels Earth move.',
+    approaches: ['Start with Newton\u2019s third law: forces come in pairs.', 'Use a = F \u00f7 m for Earth and compare the mass of Earth to the mass of the book.'],
+    sample: 'Yes. The book pulls up on Earth with a force of 4.9 N, the same size as Earth\u2019s pull on the book, but in the opposite direction. Even though the forces are equal, the effects are different. Acceleration equals force divided by mass, and Earth\u2019s mass is enormous, so a 4.9 N force gives Earth an acceleration that is basically zero. That is why nobody sees Earth move.',
+    why: ['It answers the yes/no part first.', 'It names the equal and opposite forces.', 'It connects to a = F \u00f7 m and explains the effect, not just the force.'] },
+  { title: 'Hammer and paper on the Moon',
+    prompt: 'On the Moon, an astronaut drops a wrench and a sheet of paper from the same height at the same time. Predict what happens and explain it using forces.',
+    approaches: ['Say what forces act on each object on the Moon.', 'Explain what air resistance does and whether the Moon has any.'],
+    sample: 'They land at the same time. The Moon has no air, so there is no air resistance. The only force on each object is gravity, which is free fall, and gravity gives every object the same acceleration, 1.62 m/s\u00b2. The wrench weighs more, but it also has more mass, so the acceleration is the same.',
+    why: ['It makes a clear prediction.', 'It names the force that is missing (air resistance) and the one that is left (gravity).', 'It explains why weight does not change the acceleration.'] },
+  { title: 'Action-reaction pairs when kicking',
+    prompt: 'Describe two action-reaction pairs when a player kicks a soccer ball.',
+    approaches: ['Name the two objects in each pair.', 'State the direction of each force and say they are the same size.'],
+    sample: 'Pair 1: the foot pushes forward on the ball, and the ball pushes backward on the foot with a force of the same size. Pair 2: the foot pushes down on the ground when the player plants it, and the ground pushes up on the foot. In each pair the forces are equal and opposite and act on different objects.',
+    why: ['Each pair names two objects and both directions.', 'It says the forces are equal in size.', 'It notes they act on different objects.'] },
+  { title: 'Pushing off the pool wall',
+    prompt: 'A swimmer pushes off the wall to start a lap. Explain how this shows Newton\u2019s third law of motion.',
+    approaches: ['Identify the action force and its direction.', 'Identify the reaction force and what it does to the swimmer.'],
+    sample: 'The swimmer pushes backward on the wall, which is the action force. By Newton\u2019s third law, the wall pushes forward on the swimmer with a force of the same size in the opposite direction. This reaction force acts on the swimmer, so the net force is forward and the swimmer accelerates away from the wall.',
+    why: ['Action and reaction are both stated with directions.', 'It points out which object each force acts on.', 'It links the reaction force to the swimmer\u2019s acceleration.'] },
+  { title: 'What do the arrows say about speed?',
+    prompt: 'A sled slides to the right. Its free-body diagram has a 3-unit arrow to the right (applied) and a 3-unit arrow to the left (friction). The up and down arrows are equal. What is happening to the sled\u2019s speed? How do you know from the arrows?',
+    approaches: ['Compare the two horizontal arrows.', 'Say what the net force is and use Newton\u2019s first law.'],
+    sample: 'The sled\u2019s speed is staying constant. The arrow to the right and the arrow to the left are the same length, so the forces are balanced and the net force is zero. By Newton\u2019s first law, a moving object with no net force keeps moving at the same speed in the same direction.',
+    why: ['It answers with a clear claim.', 'It cites evidence from the arrows.', 'It names the law that supports the claim.'] },
+  { title: 'Starting vs. keeping it moving',
+    prompt: 'It takes a big push to start sliding a heavy bookcase, but a smaller push keeps it sliding. Explain why using static and kinetic friction.',
+    approaches: ['Say which kind of friction acts before and after it starts moving.', 'Compare the sizes of the two kinds of friction.'],
+    sample: 'Before the bookcase moves, static friction acts. It grows to match your push until it reaches its limit, so you must push harder than that limit to start the motion. After it starts sliding, kinetic friction acts. Kinetic friction is smaller than the maximum static friction, so a smaller push can keep the bookcase moving.',
+    why: ['It names both kinds of friction and when each one acts.', 'It compares their sizes.', 'It explains the push needed in each case.'] },
+  { title: 'Falling sloth: could it be on Earth?',
+    prompt: 'A sloth with a mass of 4.0 kg has 36 N of gravitational force acting on it as it falls. Ignoring air resistance, determine its acceleration. Could the sloth be falling on Earth? Briefly explain. Then explain how a parachute would change the acceleration.',
+    approaches: ['Use a = F \u00f7 m and show units.', 'Compare your answer with g on Earth (9.8 m/s\u00b2).', 'For the parachute, think about which forces act and what the net force becomes.'],
+    sample: 'a = F \u00f7 m = 36 N \u00f7 4.0 kg = 9.0 m/s\u00b2. No, the sloth is not falling on Earth, because the acceleration due to gravity on Earth is 9.8 m/s\u00b2, which is different from 9.0 m/s\u00b2. With a parachute there is an upward air resistance force, so the net force is smaller than the gravitational force. By Newton\u2019s second law the acceleration would be smaller than 9.0 m/s\u00b2.',
+    why: ['It shows the formula, the substitution, and the unit.', 'It compares the answer with a known value before deciding.', 'It explains the parachute using net force and the second law.'] },
+  { title: 'Static or kinetic friction? Fill in the table',
+    prompt: 'A 30 kg crate sits on the floor. \u03bcs = 0.50 and \u03bck = 0.30 (use g = 9.8 m/s\u00b2). For horizontal pushes of 90 N, 160 N, and 300 N, give the type and size of the friction force.',
+    approaches: ['Find the weight first, then the maximum static friction.', 'Compare each push with the maximum static friction.', 'If it slides, use the kinetic friction formula.'],
+    sample: 'W = mg = 30 \u00d7 9.8 = 294 N. Maximum static friction = \u03bcs W = 0.50 \u00d7 294 = 147 N. 90 N: less than 147 N, so the crate does not move. Static friction, 90 N. 160 N: more than 147 N, so the crate slides. Kinetic friction = \u03bck W = 0.30 \u00d7 294 = 88 N. 300 N: it slides, so kinetic friction, 88 N again.',
+    why: ['It finds the weight before using the friction formulas.', 'It compares each push with the maximum static friction.', 'It notes that kinetic friction is the same for 160 N and 300 N.'] },
+  { title: 'The bus stops suddenly',
+    prompt: 'A bus brakes quickly and the standing passengers lurch forward. Explain why using Newton\u2019s first law and inertia.',
+    approaches: ['Say what force acts on the bus and what force acts on the passengers.', 'Define inertia in your answer.'],
+    sample: 'The brakes and road exert an unbalanced force on the bus, so the bus slows down. The passengers are not attached to the bus, so no unbalanced force acts on them right away. Because of inertia, they tend to keep moving forward at the same speed, so they lurch forward as the bus slows underneath them.',
+    why: ['It separates what happens to the bus from what happens to the passengers.', 'It uses the word inertia correctly.', 'It connects to Newton\u2019s first law.'] },
+  { title: 'Mass vs. weight on Mars',
+    prompt: 'An astronaut travels from Earth to Mars. What happens to her mass and her weight? Explain.',
+    approaches: ['Define mass and weight.', 'Use W = mg with the g of each planet.'],
+    sample: 'Her mass stays the same because mass is the amount of matter in her. Her weight gets smaller because weight is the gravitational force, W = mg, and g on Mars (3.7 m/s\u00b2) is smaller than g on Earth (9.8 m/s\u00b2). The same mass multiplied by a smaller g gives a smaller weight.',
+    why: ['It defines both quantities.', 'It uses the equation with real values.', 'It states what changes and what does not.'] }
+];
+
+/* ---- units/8-forces/registry.generated.js ---- */
+'use strict';
+/* GENERATED by build.py from registry.lock.json. Append-only. Do not edit. */
+const REGISTRY = ["TYP-T1", "TYP-F01", "TYP-F02", "TYP-F03", "TYP-F04", "TYP-F05", "TYP-F06", "TYP-F07", "TYP-F08", "FBD-T1", "FBD-T2", "FBD-T3", "FBD-F01", "FBD-F02", "FBD-F03", "FBD-F04", "FBD-F05", "FBD-F06", "NET-T1", "NET-T2", "NET-T3", "NET-F01", "NET-F02", "NET-F03", "NET-F04", "NET-F05", "NET-F06", "GRV-T1", "GRV-F01", "GRV-F02", "GRV-F03", "GRV-F04", "GRV-F05", "GRV-F06", "GRV-F07", "GRV-F08", "GRV-F09", "WGT-T1", "WGT-T2", "WGT-T3", "WGT-T4", "WGT-F01", "WGT-F02", "WGT-F03", "WGT-F04", "WGT-F05", "WGT-F06", "WGT-F07", "WGT-F08", "FFL-T1", "FFL-T2", "FFL-T3", "FFL-F01", "FFL-F02", "FFL-F03", "FFL-F04", "FFL-F05", "FFL-F06", "FFL-F07", "FFL-F08", "FRI-T1", "FRI-T2", "FRI-T3", "FRI-F01", "FRI-F02", "FRI-F03", "FRI-F04", "FRI-F05", "FRI-F06", "FRI-F07", "FRI-F08", "FRI-F09", "FRI-F10", "FRI-F11", "FRI-F12", "N1-F01", "N1-F02", "N1-F03", "N1-F04", "N1-F05", "N1-F06", "N1-F07", "N1-F08", "2ND-T1", "2ND-T2", "2ND-T3", "2ND-T4", "N2-F01", "N2-F02", "N2-F03", "N2-F04", "N2-F05", "N2-F06", "N3-T1", "N3-F01", "N3-F02", "N3-F03", "N3-F04", "N3-F05", "N3-F06", "N3-F07", "N3-F08", "N3-F09", "CH-T1", "CH-T2", "CH-F01", "CH-F02", "CH-F03", "CH-F04", "CH-F05", "NET-T4", "FFL-T4", "WGT-T5", "FRI-T4", "FBD-T4", "TYP-F09", "FFL-F09"];
+
+/* ---- engine/40-engine.js ---- */
+'use strict';
+/* ======================= STUDENT STATE (stored on the student's device) ======================= */
+const MEM = {};   // fallback store when localStorage is unavailable (and in tests)
+function _store() { try { if (typeof localStorage !== 'undefined') { localStorage.setItem('__t', '1'); localStorage.removeItem('__t'); return localStorage; } } catch (e) {} return null; }
+const STORE = _store();
+function lsGet(k) { try { return STORE ? STORE.getItem(k) : (k in MEM ? MEM[k] : null); } catch (e) { return null; } }
+function lsSet(k, v) { try { if (STORE) STORE.setItem(k, v); else MEM[k] = v; } catch (e) { MEM[k] = v; } }
+const STATE_KEY = 'review:' + UNIT.grade + ':' + UNIT.id + ':student';
+const CLASS_KEY = 'review:' + UNIT.grade + ':' + UNIT.id + ':class-test-mode';
+
+function newState() { return { v: 1, keys: {}, pre: {}, post: {}, last: {}, conf: {}, scope: null }; }
+let S = newState();
+function loadState() {
+  try { const raw = lsGet(STATE_KEY); if (raw) { const o = JSON.parse(raw); if (o && o.v === 1) S = Object.assign(newState(), o); } } catch (e) { S = newState(); }
+  return S;
+}
+function saveState() { lsSet(STATE_KEY, JSON.stringify(S)); }
+function recordLocal(key, correct, assisted, conf) {
+  const k = S.keys[key] || (S.keys[key] = [0, 0]);
+  k[0] += 1; if (!correct || assisted === 'how') k[1] += 1;
+  S.last[key] = (correct && assisted !== 'how') ? 1 : 0;
+  if (conf) S.conf[key] = conf;
+  saveState();
+}
+
+/* ======================= CLASS STATS (anonymous counters) =======================
+   Test mode: counters live on this device only, so the Insights page works before Firebase is connected.
+   Live mode: set FIREBASE_URL (see README) and counters go to /review/{grade}/{unit}/{itemId}. No student identifier is ever sent. */
+const FIREBASE_URL = '';      // e.g. 'https://YOUR-DATABASE.firebaseio.com' (set during setup)
+const LIVE = !!FIREBASE_URL;
+let CLASS = {};               // { key: [attempts, misses] }
+function loadClassLocal() { try { const raw = lsGet(CLASS_KEY); CLASS = raw ? JSON.parse(raw) : {}; } catch (e) { CLASS = {}; } }
+function reportClass(key, correct) {
+  if (!LIVE) { const c = CLASS[key] || (CLASS[key] = [0, 0]); c[0] += 1; if (!correct) c[1] += 1; lsSet(CLASS_KEY, JSON.stringify(CLASS)); return; }
+  const body = { attempts: { '.sv': { increment: 1 } } };
+  if (!correct) body.misses = { '.sv': { increment: 1 } };
+  try { fetch(FIREBASE_URL + '/review/' + UNIT.grade + '/' + UNIT.id + '/' + key + '.json', { method: 'PATCH', body: JSON.stringify(body), keepalive: true }).catch(function () {}); } catch (e) {}
+}
+async function refreshClass() {
+  if (!LIVE) { loadClassLocal(); return 'test'; }
+  try {
+    const r = await fetch(FIREBASE_URL + '/review/' + UNIT.grade + '/' + UNIT.id + '.json');
+    const o = await r.json(); CLASS = {};
+    Object.keys(o || {}).forEach(k => { CLASS[k] = [o[k].attempts || 0, o[k].misses || 0]; });
+    return 'live';
+  } catch (e) { return 'offline'; }
+}
+
+/* ======================= DIFFICULTY (0 to 100) ======================= */
+function priorOf(key) { return QDEFS.byKey[key].prior; }
+function difficulty(key) {
+  const c = CLASS[key] || [0, 0];
+  return Math.round(100 * (c[1] + UNIT.k * priorOf(key) / 100) / (c[0] + UNIT.k));
+}
+function diffLabel(key) {
+  const a = (CLASS[key] || [0, 0])[0];
+  return a >= UNIT.minTrust ? 'based on ' + a + ' tries' : (a >= 1 ? 'mostly an estimate, ' + a + (a === 1 ? ' try' : ' tries') + ' so far' : 'starting estimate');
+}
+function keysOfTopic(t) { return QDEFS.order.filter(k => QDEFS.byKey[k].topic === t); }
+function topicDifficulty(t) { const ks = keysOfTopic(t); return ks.length ? Math.round(ks.reduce((s, k) => s + difficulty(k), 0) / ks.length) : 0; }
+function unitDifficulty() { const ts = UNIT.topics.map(t => topicDifficulty(t.id)); return Math.round(ts.reduce((a, b) => a + b, 0) / ts.length); }
+function diffBand(d) { return d < 35 ? 'Easier' : d < 60 ? 'Medium' : 'Tough'; }
+/* "harder/easier than expected": needs enough real data and a big gap between the raw miss rate and the estimate */
+function expectation(key) {
+  const c = CLASS[key] || [0, 0];
+  if (c[0] < UNIT.minTrust) return null;
+  const gap = 100 * c[1] / c[0] - priorOf(key);
+  return gap >= 20 ? 'harder' : gap <= -20 ? 'easier' : null;
+}
+
+/* ======================= READINESS (local, graded topics only; Challenge excluded) ======================= */
+function topicStats(t) {
+  let a = 0, m = 0;
+  keysOfTopic(t).forEach(k => { const c = S.keys[k]; if (c) { a += c[0]; m += c[1]; } });
+  return { a: a, m: m, acc: a ? (a - m) / a : null };
+}
+function topicStatus(t) {
+  const s = topicStats(t);
+  if (s.a < 3) return { id: 'new', label: s.a ? 'Just started' : 'Not started' };
+  if (s.acc >= 0.85) return { id: 'ready', label: 'Ready' };
+  if (s.acc >= 0.65) return { id: 'almost', label: 'Almost there' };
+  return { id: 'work', label: 'Needs work' };
+}
+function unitReadiness(topics) {
+  const ts = topics || UNIT.topics.map(t => t.id);
+  const ready = ts.filter(t => topicStatus(t).id === 'ready').length;
+  return Math.round(100 * ready / ts.length);
+}
+
+/* ======================= SCOPES ======================= */
+function scopeQuiz(id) { const q = UNIT.quizzes.find(x => x.id === id); return { type: 'quiz', id: id, topics: q.topics.slice(), label: q.name }; }
+function scopeTopics(ids) { return { type: 'topics', topics: ids.slice(), label: ids.length === 1 ? UNIT.topicById[ids[0]].name : ids.length + ' topics I picked' }; }
+function scopeUnit() { return { type: 'unit', topics: UNIT.topics.map(t => t.id), label: 'The whole unit test' }; }
+function scopeChal() { return { type: 'chal', topics: ['chal'], label: 'Challenge: beyond the test' }; }
+
+/* ======================= QUESTION SELECTION ======================= */
+function weightedPick(items, weights) {
+  const tot = weights.reduce((a, b) => a + b, 0); let r = rand() * tot;
+  for (let i = 0; i < items.length; i++) { r -= weights[i]; if (r <= 0) return items[i]; }
+  return items[items.length - 1];
+}
+function nextPracticeKey(scope, recent) {
+  const keys = scope.topics.reduce((acc, t) => acc.concat(keysOfTopic(t)), []);
+  const pool = keys.filter(k => recent.indexOf(k) < 0); const use = pool.length ? pool : keys;
+  const w = use.map(k => {
+    const d = QDEFS.byKey[k], c = S.keys[k], ts = topicStats(d.topic);
+    let x = 1 + 4 * (ts.acc === null ? 0.5 : 1 - ts.acc);
+    if (!c) x += 0.5;
+    if (S.last[k] === 0) x += 3;
+    if (c && c[0] >= 2 && c[1] === 0 && d.kind === 'fixed') x *= 0.35;
+    if (d.kind === 'template') x *= 1.2;
+    return x;
+  });
+  return weightedPick(use, w);
+}
+/* A fixed-length check (pre or post): a spread across the topics in scope, skipping keys in `avoid` when it can. */
+function buildCheck(scope, avoid) {
+  const topics = scope.topics, N = Math.max(4, Math.min(20, topics.length * 2));
+  const used = {}; const out = [];
+  let guard = 0, ti = 0;
+  const order = shuffle(topics);
+  while (out.length < N && guard++ < 500) {
+    const t = order[ti++ % order.length], ks = shuffle(keysOfTopic(t));
+    let k = ks.find(x => !used[x] && (!avoid || avoid.indexOf(x) < 0)) || ks.find(x => !used[x]);
+    if (!k) continue;
+    used[k] = 1; out.push(k);
+  }
+  return shuffle(out);
+}
+
+/* ---- engine/50-codes.js ---- */
+'use strict';
+/* ======================= SAVE-AND-RESTORE CODE =======================
+   Bit layout (all numbers big-endian):
+     6 bits  version (1)
+     10 bits unit check (hash of unit id)
+     8 bits  N = number of registry slots in this code
+     N x 6   per slot: attempts (0-7), misses (0-7)   <- slot = position in REGISTRY (append-only)
+     6 bits  T = number of topics in this code
+     T x 8   pre-check  (correct 0-15, total 0-15)
+     T x 8   post-check (correct 0-15, total 0-15)
+     16 bits CRC-16 of everything above
+   RULE: never change how version 1 is read. If the layout must change, add version 2 and keep the v1 reader. */
+const B32 = '0123456789ABCDEFGHJKMNPQRSTVWXYZ';
+function _hash10(s) { let h = 2166136261; for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); } return (h >>> 0) & 1023; }
+function _crc16(bits) {
+  let crc = 0xFFFF;
+  for (let i = 0; i < bits.length; i++) {
+    const b = bits[i] ^ ((crc >> 15) & 1); crc = (crc << 1) & 0xFFFF; if (b) crc ^= 0x1021;
+  }
+  return crc;
+}
+function _pushBits(arr, val, n) { for (let i = n - 1; i >= 0; i--) arr.push((val >> i) & 1); }
+function _readBits(arr, pos, n) { let v = 0; for (let i = 0; i < n; i++) v = (v << 1) | arr[pos.p++]; return v; }
+function _scale(a, m) { if (a <= 7) return [a, Math.min(m, a)]; return [7, Math.min(7, Math.round(m * 7 / a))]; }
+function _scale15(c, t) { if (t <= 15) return [Math.min(c, t), t]; return [Math.round(c * 15 / t), 15]; }
+function encodeProgress(st) {
+  const bits = [];
+  _pushBits(bits, 1, 6); _pushBits(bits, _hash10(UNIT.id), 10);
+  _pushBits(bits, REGISTRY.length, 8);
+  REGISTRY.forEach(k => { const c = st.keys[k] || [0, 0]; const s = _scale(c[0], c[1]); _pushBits(bits, s[0], 3); _pushBits(bits, s[1], 3); });
+  const tp = UNIT.topics.map(t => t.id);
+  _pushBits(bits, tp.length, 6);
+  ['pre', 'post'].forEach(w => tp.forEach(t => { const c = st[w][t] || [0, 0]; const s = _scale15(c[0], c[1]); _pushBits(bits, s[0], 4); _pushBits(bits, s[1], 4); }));
+  _pushBits(bits, _crc16(bits), 16);
+  while (bits.length % 5) bits.push(0);
+  let out = '';
+  for (let i = 0; i < bits.length; i += 5) out += B32[(bits[i] << 4) | (bits[i + 1] << 3) | (bits[i + 2] << 2) | (bits[i + 3] << 1) | bits[i + 4]];
+  const grp = out.match(/.{1,5}/g).join('-');
+  return UNIT.codePrefix + '-' + grp;
+}
+/* returns {ok:true, state} or {ok:false, error:'friendly message'} */
+function decodeProgress(text) {
+  let s = String(text || '').toUpperCase().replace(/[\s-]/g, '');
+  const pre = UNIT.codePrefix.toUpperCase();
+  if (!s) return { ok: false, error: 'Paste your code first.' };
+  if (s.indexOf(pre) !== 0) return { ok: false, error: 'That does not look like a code from this unit. Codes start with ' + UNIT.codePrefix + '. If it came from a different unit, use this unit\u2019s code instead.' };
+  s = s.slice(pre.length).replace(/I/g, '1').replace(/L/g, '1').replace(/O/g, '0').replace(/U/g, 'V');
+  const bits = [];
+  for (const ch of s) { const v = B32.indexOf(ch); if (v < 0) return { ok: false, error: 'That code has a character that is not allowed. Check for typos.' }; for (let i = 4; i >= 0; i--) bits.push((v >> i) & 1); }
+  if (bits.length < 40) return { ok: false, error: 'That code is too short. Make sure you copied the whole thing.' };
+  const pos = { p: 0 };
+  const ver = _readBits(bits, pos, 6);
+  if (ver !== 1) return { ok: false, error: 'This code was made by a newer version of the site. Refresh the page and try again.' };
+  const unit = _readBits(bits, pos, 10);
+  const n = _readBits(bits, pos, 8);
+  const need = 6 + 10 + 8 + n * 6 + 6;
+  if (bits.length < need + 16) return { ok: false, error: 'That code is too short. Make sure you copied the whole thing.' };
+  const keysData = []; for (let i = 0; i < n; i++) keysData.push([_readBits(bits, pos, 3), _readBits(bits, pos, 3)]);
+  const T = _readBits(bits, pos, 6);
+  const total = need + T * 16;
+  if (bits.length < total + 16) return { ok: false, error: 'That code is too short. Make sure you copied the whole thing.' };
+  const pp = []; for (let i = 0; i < T; i++) pp.push([_readBits(bits, pos, 4), _readBits(bits, pos, 4)]);
+  const qq = []; for (let i = 0; i < T; i++) qq.push([_readBits(bits, pos, 4), _readBits(bits, pos, 4)]);
+  const crcPos = pos.p; const crc = _readBits(bits, pos, 16);
+  if (_crc16(bits.slice(0, crcPos)) !== crc) return { ok: false, error: 'That code does not look right. Check for a mistyped or missing character.' };
+  const rest = bits.slice(pos.p);
+  if (rest.length >= 5) return { ok: false, error: 'That code is longer than expected. Make sure you copied only the code.' };
+  if (rest.some(b => b !== 0)) return { ok: false, error: 'That code does not look right. Check for a mistyped or missing character.' };
+  if (unit !== _hash10(UNIT.id)) return { ok: false, error: 'This code is from a different unit.' };
+  const st = newState();
+  keysData.forEach((c, i) => { if (REGISTRY[i] && (c[0] || c[1])) st.keys[REGISTRY[i]] = [c[0], c[1]]; });
+  const tp = UNIT.topics.map(t => t.id);
+  tp.forEach((t, i) => { if (i < T) { if (pp[i][1]) st.pre[t] = [pp[i][0], pp[i][1]]; if (qq[i][1]) st.post[t] = [qq[i][0], qq[i][1]]; } });
+  return { ok: true, state: st };
+}
+
+/* ---- engine/90-ui.js ---- */
+'use strict';
+/* ======================= USER INTERFACE ======================= */
+const $ = (s, el) => (el || document).querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const LETTERS = ['A', 'B', 'C', 'D'];
+const HOME = { panel: null, sel: {} };
+let SESSION = null;
+let CLASS_MODE = 'test';
+const MURPHY_OK = ['Murphy wags his tail. Nice work!', 'Tail wag! That\u2019s the one.', 'Murphy gives that a happy bark.', 'Murphy approves.'];
+const MURPHY_NO = ['Murphy tilts his head. Read the notes below, then try the next one.', 'Murphy nudges you with his nose: check why each choice is or isn\u2019t right.', 'Not this time, and that\u2019s how we learn it.'];
+
+function go(h) { if (location.hash === h) render(); else location.hash = h; }
+function gauge(d) { return '<span class="gauge" role="img" aria-label="Difficulty ' + d + ' out of 100"><i style="width:' + d + '%"></i></span>'; }
+function chip(t) { return '<span class="chip">' + esc(UNIT.topicById[t].name) + '</span>'; }
+function statusChip(t) { const s = topicStatus(t); return '<span class="status s-' + s.id + '">' + s.label + '</span>'; }
+
+/* ---------- header / shell ---------- */
+function shell(inner, opts) {
+  opts = opts || {};
+  return '<header class="top"><a class="brand" href="#/" aria-label="Home"><img class="dog" src="' + MURPHY_IMG + '" alt="Murphy the dog" width="48" height="48">' +
+    '<span><b>' + esc(UNIT.title) + '</b><small>Grade ' + UNIT.grade + ' review</small></span></a>' +
+    '<nav aria-label="Sections"><a href="#/">Home</a><a href="#/notes">Study notes</a><a href="#/tips">Test tips</a><a href="#/written">Written response</a><a href="#/insights">Class insights</a><a href="#/code">Save or restore</a></nav></header>' +
+    '<main id="main" tabindex="-1" class="' + (opts.cls || '') + '">' + inner + '</main>';
+}
+
+/* ---------- home ---------- */
+function homeView() {
+  loadClassLocal();
+  const anyProg = Object.keys(S.keys).length > 0;
+  let panel = '';
+  if (HOME.panel === 'quiz') {
+    panel = '<div class="panel"><h3>Which homework quiz?</h3><div class="list">' + UNIT.quizzes.map(q =>
+      '<button class="row" data-act="pick-quiz" data-id="' + q.id + '"><span class="rt"><b>' + esc(q.name) + '</b><small>' +
+      q.topics.map(t => esc(UNIT.topicById[t].name)).join(', ') + '</small></span>' + gauge(Math.round(q.topics.reduce((s, t) => s + topicDifficulty(t), 0) / q.topics.length)) + '</button>').join('') + '</div></div>';
+  } else if (HOME.panel === 'topics') {
+    const n = Object.keys(HOME.sel).filter(k => HOME.sel[k]).length;
+    panel = '<div class="panel"><h3>Pick any topics. Mix and match.</h3><div class="checks">' + UNIT.topics.map(t =>
+      '<label class="chk"><input type="checkbox" data-act="topic-toggle" data-id="' + t.id + '"' + (HOME.sel[t.id] ? ' checked' : '') + '><span>' + esc(t.name) + '</span>' + statusChip(t.id) + '</label>').join('') +
+      '</div><button class="btn" data-act="go-topics"' + (n ? '' : ' disabled') + '>Study ' + (n ? n + ' topic' + (n > 1 ? 's' : '') : 'these topics') + '</button></div>';
+  }
+  const ready = unitReadiness();
+  return shell(
+    '<section class="hero"><h1>What are you studying for?</h1><p class="lead">Pick one. Everything you do here is saved on this device, and you can move to another computer with a code.</p>' +
+    '<div class="opts">' +
+    optCard('quiz', 'A homework quiz', 'Practice just the topics from one homework and its quiz.') +
+    optCard('topics', 'Topics I choose', 'Pick one topic or mix several, like weight and free fall together.') +
+    optCard('unit', 'The whole unit test', 'Everything on the test. Starts with a quick pre-check to find your weak spots.') +
+    optCard('chal', 'Challenge', 'Goes above and beyond the test, but it\u2019s good to know!') +
+    '</div>' + panel + '</section>' +
+    '<section class="where"><h2>Where you stand</h2>' + (anyProg
+      ? '<p><b>' + ready + '%</b> of the test topics are marked Ready. Challenge questions don\u2019t count toward this.</p>' : '<p>Nothing yet. Start with any option above.</p>') +
+    '<div class="tgrid">' + UNIT.topics.map(t => '<div class="tcell"><span>' + esc(t.name) + '</span>' + statusChip(t.id) + '<span class="tough">How tough: ' + topicDifficulty(t.id) + '/100</span></div>').join('') + '</div></section>');
+}
+function optCard(id, title, text) {
+  const on = HOME.panel === id ? ' on' : '';
+  return '<button class="opt' + on + '" data-act="opt" data-id="' + id + '"><b>' + title + '</b><span>' + text + '</span></button>';
+}
+
+/* ---------- plan (before the pre-check) ---------- */
+function planView() {
+  const sc = S.scope; if (!sc) return homeView();
+  const chal = sc.type === 'chal';
+  const rows = sc.topics.map(t => '<div class="trow"><div><b>' + esc(UNIT.topicById[t].name) + '</b>' + (chal ? '' : statusChip(t)) + '</div>' +
+    '<div class="tough">How tough is this section? ' + topicDifficulty(t) + '/100 ' + gauge(topicDifficulty(t)) + '</div></div>').join('');
+  const n = chal ? 0 : buildCheck(sc).length;
+  return shell('<section class="card"><p class="kicker">' + (chal ? 'Beyond the test' : 'Your plan') + '</p><h1>' + esc(sc.label) + '</h1>' +
+    (chal ? '<p class="banner">This goes beyond the test, but it\u2019s good to know! These questions are tracked separately and don\u2019t count toward your test readiness.</p>' : '') +
+    '<div class="tlist">' + rows + '</div>' +
+    (chal
+      ? '<div class="btns"><button class="btn" data-act="start-practice">Start Challenge</button></div>'
+      : '<p>A pre-check of ' + n + ' questions finds the topics that need the most work. Then your study plan pre-checks them for you. Hints are off during checks.</p>' +
+        '<div class="btns"><button class="btn" data-act="pre">Take the ' + n + '-question pre-check</button><button class="btn ghost" data-act="start-practice">Skip to practice</button></div>') +
+    '<p><a href="#/">\u2190 Pick something else</a></p></section>');
+}
+
+/* ---------- question ---------- */
+function startCheck(kind) {
+  const avoid = kind === 'post' ? (S._preKeys || null) : null;
+  SESSION = { mode: kind, scope: S.scope, queue: buildCheck(S.scope, avoid), idx: 0, results: [], recent: [] };
+  if (kind === 'pre') { S._preKeys = SESSION.queue.slice(); saveState(); }
+  nextQuestion();
+}
+function startPractice(topics) {
+  const base = S.scope || scopeUnit();
+  const scope = topics ? Object.assign({}, base, { topics: topics }) : base;
+  SESSION = { mode: base.type === 'chal' ? 'chal' : 'practice', scope: scope, results: [], recent: [] };
+  nextQuestion();
+}
+function nextQuestion() {
+  const sc = SESSION;
+  let key;
+  if (sc.mode === 'pre' || sc.mode === 'post') { if (sc.idx >= sc.queue.length) return finishCheck(); key = sc.queue[sc.idx]; }
+  else { key = nextPracticeKey(sc.scope, sc.recent); sc.recent.push(key); if (sc.recent.length > 3) sc.recent.shift(); }
+  Object.assign(sc, { q: makeQuestion(key), picked: null, conf: null, hints: 0, elim: [], hintTexts: [], showed: false, done: false });
+  go('#/q');
+}
+function qView() {
+  if (!SESSION || !SESSION.q) return homeView();
+  const s = SESSION, q = s.q, check = s.mode === 'pre' || s.mode === 'post';
+  const d = difficulty(q.key);
+  const modeLbl = { pre: 'Pre-check', post: 'Post-check', practice: 'Practice', chal: 'Challenge' }[s.mode];
+  const prog = check ? 'Question ' + (s.done ? s.idx : s.idx + 1) + ' of ' + s.queue.length : 'Question ' + (s.results.length + 1) + (s.results.length ? ' \u00b7 ' + s.results.filter(r => r.ok).length + ' of ' + s.results.length + ' right so far' : '');
+  const choices = q.choices.map((c, i) => {
+    let cls = 'ch';
+    if (s.done) cls += c.ok ? ' right' : (i === s.picked ? ' wrong' : ' off');
+    else { if (i === s.picked) cls += ' sel'; if (s.elim.indexOf(i) >= 0) cls += ' gone'; }
+    return '<li><button class="' + cls + '" data-act="choose" data-i="' + i + '"' + ((s.done || s.elim.indexOf(i) >= 0) ? ' disabled' : '') + ' aria-pressed="' + (i === s.picked) + '">' +
+      '<span class="ltr">' + LETTERS[i] + '</span><span class="ctext">' + c.html + '</span></button>' +
+      (s.done && !c.ok ? '<div class="why"><b>Why not ' + LETTERS[i] + '?</b> ' + esc(c.why) + '</div>' : '') +
+      (s.done && c.ok ? '<div class="why good"><b>Why ' + LETTERS[i] + ' is right:</b> ' + esc(q.explain.replace(/<[^>]+>/g, '')) + '</div>' : '') + '</li>';
+  }).join('');
+  const hintBox = s.hintTexts.map(t => '<p class="hint">' + t + '</p>').join('') + (s.showed && !s.done ? '<div class="how"><b>Show me how:</b> ' + q.explain + '</div>' : '');
+  const conf = !s.done ? '<div class="conf" role="group" aria-label="How sure are you?"><span>How sure are you?</span>' +
+    [['sure', 'Sure'], ['mid', 'Pretty sure'], ['guess', 'Guessing']].map(c => '<button class="pill' + (s.conf === c[0] ? ' on' : '') + '" data-act="conf" data-v="' + c[0] + '">' + c[1] + '</button>').join('') + '</div>' : '';
+  let fb = '';
+  if (s.done) {
+    const c = s.q.choices[s.picked], ok = c && c.ok, last = s.results[s.results.length - 1];
+    const d2 = difficulty(q.key);
+    fb = '<div class="fb ' + (ok ? 'fb-ok' : 'fb-no') + '" role="status"><b>' + (ok ? 'Correct!' : (last && last.skipped ? 'Skipped.' : 'Not quite.')) + '</b> ' + (ok ? MURPHY_OK[ri(0, MURPHY_OK.length - 1)] : MURPHY_NO[ri(0, MURPHY_NO.length - 1)]) +
+      (!ok && s.conf === 'sure' && !(last && last.skipped) ? ' You were sure, so this is a great one to learn from.' : '') +
+      (s.showed ? ' (Used Show me how, so this one doesn\u2019t count toward class data.)' : '') +
+      '<div class="tough">How tough: ' + d2 + '/100 \u00b7 ' + diffBand(d2) + ' \u00b7 ' + diffLabel(q.key) + '</div></div>';
+  }
+  const lastQ = check && s.done && s.idx >= s.queue.length;
+  const action = s.done
+    ? '<button class="btn" data-act="next">' + (lastQ ? 'See my results' : 'Next question') + '</button>' +
+      (!check ? '<button class="btn ghost" data-act="finish-practice">I\u2019m done: check how I did</button>' : '')
+    : '<button class="btn" data-act="check"' + (s.picked === null ? ' disabled' : '') + '>Check answer</button>' +
+      (!check ? '<button class="btn ghost" data-act="hint"' + (s.hints >= 3 ? ' disabled' : '') + '>Hint (' + s.hints + ' of 3 used)</button><button class="btn ghost" data-act="how">Show me how</button>' : '') +
+      '<button class="btn quiet" data-act="skip">Skip</button>';
+  const diffLine = '<div class="tough">How tough: <b>' + d + '/100</b> \u00b7 ' + diffBand(d) + ' \u00b7 ' + diffLabel(q.key) + ' ' + gauge(d) + '</div>';
+  return shell('<section class="card q' + (s.mode === 'chal' ? ' chalcard' : '') + '">' +
+    (s.mode === 'chal' ? '<p class="banner">This goes beyond the test, but it\u2019s good to know!</p>' : '') +
+    '<div class="qhead"><span class="mode">' + modeLbl + '</span>' + chip(q.topic) + '<span class="prog">' + prog + '</span></div>' +
+    (s.done ? '' : diffLine) +
+    '<div class="prompt">' + q.prompt + '</div>' + (check ? '' : hintBox) +
+    '<ol class="choices' + (q.choices.every(c => c.html.indexOf('<svg') === 0) ? ' diag' : '') + '">' + choices + '</ol>' + conf + fb + '<div class="btns">' + action + '</div>' +
+    (check ? '<p class="small">Hints are off during checks. Your answer still gets full feedback afterward.</p>' : '') +
+    '<p class="small"><a href="#/">Stop and go home</a></p></section>', { cls: 'wide' });
+}
+function answer(skipped) {
+  const s = SESSION, q = s.q;
+  const c = skipped ? null : q.choices[s.picked], ok = !!(c && c.ok);
+  const assisted = s.showed ? 'how' : (s.hints > 0 ? 'hint' : null);
+  if (!skipped) {
+    recordLocal(q.key, ok, assisted, s.conf);
+    if (!assisted) reportClass(q.key, ok);
+  }
+  s.results.push({ key: q.key, topic: q.topic, ok: ok, skipped: !!skipped });
+  s.done = true; if (skipped) s.picked = -1;
+  if (s.mode === 'pre' || s.mode === 'post') s.idx += 1;
+  render();
+  const el = document.querySelector('.fb'); if (el) el.scrollIntoView({ block: 'nearest', behavior: 'auto' });
+}
+function finishCheck() {
+  const s = SESSION, kind = s.mode, per = {};
+  s.scope.topics.forEach(t => per[t] = [0, 0]);
+  s.results.forEach(r => { if (per[r.topic]) { per[r.topic][1] += 1; if (r.ok) per[r.topic][0] += 1; } });
+  Object.keys(per).forEach(t => { if (per[t][1]) S[kind][t] = per[t]; });
+  saveState();
+  s.finished = { kind: kind, per: per };
+  go('#/result');
+}
+
+/* ---------- results: study plan (after pre) and growth view (after post) ---------- */
+function resultView() {
+  const s = SESSION; if (!s || !s.finished) return homeView();
+  const f = s.finished, per = f.per, topics = Object.keys(per);
+  const tot = topics.reduce((a, t) => [a[0] + per[t][0], a[1] + per[t][1]], [0, 0]);
+  if (f.kind === 'pre') {
+    const weak = topics.filter(t => per[t][1] && per[t][0] / per[t][1] < 0.75);
+    const pick = weak.length ? weak : topics;
+    const rows = topics.map(t => '<label class="chk"><input type="checkbox" data-act="plan-toggle" data-id="' + t + '"' + (pick.indexOf(t) >= 0 ? ' checked' : '') + '><span><b>' + esc(UNIT.topicById[t].name) + '</b>' +
+      '<small>' + per[t][0] + ' of ' + per[t][1] + ' right on the pre-check</small></span><span class="tough">' + topicDifficulty(t) + '/100</span></label>').join('');
+    return shell('<section class="card"><p class="kicker">Pre-check done</p><h1>' + tot[0] + ' of ' + tot[1] + ' right</h1>' +
+      '<p>' + (weak.length ? 'Here is your study plan. The topics that need the most work are already checked.' : 'Every topic looks solid. Keep it sharp: all topics are checked for practice.') + '</p>' +
+      '<div class="checks">' + rows + '</div><div class="btns"><button class="btn" data-act="start-plan">Start practice</button></div></section>');
+  }
+  const rows = topics.map(t => {
+    const pre = S.pre[t], post = per[t];
+    const dp = pre && pre[1] ? Math.round(100 * pre[0] / pre[1]) : null, dq = post[1] ? Math.round(100 * post[0] / post[1]) : 0;
+    const delta = dp === null ? '' : (dq - dp > 0 ? '<span class="up">+' + (dq - dp) + ' points</span>' : dq - dp < 0 ? '<span class="down">' + (dq - dp) + ' points</span>' : '<span>same</span>');
+    return '<div class="grow"><b>' + esc(UNIT.topicById[t].name) + '</b><div class="bars"><span>Before ' + (dp === null ? '\u2013' : dp + '%') + '</span><i class="bar b0" style="width:' + (dp || 0) + '%"></i>' +
+      '<span>After ' + dq + '%</span><i class="bar b1" style="width:' + dq + '%"></i></div>' + delta + '</div>';
+  }).join('');
+  return shell('<section class="card"><p class="kicker">Post-check done</p><h1>' + tot[0] + ' of ' + tot[1] + ' right</h1><p>Here is how each topic changed from your pre-check. Everything is saved on this device.</p>' +
+    '<div class="growth">' + rows + '</div><div class="btns"><button class="btn" data-act="start-practice">Practice more</button><a class="btn ghost" href="#/code">Save my code</a><a class="btn ghost" href="#/">Home</a></div></section>');
+}
+
+/* ---------- notes, tips, written ---------- */
+function notesView() {
+  const sec = t => '<article class="card note"><h2>' + esc(UNIT.topicById[t].name) + '</h2><ul>' + NOTES[t].map(x => '<li>' + x + '</li>').join('') + '</ul></article>';
+  return shell('<h1>Study notes</h1><p class="lead">Short notes in the same words as your class notes.</p>' + UNIT.topics.map(t => sec(t.id)).join('') +
+    '<article class="card note chalcard"><p class="banner">This goes beyond the test, but it\u2019s good to know!</p><h2>Challenge notes</h2><ul>' + NOTES.chal.map(x => '<li>' + x + '</li>').join('') + '</ul></article>');
+}
+function tipsView() {
+  return shell('<h1>Test tips</h1><p class="lead">Habits that help on any test in this unit.</p><div class="tips">' + TIPS.map(t => '<article class="card"><h3>' + t[0] + '</h3><p>' + t[1] + '</p></article>').join('') + '</div>');
+}
+function writtenView() {
+  return shell('<h1>Written-response practice</h1><p class="lead">Not graded and not tracked. Try writing your own answer first, then open the sample.</p>' +
+    WRITTEN.map((w, i) => '<details class="card wr"><summary><b>' + esc(w.title) + '</b></summary><p class="prompt">' + w.prompt + '</p>' +
+      '<h4>Ways you could approach it</h4><ul>' + w.approaches.map(a => '<li>' + a + '</li>').join('') + '</ul>' +
+      '<h4>A strong sample answer</h4><blockquote>' + w.sample + '</blockquote><h4>What makes it strong</h4><ul>' + w.why.map(a => '<li>' + a + '</li>').join('') + '</ul></details>').join(''));
+}
+
+/* ---------- class insights ---------- */
+function insightsView() {
+  const topicRows = UNIT.topics.map(t => {
+    const ks = keysOfTopic(t.id), tries = ks.reduce((a, k) => a + (CLASS[k] ? CLASS[k][0] : 0), 0);
+    return '<tr><td>' + esc(t.name) + '</td><td>' + tries + '</td><td>' + (tries >= UNIT.minShow ? topicDifficulty(t.id) + '/100 ' + gauge(topicDifficulty(t.id)) : 'Starting estimate: ' + topicDifficulty(t.id) + '/100') + '</td></tr>';
+  }).join('');
+  const quizRows = UNIT.quizzes.map(q => {
+    const ks = q.topics.reduce((a, t) => a.concat(keysOfTopic(t)), []), tries = ks.reduce((a, k) => a + (CLASS[k] ? CLASS[k][0] : 0), 0);
+    const d = Math.round(q.topics.reduce((s, t) => s + topicDifficulty(t), 0) / q.topics.length);
+    return '<tr><td>' + esc(q.name) + '</td><td>' + tries + '</td><td>' + d + '/100 ' + gauge(d) + '</td></tr>';
+  }).join('');
+  const itemRow = k => {
+    const c = CLASS[k] || [0, 0], d = QDEFS.byKey[k], diff = difficulty(k), ex = expectation(k);
+    const st = c[0] < UNIT.minShow ? '<span class="status s-new">Not enough data yet</span>' : ex === 'harder' ? '<span class="status s-work">Harder than expected</span>' : ex === 'easier' ? '<span class="status s-ready">Easier than expected</span>' : '<span class="status s-almost">About as expected</span>';
+    return '<tr><td>' + esc(d.label) + '<small>' + (d.kind === 'template' ? 'Skill (new numbers each time) \u00b7 ' : '') + esc(k) + '</small></td><td>' + esc(UNIT.topicById[d.topic].name) + '</td><td>' + c[0] + '</td><td>' + c[1] + '</td><td>' + (c[0] < UNIT.minShow ? 'Estimate ' + d.prior : diff + '/100') + '</td><td>' + st + '</td></tr>';
+  };
+  const graded = QDEFS.order.filter(k => !QDEFS.byKey[k].chal).sort((a, b) => difficulty(b) - difficulty(a));
+  const chal = QDEFS.order.filter(k => QDEFS.byKey[k].chal).sort((a, b) => difficulty(b) - difficulty(a));
+  const banner = CLASS_MODE === 'live' ? '<p class="banner ok">Live class data. Every number here is anonymous: no names, no student information.</p>'
+    : CLASS_MODE === 'offline' ? '<p class="banner">Could not reach the class data right now, so this page is showing estimates and this device only. Try again later.</p>'
+    : '<p class="banner">Test mode: the class counters are not connected yet, so only answers from this device are counted here. When the site is connected, this page will show the whole class.</p>';
+  return shell('<h1>Class insights</h1><p class="lead">What is hard in this unit, based on every student\u2019s answers. Nothing here identifies a student.</p>' + banner +
+    '<div class="card"><h2>Unit difficulty: ' + unitDifficulty() + '/100 ' + gauge(unitDifficulty()) + '</h2><p class="small">Starts as my estimate and moves toward real class data. With about ' + UNIT.minTrust + ' tries on a question, the number is mostly real data. Challenge is not included.</p></div>' +
+    '<div class="card"><h2>By homework quiz</h2><div class="scroll"><table><thead><tr><th>Quiz</th><th>Tries</th><th>How tough</th></tr></thead><tbody>' + quizRows + '</tbody></table></div></div>' +
+    '<div class="card"><h2>By topic</h2><div class="scroll"><table><thead><tr><th>Topic</th><th>Tries</th><th>How tough</th></tr></thead><tbody>' + topicRows + '</tbody></table></div></div>' +
+    '<div class="card"><h2>Every question and skill, hardest first</h2><div class="scroll"><table><thead><tr><th>Question</th><th>Topic</th><th>Tries</th><th>Misses</th><th>How tough</th><th>Compared with my estimate</th></tr></thead><tbody>' + graded.map(itemRow).join('') + '</tbody></table></div></div>' +
+    '<div class="card chalcard"><p class="banner">This goes beyond the test, but it\u2019s good to know!</p><h2>Challenge (tracked separately)</h2><div class="scroll"><table><thead><tr><th>Question</th><th>Topic</th><th>Tries</th><th>Misses</th><th>How tough</th><th>Compared with my estimate</th></tr></thead><tbody>' + chal.map(itemRow).join('') + '</tbody></table></div></div>');
+}
+
+/* ---------- save and restore ---------- */
+let CODE_MSG = '';
+function codeView() {
+  return shell('<h1>Save or restore my progress</h1><p class="lead">Your practice history lives on this device. To keep going on another computer, copy your code, open this unit there, and paste it in.</p>' +
+    '<div class="card"><h2>My code</h2><textarea id="mycode" readonly rows="4" aria-label="My progress code">' + esc(encodeProgress(S)) + '</textarea>' +
+    '<div class="btns"><button class="btn" data-act="copy-code">Copy my code</button></div><p class="small" id="copymsg" role="status"></p></div>' +
+    '<div class="card"><h2>Restore from a code</h2><textarea id="incode" rows="4" placeholder="Paste a code that starts with ' + UNIT.codePrefix + '" aria-label="Paste a progress code"></textarea>' +
+    '<div class="btns"><button class="btn" data-act="restore-code">Restore</button></div><p class="small" id="restoremsg" role="status">' + esc(CODE_MSG) + '</p></div>' +
+    '<div class="card"><h2>Start over</h2><p class="small">Clears the practice history on this device. Class data is not affected.</p><div class="btns"><button class="btn quiet" data-act="reset">Clear my progress</button></div></div>');
+}
+
+/* ---------- router ---------- */
+async function render() {
+  const h = location.hash || '#/';
+  const app = $('#app');
+  let html;
+  if (h === '#/plan') html = planView();
+  else if (h === '#/q') html = qView();
+  else if (h === '#/result') html = resultView();
+  else if (h === '#/notes') html = notesView();
+  else if (h === '#/tips') html = tipsView();
+  else if (h === '#/written') html = writtenView();
+  else if (h === '#/code') html = codeView();
+  else if (h === '#/insights') { loadClassLocal(); app.innerHTML = shell('<p class="lead">Loading class data\u2026</p>'); CLASS_MODE = await refreshClass(); html = insightsView(); }
+  else html = homeView();
+  app.innerHTML = html;
+  const nv = app.querySelectorAll('nav a'); nv.forEach(a => { if (a.getAttribute('href') === h) a.setAttribute('aria-current', 'page'); });
+  if (!window.__noscroll) window.scrollTo(0, 0);
+}
+
+const ACT = {
+  opt(el) {
+    const id = el.dataset.id;
+    if (id === 'quiz' || id === 'topics') { HOME.panel = HOME.panel === id ? null : id; render(); }
+    else { S.scope = id === 'unit' ? scopeUnit() : scopeChal(); saveState(); go('#/plan'); }
+  },
+  'pick-quiz'(el) { S.scope = scopeQuiz(el.dataset.id); saveState(); go('#/plan'); },
+  'topic-toggle'(el) { HOME.sel[el.dataset.id] = el.checked; const b = $('[data-act="go-topics"]'); const n = Object.keys(HOME.sel).filter(k => HOME.sel[k]).length; if (b) { b.disabled = !n; b.textContent = 'Study ' + (n ? n + ' topic' + (n > 1 ? 's' : '') : 'these topics'); } },
+  'go-topics'() { const ids = UNIT.topics.map(t => t.id).filter(t => HOME.sel[t]); if (ids.length) { S.scope = scopeTopics(ids); saveState(); go('#/plan'); } },
+  pre() { startCheck('pre'); },
+  'start-practice'() { startPractice(); },
+  'plan-toggle'(el) { el.dataset.on = el.checked ? '1' : '0'; },
+  'start-plan'() { const ids = Array.prototype.map.call(document.querySelectorAll('[data-act="plan-toggle"]:checked'), x => x.dataset.id); if (!ids.length) return; startPractice(ids); },
+  choose(el) { if (SESSION.done) return; SESSION.picked = Number(el.dataset.i); render(); },
+  conf(el) { SESSION.conf = el.dataset.v; render(); },
+  check() { if (SESSION.picked !== null && !SESSION.done) answer(false); },
+  skip() { if (!SESSION.done) answer(true); },
+  next() { nextQuestion(); },
+  hint() {
+    const s = SESSION, q = s.q; if (s.hints >= 3 || s.done) return; s.hints += 1;
+    const wrongIdx = q.choices.map((c, i) => c.ok ? -1 : i).filter(i => i >= 0 && s.elim.indexOf(i) < 0 && i !== s.picked);
+    if (s.hints === 1) s.hintTexts.push('<b>Hint 1:</b> ' + UNIT.topicById[q.topic].idea);
+    else if (s.hints === 2 && q.hint) s.hintTexts.push('<b>Hint 2:</b> ' + q.hint);
+    else if (wrongIdx.length) { const i = pick(wrongIdx); s.elim.push(i); s.hintTexts.push('<b>Hint ' + s.hints + ':</b> Choice ' + LETTERS[i] + ' is not right. I crossed it out.'); }
+    else s.hintTexts.push('<b>Hint ' + s.hints + ':</b> Try reading the question again and compare the choices that are left.');
+    render();
+  },
+  how() { if (!SESSION.done) { SESSION.showed = true; render(); } },
+  'finish-practice'() { if (SESSION.results.length < 1) return; startCheck('post'); },
+  'copy-code'() {
+    const t = $('#mycode'); const msg = $('#copymsg');
+    const ok = () => { msg.textContent = 'Copied. Paste it somewhere safe, or into this page on another computer.'; };
+    try { if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(t.value).then(ok, () => { t.select(); document.execCommand('copy'); ok(); }); return; } } catch (e) {}
+    t.select(); try { document.execCommand('copy'); ok(); } catch (e) { msg.textContent = 'Select the code and copy it yourself.'; }
+  },
+  'restore-code'() {
+    const r = decodeProgress($('#incode').value), msg = $('#restoremsg');
+    if (!r.ok) { msg.textContent = r.error; return; }
+    if (Object.keys(S.keys).length && !window.confirm('This replaces the progress on this device with the code\u2019s progress. Continue?')) return;
+    const scope = S.scope; S = r.state; S.scope = scope; saveState();
+    const n = Object.keys(S.keys).length; msg.textContent = 'Restored! ' + n + ' question' + (n === 1 ? '' : 's') + ' of history came back.';
+  },
+  reset() { if (window.confirm('Clear all practice history on this device?')) { S = newState(); saveState(); go('#/'); } }
+};
+document.addEventListener('click', e => { const el = e.target.closest('[data-act]'); if (!el || el.tagName === 'INPUT') return; if (el.disabled) return; ACT[el.dataset.act] && ACT[el.dataset.act](el, e); });
+document.addEventListener('change', e => { const el = e.target; if (el.tagName === 'INPUT' && el.dataset.act && ACT[el.dataset.act]) ACT[el.dataset.act](el, e); });
+window.addEventListener('hashchange', render);
+if (typeof document !== 'undefined') {
+  document.addEventListener('DOMContentLoaded', () => { loadState(); loadClassLocal(); render(); });
+}
+
+</script>
+</body>
+</html>
